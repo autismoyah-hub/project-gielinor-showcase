@@ -202,3 +202,30 @@ Metadata-free PNG copies; original rendered RGB pixels and dimensions preserved.
 - Hosted-copy SHA-256: `e4ec395633ea9b4dd9d9e0b3cb2bcd3a223291959735a8899c67922d794b79f5`
 - Size: 1000 × 800; 59939 bytes
 
+## 21-live-inventory.png
+
+- Type: Live native client
+- Caption: Full native client with actors, populated inventory, chat, HUD and minimap during the widget-drag acceptance run.
+- Source: live-widget-drag.bmp
+- Source SHA-256: `f40de13614322da580621b9b6121afefc78fa736b89af2d0a4a62489a1da031d`
+- Hosted-copy SHA-256: `da3bcf6554fac973d1e36c88c1b52c552872e86f75df82656bf5158748e3be42`
+- Size: 765 × 503; 240361 bytes
+
+## 22-live-hub.png
+
+- Type: Live native client
+- Caption: Full native client showing the hub, actors, inventory, chat and minimap during preference verification.
+- Source: preferences-verified.bmp
+- Source SHA-256: `06a4d4c90ed40164d9157339f3a59a85e42acdf650066e1bbe555c2ffec6dd50`
+- Hosted-copy SHA-256: `7de14fe8f2bb3043eda11299708d87c5843caa201dced0bff73e74b45a0bc0c8`
+- Size: 765 × 503; 289464 bytes
+
+## 23-live-editor.png
+
+- Type: UI test in live session
+- Caption: Temporary text-editor acceptance widget inside the logged-in native client; not a standard gameplay dialogue.
+- Source: live-editor.bmp
+- Source SHA-256: `373d8dd6e9d6616e7f2abe6dbe0fda062c92767a4470b31be475b772592f36ea`
+- Hosted-copy SHA-256: `0ee741f389b4c0c18851b4e5afb718e4fe9a8411c889ff7af2e17f7eceb0d300`
+- Size: 765 × 503; 233199 bytes
+

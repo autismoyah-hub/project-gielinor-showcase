@@ -8,7 +8,11 @@ Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC; Copyright 20
 
 ## Gallery
 
-Twenty reviewed screenshots: live reference-server captures, offline regional scenes, model demonstrations and interface tests. Older Scout renders show historical checkpoints.
+23 reviewed screenshots, led by full logged-in native client views. Live captures use the isolated Kotlin reference server. Historical offline scenes and UI tests are individually labeled. Full HUD composition does not imply complete functional parity.
+
+### Live native client: Full native client with actors, populated inventory, chat, HUD and minimap during the widget-drag acceptance run.
+
+![Full native client with actors, populated inventory, chat, HUD and minimap during the widget-drag acceptance run.](images/21-live-inventory.png)
 
 ### Live native client: World, actors, minimap and spellbook in the native client.
 
@@ -17,6 +21,10 @@ Twenty reviewed screenshots: live reference-server captures, offline regional sc
 ### Live native client: Floating world map in the native client.
 
 ![Floating world map in the native client.](images/02-native-world-map.png)
+
+### Live native client: Full native client showing the hub, actors, inventory, chat and minimap during preference verification.
+
+![Full native client showing the hub, actors, inventory, chat and minimap during preference verification.](images/22-live-hub.png)
 
 ### Offline rendering test: Lumbridge castle and surrounding terrain.
 
@@ -89,4 +97,8 @@ Twenty reviewed screenshots: live reference-server captures, offline regional sc
 ### UI test: Equipment interface rendered by the isolated Rust UI harness.
 
 ![Equipment interface rendered by the isolated Rust UI harness.](images/06-equipment-interface.png)
+
+### UI test in live session: Temporary text-editor acceptance widget inside the logged-in native client; not a standard gameplay dialogue.
+
+![Temporary text-editor acceptance widget inside the logged-in native client; not a standard gameplay dialogue.](images/23-live-editor.png)
 
