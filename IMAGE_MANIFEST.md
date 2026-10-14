@@ -92,3 +92,113 @@ Metadata-free PNG copies; original rendered RGB pixels and dimensions preserved.
 - Hosted-copy SHA-256: `d4d70eab6a6253fce7ea995e7e45341b181f7a456c80cbd1494879dd049cb018`
 - Size: 760 × 480; 23681 bytes
 
+## 11-lumbridge-castle.png
+
+- Type: Offline rendering test
+- Caption: Lumbridge castle and surrounding terrain.
+- Source: 01-lumbridge-castle.png
+- Evidence: osrs-239-visual-report-v2/captures.json:01-lumbridge-castle
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `d93a9692eebac95b6062cc5c868f6dc07970d66ce7f51e6d2acb90beec563d56`
+- Hosted-copy SHA-256: `29807ca3971bacf97e63a17c814a37a17155b0914bbf6f80cd7d597b7f8e7e03`
+- Size: 1280 × 900; 1125123 bytes
+
+## 12-varrock-square.png
+
+- Type: Offline rendering test
+- Caption: Varrock market square and fountain.
+- Source: 02-varrock-square.png
+- Evidence: osrs-239-visual-report-v2/captures.json:02-varrock-square
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `d9ac9ab6f289e2362866cbe3860b5c2cdbfee48e1d0a384c9e818c84616e0efb`
+- Hosted-copy SHA-256: `1855fcc62ec928efeb459d4496c2d6f9536a811f3be5f1a4811024b762270e25`
+- Size: 1280 × 900; 698664 bytes
+
+## 13-falador-castle.png
+
+- Type: Offline rendering test
+- Caption: Falador castle, towers and rooftops.
+- Source: 03-falador-castle.png
+- Evidence: osrs-239-visual-report-v2/captures.json:03-falador-castle
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `eb2b01f37df079adc26d19bf833b22e7332bbe373e4f7433bc3a46cfae1080da`
+- Hosted-copy SHA-256: `6d11eecedaae9d629be395373e689ff46e087c765a4dbfac54d97ebc7053c571`
+- Size: 1280 × 900; 1625413 bytes
+
+## 14-draynor-village.png
+
+- Type: Offline rendering test
+- Caption: Draynor village buildings and waterfront.
+- Source: 04-draynor-village.png
+- Evidence: osrs-239-visual-report-v2/captures.json:04-draynor-village
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `236617a7da4bda631c1863371f88ccf72c7c0bafa1c81f6a3277f930f1c55a68`
+- Hosted-copy SHA-256: `0e8e478ab341bcc81d3ee69df6186c59e271d1590f1513caf33e70d98d78ccb7`
+- Size: 1280 × 900; 1212711 bytes
+
+## 15-al-kharid-palace.png
+
+- Type: Offline rendering test
+- Caption: Al Kharid palace and desert scenery.
+- Source: 05-al-kharid-palace.png
+- Evidence: osrs-239-visual-report-v2/captures.json:05-al-kharid-palace
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `05284a35248b6e1f9647f6d71b6b4ad6271317b375630021cdcb34980cdcdfed`
+- Hosted-copy SHA-256: `75224919546d37bd94dab830af28fc58c84d78b0f6d90fe28160da469b32dbfd`
+- Size: 1280 × 900; 789727 bytes
+
+## 16-castle-interior.png
+
+- Type: Offline rendering test
+- Caption: Lumbridge castle upper-floor interior.
+- Source: 09-castle-upper-floor.png
+- Evidence: osrs-239-visual-report-v2/captures.json:09-castle-upper-floor
+- Limitations: Cache scene only: no network session, actors or gameplay. Lighting and scene ordering are the current Rust implementation, not a claim of full Java image parity.
+- Source SHA-256: `f59d36730ce0bac02ce4eeaec8dc5660e4c3791ce06874d6d3058328ea33cda7`
+- Hosted-copy SHA-256: `c38e2cbe796d3422e2e678752f4f686c38a6b06249e5fecb705b4bf36c1532c6`
+- Size: 1280 × 900; 948027 bytes
+
+## 17-rune-equipment.png
+
+- Type: Offline rendering test
+- Caption: Assembled rune equipment meshes; no player base model.
+- Source: 17-rune-equipment-body-0.png
+- Evidence: osrs-239-visual-report-v2/captures.json:17-rune-equipment-body-0
+- Limitations: Static merged equipment components, not a complete player/NPC actor. No identity-kit base, player appearance packet, character animation or game-world actor insertion is shown. Skin-coloured faces, where visible, are already in the equipment assets.
+- Source SHA-256: `9da56efe6f8d6d5cfb42595fe6e12a83d2b6a98a7df4356becf4012979221371`
+- Hosted-copy SHA-256: `674446c7a7829c71d19f0167e9c57f8a63ee2f35543735d52f98d408d484d353`
+- Size: 1000 × 900; 29375 bytes
+
+## 18-dragon-equipment.png
+
+- Type: Offline rendering test
+- Caption: Assembled dragon equipment meshes; no player base model.
+- Source: 19-dragon-equipment.png
+- Evidence: osrs-239-visual-report-v2/captures.json:19-dragon-equipment
+- Limitations: Static merged equipment components, not a complete player/NPC actor. No identity-kit base, player appearance packet, character animation or game-world actor insertion is shown. Skin-coloured faces, where visible, are already in the equipment assets.
+- Source SHA-256: `adb1681d54206d02235fc4eff6c06454fc60d0ccb3dab27d4844471f64383528`
+- Hosted-copy SHA-256: `a85558a57993409b8a7265cdd505ae61e9b3b2f664d74e9ab4ad8f2f972991b5`
+- Size: 1000 × 900; 34196 bytes
+
+## 19-windmill-frame.png
+
+- Type: Offline rendering test
+- Caption: Windmill animation test captured at tick 60.
+- Source: 12-windmill-tick-60.png
+- Evidence: osrs-239-visual-report-v2/captures.json:12-windmill-tick-60
+- Limitations: These are discrete, genuine framebuffer samples. Tick 0 is the mesh before advancement. No image interpolation or synthetic motion was added.
+- Source SHA-256: `50761fc04a01ba5c99f29f60d4c3798ca1b09cf702a4403bd86a268a29dafee4`
+- Hosted-copy SHA-256: `2314d7f3d22cdb73427e67d6ab3291005d5d954e7f51ac6add7135ba6f4d80a9`
+- Size: 1280 × 900; 812589 bytes
+
+## 20-green-dragon.png
+
+- Type: Offline rendering test
+- Caption: Green dragon model in the native animation/rendering harness.
+- Source: 04-dragon.png
+- Evidence: osrs-visual-verification-v3/captures.json:04-dragon
+- Limitations: Offline asset harness using the native NPC, animation and triangle-rendering systems. No actor update stream, world placement or AI. The close camera places the snout near the lower frame edge.
+- Source SHA-256: `3a2e772c9b11ec221cace2af7f72a664219ecf190510a7f3e061d932cf47ab15`
+- Hosted-copy SHA-256: `e4ec395633ea9b4dd9d9e0b3cb2bcd3a223291959735a8899c67922d794b79f5`
+- Size: 1000 × 800; 59939 bytes
+
