@@ -1,10 +1,10 @@
 [size=5][b]Blender to the native Rust client — custom asset experiments[/b][/size]
 
-Hi everyone! We have also been experimenting with an AI-assisted authoring workbench for original RuneScape-inspired 3D assets. The useful test is how a model looks and moves in the native Rust client, so Blender beauty renders and native results are kept separate.
+AI-assisted Blender authoring and native-format conversion for original RuneScape-inspired assets. Images distinguish Blender renders, native previews and live placements.
 
-[b]The first conversion proof[/b]
+[b]Blender-to-native conversion[/b]
 
-An early procedural arch went from an editable Blender scene into the native model format, then into an isolated live world. The lighting changes between the Blender and native images are real; conversion does not carry Blender’s whole material system with it.
+The first procedural arch was exported from Blender, converted to the native model format and placed in an isolated live world. Blender lighting and materials do not transfer unchanged.
 
 [SPOILER=Blender conversion and first live placement]
 
@@ -21,24 +21,24 @@ An early procedural arch went from an editable Blender scene into the native mod
 
 [b]Reference checks and original machinery[/b]
 
-An authentic anvil provides a small reconstruction check; the comparison labels the reference and the independently built candidate. The riveting station and screw press are original designs. A successful export or silhouette score is not artistic approval.
+The anvil compares an authentic reference with an independently modeled reconstruction. The riveting station and screw press are original designs. Export success and silhouette scores do not establish artistic quality.
 
 [SPOILER=Anvil reference and original machinery]
 
 [i]Prepared native comparison — Authentic Jagex anvil on the left; independently authored reconstruction on the right. Same native camera and light.[/i]
 [img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/04-anvil-reference.png[/img]
 
-[i]Prepared native render — An original split-die riveting station.[/i]
+[i]Prepared native render — Original split-die riveting station.[/i]
 [img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/05-riveting-station.png[/img]
 
-[i]Prepared native render — An original counterweighted screw press with an authored helical thread.[/i]
+[i]Prepared native render — Original counterweighted screw press with an authored helical thread.[/i]
 [img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/06-screw-press.png[/img]
 
 [/SPOILER]
 
-[b]Refining construction instead of adding surface noise[/b]
+[b]Architecture and machinery refinement[/b]
 
-Matched native views of the entrance and pump show successive passes on proportions, supports, ironwork and mechanical connections. The assembled vignette checks whether the parts work together at a player-oriented camera.
+Matched entrance and pump views show changes to proportions, supports, ironwork and mechanical connections. The assembled scene shows the assets at a player-oriented camera.
 
 [SPOILER=Architecture and pump refinement]
 
@@ -61,10 +61,10 @@ Matched native views of the entrance and pump show successive passes on proporti
 
 [SPOILER=Workshop machinery and static creature study]
 
-[i]Prepared native render — An original clamping workstation, rendered natively.[/i]
+[i]Prepared native render — Original clamping workstation, rendered natively.[/i]
 [img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/12-clamping-workstation.png[/img]
 
-[i]Prepared native render — An original adjustable plate mill, rendered natively.[/i]
+[i]Prepared native render — Original adjustable plate mill, rendered natively.[/i]
 [img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/13-plate-mill.png[/img]
 
 [i]Prepared native render — Slagclaw: an original static furnace-scorpion study.[/i]
@@ -72,9 +72,9 @@ Matched native views of the entrance and pump show successive passes on proporti
 
 [/SPOILER]
 
-[b]Organic forms and authored motion[/b]
+[b]Creature modeling and animation[/b]
 
-Cindermaw uses a more developed anatomical mesh and custom action groups. The clay image is a Blender diagnostic; the still and animations that follow come from the native renderer. Joint transitions, stance and foot contact remain areas to improve.
+Cindermaw has custom geometry and animation groups. The clay image is a Blender diagnostic; subsequent images use the native renderer. Joints, stance and foot contact still need refinement.
 
 [SPOILER=Creature construction and custom animation]
 
@@ -92,9 +92,9 @@ Cindermaw uses a more developed anatomical mesh and custom action groups. The cl
 
 [/SPOILER]
 
-[b]Working from an original 2D reference[/b]
+[b]2D reference reconstruction[/b]
 
-Ashhorn tests a different approach: retain an original AI-generated turnaround and rebuild against its front, side and quarter views. The earlier interpretation and later static reconstruction below share the same native quarter camera. The face, plate hierarchy and anatomy still fall short of the illustration; this study has no animation or playable encounter.
+Ashhorn was reconstructed against a preserved AI-generated turnaround. Earlier and later models share the same quarter-view camera. Facial detail, armor and anatomy remain approximate. The model is static and has no playable encounter.
 
 [SPOILER=Ashhorn reference-to-model reconstruction]
 
@@ -117,7 +117,7 @@ Ashhorn tests a different approach: retain an original AI-generated turnaround a
 
 [b]Equipment and experimental creatures[/b]
 
-The Surveyor, shield and segmented Matriarch explore other silhouettes and equipment construction. Their action previews are native animation studies, not evidence of completed in-game bosses.
+The shield, Surveyor and Matriarch demonstrate equipment construction and alternative body shapes. Action previews show native animation playback, not completed boss encounters.
 
 [SPOILER=Equipment and Glasswake Surveyor]
 
@@ -142,8 +142,6 @@ The Surveyor, shield and segmented Matriarch explore other silhouettes and equip
 
 [/SPOILER]
 
-Authentic-asset studies also exposed failures. The Fire Giant club-variant test reached a static comparison and a separate corrected motion retest after the first motion attempt failed; it does not establish a finished original NPC or independently authored choreography. Convincing organic creatures and consistent high artistic fidelity remain active research problems.
-
-The pipeline is increasingly useful for structures and machinery. We are still learning how to make creature shapes, faces, materials and motion feel authored rather than procedural. Thanks for looking — criticism of the native results is especially welcome.
+The Fire Giant study reached static comparison and a corrected motion retest after the first animation attempt failed. It is not an approved original NPC or independently authored choreography. Organic modeling and consistent artistic fidelity remain unresolved.
 
 [i]Only review images and original animation previews are included here. Authentic anvil imagery is credited to Jagex; no cache meshes or extracted reference animations are distributed. RuneScape / OSRS belongs to Jagex. Unofficial project, unaffiliated with Jagex.[/i]

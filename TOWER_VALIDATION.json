@@ -57,5 +57,22 @@
       "captions_text_and_urls_preserved": true
     }
   },
-  "spoiler_syntax_reference": "https://rune-server.org/help/bb-codes/"
+  "spoiler_syntax_reference": "https://rune-server.org/help/bb-codes/",
+  "concise_copy_revision": {
+    "tower-gameplay": {
+      "prose_words_before": 287,
+      "prose_words_after": 179,
+      "images_and_categories_preserved": true
+    },
+    "tower-map": {
+      "prose_words_before": 253,
+      "prose_words_after": 159,
+      "images_and_categories_preserved": true
+    },
+    "custom-model-pipeline": {
+      "prose_words_before": 358,
+      "prose_words_after": 222,
+      "images_and_categories_preserved": true
+    }
+  }
 }
