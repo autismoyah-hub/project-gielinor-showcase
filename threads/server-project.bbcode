@@ -3,19 +3,36 @@
 
 Project Gielinor is an in-progress Rust server project. The work started with networking, login, saved characters and a ticking world, then expanded into gameplay and OpenRune content.
 
-The aim is steady, tested progress. Content migration and gameplay verification continue; this is not a full-parity announcement.
+This thread will follow the server’s development and the OpenRune content port.
 
-New banking, mining, herb, potion and dough images are scripted native-client integration captures from prepared accounts on real Rust servers. Headless rule tests and Kotlin-reference captures are identified separately.
+The pictures include Rust-server sessions, scripted native-client tests and Kotlin reference comparisons. Test accounts have prepared items and levels.
+
+[SIZE=4][B]OpenRune port progress[/B][/SIZE]
+The ledger currently tracks 173 implementation units. Porting and testing continue alongside each other.
+
+[TABLE]
+[TR][TH]Area[/TH][TH]Ported so far[/TH][TH]Testing and next steps[/TH][/TR]
+[TR][TD][B]Herblore[/B][/TD][TD]Herb cleaning, unfinished/finished potion recipes, grinding, tar and dose upgrades.[/TD][TD]Native checks for selected recipes; more recipe and lifecycle tests to follow.[/TD][/TR]
+[TR][TD][B]Food and drinks[/B][/TD][TD]Healing, multiple bites, returned containers, boosts and drink effects.[/TD][TD]Selected native food/drink checks passed; item coverage is expanding.[/TD][/TR]
+[TR][TD][B]Cooking and preparation[/B][/TD][TD]Dough, pie/pizza assembly, fire and range recipes.[/TD][TD]Native dough and selected assembly runs passed; broader cooking checks continue.[/TD][/TR]
+[TR][TD][B]Crafting[/B][/TD][TD]Gems, glassblowing, pottery, spinning, weaving, jewellery and leatherwork.[/TD][TD]Recipe and quantity tests in place; further native testing planned.[/TD][/TR]
+[TR][TD][B]Mining and woodcutting[/B][/TD][TD]Ore/tree profiles, tool selection, depletion and respawn.[/TD][TD]Copper mining tested natively; wider node and tool checks continue.[/TD][/TR]
+[TR][TD][B]Runecrafting[/B][/TD][TD]Selected rune altars, Daeyalt essence and outfit bonuses.[/TD][TD]World and selected native altar checks; reference work continues.[/TD][/TR]
+[TR][TD][B]Prayer content[/B][/TD][TD]Bone burial, ash scattering and Zealot robe effects.[/TD][TD]Rule and world tests in place; further native/lifecycle checks remain.[/TD][/TR]
+[TR][TD][B]Guilds and services[/B][/TD][TD]Tanning, guild access, deposit boxes, cape sales and worn Boost.[/TD][TD]Crafting-cape worn Boost independently verified; other services are being checked.[/TD][/TR]
+[TR][TD][B]NPC and item interactions[/B][/TD][TD]Pickpocketing, item packs, coin pouches, water filling and milking.[/TD][TD]Selected native item/service runs passed; wider interaction coverage continues.[/TD][/TR]
+[TR][TD][B]Scenery and traversal[/B][/TD][TD]Searches, pickables, chests/drawers, ladders/stairs, signposts and spade Dig.[/TD][TD]Empty-search feature independently verified; newer handlers and quest Dig hooks are next.[/TD][/TR]
+[/TABLE]
 
 [SIZE=4][B]A Rust server you can log into[/B][/SIZE]
 Rust handles the connection, world simulation, movement, player/NPC updates and character storage. Inventory, equipment and banking are connected to the gameplay runtime.
 
 [SPOILER=World, login and NPCs]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/01-rust-world.png[/IMG]
-[I]Live Rust-server gameplay — an early logged-in world capture with nearby NPCs. Historical build, not the latest content checkpoint.[/I]
+[I]Early Rust-server login with nearby NPCs.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/09-rust-interior.png[/IMG]
-[I]Live Rust-server gameplay — a historical interior capture. It shows the loaded scene and actors; it does not demonstrate every newer ladder or scenery script.[/I]
+[I]A Rust-server interior from an earlier development build.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Banking and saved characters[/B][/SIZE]
@@ -23,98 +40,96 @@ Native deposit and withdrawal actions are exercised against Rust. Earlier same-s
 
 [SPOILER=Banking]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/02-bank-transfers.png[/IMG]
-[I]Rust-server native integration capture, prepared account — three single deposits and two withdrawals left nine coins carried and one banked. Captured after the actual transfers.[/I]
+[I]Rust server — three coin deposits and two withdrawals; nine coins carried and one banked.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Gathering and resource processing[/B][/SIZE]
-Selected mining and woodcutting profiles include tool requirements, XP, resource depletion and restoration. Smelting and smithing have separate material, output and failure checks.
+Mining and woodcutting include tool requirements, XP, resource depletion and restoration. Smelting and smithing have separate material, output and failure checks.
 
 [SPOILER=Gathering and mining]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/03-copper-mining.png[/IMG]
-[I]Rust-server native integration capture, prepared mining fixture — a native Mine action produced copper ore and displayed XP growth. The run also checked depletion and respawn; a still frame alone does not prove their timing.[/I]
+[I]Rust-server test — copper ore and XP gained, with depletion and respawn checked during the run.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Cooking preparation[/B][/SIZE]
-Selected preparation flows use the native production interfaces and return the appropriate containers. Here is dough preparation on a real Rust server.
+Dough preparation uses the native production interface and returns the appropriate containers.
 
 [SPOILER=Cooking preparation]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/15-dough-menu.png[/IMG]
-[I]Prepared Rust-server native integration capture — the real dough-choice interface before the first selection.[/I]
+[I]Rust-server test — choosing dough through the native Make interface.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/16-dough-outputs.png[/IMG]
-[I]After nine native selections: three each of bread, pastry and pizza dough, with the pots and empty vessels returned. Coins and XP were checked.[/I]
+[I]Nine selections produced bread, pastry and pizza dough, with pots and empty vessels returned.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Herblore and item interactions[/B][/SIZE]
-Manual herb cleaning, unfinished potions, selected finished potions, grinding and dose upgrades have implemented paths and bounded tests. Native potion runs also exercise the selected ingredients and resulting items.
+Herblore work includes herb cleaning, potion making, grinding and dose upgrades. Native tests check the ingredients and resulting items.
 
 [SPOILER=Herblore: cleaning and potion making]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/04-herbs-before.png[/IMG]
-[I]Rust-server native integration capture, prepared account — selected grimy herbs before cleaning, with a full backpack.[/I]
+[I]Rust-server test — selected grimy herbs in a full backpack.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/05-herbs-after.png[/IMG]
-[I]The same run after two native Clean actions: both selected herbs changed, the backpack stayed full, and the server awarded the checked XP. Items and levels were prepared for the demonstration.[/I]
+[I]After two Clean actions, both selected herbs are clean and the XP has been awarded.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/12-potions-before.png[/IMG]
-[I]Prepared Rust-server native integration capture — seven selected herb and water-vial pairs before production.[/I]
+[I]Rust-server test — seven herb and water-vial pairs ready to mix.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/13-potions-menu.png[/IMG]
-[I]The real native Make interface for the selected herb and vial. This is unfinished-potion production, not potion drinking.[/I]
+[I]The native Make interface for an unfinished potion.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/14-potions-after.png[/IMG]
-[I]All seven selected pairs became unfinished potions through native Use/Make actions. Coins and XP were preserved; combining the pairs freed the expected slots.[/I]
+[I]Seven unfinished potions made, with coins and XP unchanged.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Food and consumables[/B][/SIZE]
-Selected foods and drinks cover healing, multiple bites, returned containers and stat effects. Individual item rules are checked rather than treating every consumable alike.
+Food and drink work covers healing, multiple bites, returned containers and stat effects. Each item has its own rules.
 
 [SPOILER=Food and consumables]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/06-crab-food.png[/IMG]
-[I]Rust-server native integration capture — an independent giant-crab-meat test after five selected Eat actions. UI-focused capture; the scene camera is incomplete. Health and item transitions were checked alongside the image.[/I]
+[I]Rust server — five bites of giant crab meat, with inventory and health checks. UI-focused test capture.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/07-wine-effects.png[/IMG]
-[I]Rust-server native integration capture — a separate wine test showing Attack drained to zero. The run checked healing and retained jugs. This is a UI-focused verification capture, not a complete world-rendering demonstration.[/I]
+[I]Rust server — wine’s Attack drain shown in the Skills tab. UI-focused test capture.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Scenery and everyday interactions[/B][/SIZE]
-Recent content includes selected searches, pickables, chests, drawers, ladders, stairs and other small interactions. Each needs its own bindings and verification.
+Recent additions include searches, pickables, chests, drawers, ladders, stairs and other everyday interactions.
 
 [SPOILER=Scenery interactions]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/08-empty-search.png[/IMG]
-[I]Rust-server native integration capture — native movement followed by a reached Search action and the “nothing” reply. This bounded search feature has separate independent verification.[/I]
+[I]Rust server — walking to a crate and using Search.[/I]
 [/SPOILER]
 
 [SIZE=4][B]Other implemented work[/B][/SIZE]
-These areas have development or integration tests, but are not all demonstrated by the screenshots above:
+Other work with development or integration tests includes:
 [LIST]
 [*]Melee, ranged and elemental-spell rules; rune/ammunition checks, combat XP and prayer selection/drain.
 [*]Cooking and baking, dough and pie assembly, gem cutting, glassblowing, pottery, jewellery, spinning, weaving and selected leatherwork.
 [*]Equipment changes, NPC routing and dialogue, death/loot handling, item packs and selected use-item interactions.
 [*]Shop transaction and stock rules. Broad world-shop registration is still incomplete.
 [/LIST]
-These are selected implementations and bounded checks, not claims that every skill, NPC, item or encounter is finished. Broader native combat and loot verification remains work in progress.
+Next steps include broader native combat and loot tests.
 
 [SIZE=4][B]Reference comparison captures[/B][/SIZE]
-The next two images use the [B]Kotlin reference server[/B]. They show comparison scenarios used during client/integration development and are [B]not Rust-server combat proof[/B].
+These ranged and magic captures are from the [B]Kotlin reference server[/B], used for comparison during integration work.
 
 [SPOILER=Kotlin reference only: combat comparisons]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/10-kotlin-ranged-reference.png[/IMG]
-[I]Live Kotlin-reference gameplay — ranged encounter.[/I]
+[I]Kotlin reference server — ranged encounter.[/I]
 
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/11-kotlin-magic-reference.png[/IMG]
-[I]Live Kotlin-reference gameplay — Wind Strike encounter.[/I]
+[I]Kotlin reference server — Wind Strike encounter.[/I]
 [/SPOILER]
 
 [SIZE=4][B]OpenRune migration and verification[/B][/SIZE]
-OpenRune behavior is independently adapted to the existing Rust architecture and revision 239.1 target. It is not a drop-in plugin copy. Item definitions, interfaces and source/Wiki differences need explicit checks.
+We adapt OpenRune behavior to the existing Rust action, inventory and persistence systems, targeting revision 239.1. Wiki checks help resolve version and gameplay differences.
 
-The migration ledger tracks implementation and registration. Independent verification checks exact builds and includes native actions, saved state and reference comparisons. Headless tests help, but do not replace playing through the native client. Prepared demonstrations use disposable accounts and seeded items; they do not prove those items can already be acquired normally.
-
-The discovery inventory is a source-review list, not a gameplay completion percentage. Many obligations remain open, including native verification of newer content. The ordinary spade action is one recent implementation checkpoint; its quest and boss hooks are still unported.
+The ledger records each implementation and its registration. Independent verification uses pinned builds to check native actions, saved state and reference behavior. Current work includes recently ported scenery interactions and quest-specific spade Dig hooks.
 
 [URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/tree/agent2/openrune-content]Server development[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/blob/agent2/openrune-content/docs/openrune/verification/IMPLEMENTATION_STATUS.md]Migration status[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-showcase/blob/main/threads/server-project-evidence.md]Capture labels and evidence notes[/URL]
 
 [SIZE=4][B]Credits[/B][/SIZE]
-Thanks to the Project Gielinor, RS Mod, OpenRune, RSProt, RuneLite, RSProx and OSRS Wiki contributors whose projects and research support this work. Development is AI-assisted under human direction and review. RuneScape, Old School RuneScape and the depicted game assets belong to Jagex. This is an unofficial project, unaffiliated with Jagex. Software licences do not grant a licence to the depicted game assets.
+Thanks to the Project Gielinor, RS Mod, OpenRune, RSProt, RuneLite, RSProx and OSRS Wiki contributors whose projects and research support this work. Development is AI-assisted under human direction and review. RuneScape, Old School RuneScape and the depicted game assets belong to Jagex. This is an unofficial project, unaffiliated with Jagex.
 
 More content and verification updates will follow in this thread.
