@@ -4,7 +4,7 @@ Reviewed 2026-10-19 (America/Los_Angeles). This accompanies the main server thre
 
 ## What the images are
 
-The gallery has nine Rust-server captures and two explicitly labelled Kotlin-reference captures. New bank, copper-mining and herb-cleaning images come from scripted native-client integration runs over real TCP sessions with immutable historical Rust server executables. They use actual native menus and assert received results. These are prepared demonstrations on disposable, offline-seeded accounts, not manual end-to-end playtests or proof of normal item acquisition. Other headless rule tests are discussed in prose and are not presented as gameplay screenshots.
+The gallery has fourteen Rust-server captures and two explicitly labelled Kotlin-reference captures. New bank, copper-mining, herb-cleaning, unfinished-potion and dough images come from scripted native-client integration runs over real TCP sessions with immutable historical Rust server executables. They use actual native menus and assert received results. These are prepared demonstrations on disposable, offline-seeded accounts, not manual end-to-end playtests or proof of normal item acquisition. Other headless rule tests are discussed in prose and are not presented as gameplay screenshots.
 
 The food and wine images are UI-focused independent verification frames with incomplete scene cameras; captions retain that limitation. We excluded blank scene-only equipment captures and repetitive failed camera probes. No generated, retouched or reconstructed gameplay image is included. PNG encoding preserves the original rendered RGB pixels and dimensions and removes metadata. The [image manifest](../images/server-openrune/MANIFEST.json) records hashes, server/commit identities, source run identifiers and limitations without private filesystem paths.
 
@@ -41,3 +41,20 @@ Independent verification is separate from implementation-owner tests and attache
 OpenRune behavior is independently adapted to existing Rust actions, queues, inventory and persistence rather than installing or copying donor plugins. Source/configuration revisions, native239.1 bindings and Wiki differences remain explicit. Exact-build native/lifecycle/source comparisons continue in [verification issue 134](https://github.com/autismoyah-hub/project-gielinor-rust-server/issues/134); other subsystem issues retain their own scope. Open defects and pending verification are not closed by this showcase.
 
 Only reviewed screenshots, BBCode and source-safe provenance notes are published. No restricted reference source, cache, model archive, executable, private fixture, save, key, credential or raw capture log is included. Production gameplay code and existing showcase images/manifests are unchanged. This publication adds no separate Tower thread and does not modify existing Tower material.
+
+## Additional captures and show boxes
+
+The updated thread puts every picture and its caption inside one of eight titled show boxes: world/login/NPCs, banking, gathering, cooking preparation, Herblore, consumables, scenery and Kotlin-reference comparisons. Syntax follows the [Rune-Server BBCode help](https://rune-server.org/help/bb-codes/) (`SPOILER=title`). Reference pictures remain in their own clearly labelled box.
+
+Five additional images come from two new prepared native integration runs, preserving all earlier images and evidence:
+
+- `showcase-potions-20261019-001`: seven selected unfinished-potion profiles using real native Use/Make actions; ingredients, the production interface and outputs captured. Driver checks an initially full backpack, the expected freed slots, 1000 coins and unchanged XP. The archive is historical; this is not verification of every potion or current HEAD.
+- `showcase-dough-20261019-001`: nine real native choice selections produce three each bread/pastry/pizza dough and return nine pots and three each empty vessel, preserving1000coins and XP. The native choice interface and final inventory are captured. This does not demonstrate baking or every cooking recipe.
+
+Both runs used fresh disposable copies, acknowledged saves and clean client/server exits. The screenshot-only drivers retained their existing action/assertion code and compiled against the unchanged isolated client library under the measured resource guard. No gameplay source changed. Raw BMPs, logs, databases and fixtures remain private; only lossless reviewed PNGs and provenance notes are published.
+
+## Forum wording and progress table
+
+The post uses shorter introductory text and captions, with the detailed test qualifications retained in these evidence notes and the image manifest. Rust-server and Kotlin-reference labels remain explicit. The 10-row OpenRune table groups implemented features and describes their testing/next steps; it reports no completion percentage. Its 173-unit count comes from the unique implementation IDs in the pinned queue, rather than the 185 append-only revision records or the source discovery inventory. Crafting-cape worn Boost and empty-search verification refer to their separately accepted, bounded exact-build scopes. Other native checks are not described as independent acceptance.
+
+The table uses Rune-Server’s documented [TABLE/TR/TH/TD BBCode](https://rune-server.org/help/bb-codes/). No screenshots, game code or test fixtures changed for this wording update.
