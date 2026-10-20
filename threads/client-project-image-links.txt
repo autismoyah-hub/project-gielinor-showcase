@@ -28,3 +28,5 @@ https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/
 https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/28-child-overlap-visible.png
 https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/29-java-reference.png
 https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/30-rust-comparison.png
+https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/31-detailed-map.png
+https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/32-map-heatmap.png
