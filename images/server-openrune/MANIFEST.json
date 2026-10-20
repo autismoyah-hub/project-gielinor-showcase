@@ -2,7 +2,7 @@
   "schema_version": 1,
   "review_date": "2026-10-19",
   "purpose": "Main Rune-Server server project thread; screenshot provenance only, no raw source/cache/assets/database/private test fixtures.",
-  "review": "Every image visually inspected; new captures are scripted native integration runs with real Rust server effects. UI-only/incomplete scene captures explicitly labelled.",
+  "review": "All 16 images visually reviewed; five additional potion/dough captures. Existing 11 image bytes preserved. Categories use titled Rune-Server SPOILER show boxes; prepared/native/reference distinctions retained.",
   "images": [
     {
       "file": "01-rust-world.png",
@@ -220,6 +220,174 @@
       "published_sha256": "aec9542625a2b269714cabf4fbc641e892f3a87ddacc427cba2971dc78ebf98c",
       "rgb_pixel_sha256": "34fb7c9e65207c9b6d3ec660ede57f5d4369a6ce3c73a4aa7d6bc1980bc23b16",
       "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "12-potions-before.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-potions-20261019-001/potions-before.bmp",
+      "basis": {
+        "run": "showcase-potions-20261019-001",
+        "server_binary_sha256": "254F54107BA90A6C8013D5E22B1D7DA7EA08E8A19BF27D8972D51F1EDB6B26C7",
+        "client_driver_sha256": "22AC1080E07DC144F1DCF39D685062B16A39037F37F65BA40DFA289E9DE8AA21",
+        "client_log_sha256": "9b786f04eea9d887ec1086244ebf53018c18e459c02151b885bc7137cc499201",
+        "scope": "Prepared scripted native-client integration on a real immutable historical Rust server. Real menu actions and received output assertions; not independent acceptance or normal acquisition proof."
+      },
+      "claims": "Prepared seven herb/water pairs in an initially full backpack before native Use/Make operations.",
+      "limitations": "Offline-seeded disposable items/levels; bounded selected recipes only. Screenshot alone does not establish exact server timing, all recipes, acquisition or durable restart acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "2ea1254daa3262fd9cdf5d42659133a058ff0f4fbea0c8b9a7aa4036a6296c77",
+      "published_sha256": "04febe6574ce7d5ab0ab0797b60df67aa6eee3c967d97f454772332aa36e559d",
+      "rgb_pixel_sha256": "283b4e965b09fddd398ad39d9025abf1de691024707f78b32d323ce6cf55c3b7",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "13-potions-menu.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-potions-20261019-001/potions-menu.bmp",
+      "basis": {
+        "run": "showcase-potions-20261019-001",
+        "server_binary_sha256": "254F54107BA90A6C8013D5E22B1D7DA7EA08E8A19BF27D8972D51F1EDB6B26C7",
+        "client_driver_sha256": "22AC1080E07DC144F1DCF39D685062B16A39037F37F65BA40DFA289E9DE8AA21",
+        "client_log_sha256": "9b786f04eea9d887ec1086244ebf53018c18e459c02151b885bc7137cc499201",
+        "scope": "Prepared scripted native-client integration on a real immutable historical Rust server. Real menu actions and received output assertions; not independent acceptance or normal acquisition proof."
+      },
+      "claims": "Actual native production interface for the first selected unfinished potion.",
+      "limitations": "Offline-seeded disposable items/levels; bounded selected recipes only. Screenshot alone does not establish exact server timing, all recipes, acquisition or durable restart acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "ba2cb8bc6090d7e4144eb8b7e5679b174e0c07ca043c4345a38209ed2cb9a18a",
+      "published_sha256": "201fd0648d59dfcd58069abf12369a639554d41023e793965bce3247a5498d2f",
+      "rgb_pixel_sha256": "cc7b80414d3294ae3bc296b6af93b95ea2513803d88e91571f5abd93de718ec4",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "14-potions-after.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-potions-20261019-001/potions-after.bmp",
+      "basis": {
+        "run": "showcase-potions-20261019-001",
+        "server_binary_sha256": "254F54107BA90A6C8013D5E22B1D7DA7EA08E8A19BF27D8972D51F1EDB6B26C7",
+        "client_driver_sha256": "22AC1080E07DC144F1DCF39D685062B16A39037F37F65BA40DFA289E9DE8AA21",
+        "client_log_sha256": "9b786f04eea9d887ec1086244ebf53018c18e459c02151b885bc7137cc499201",
+        "scope": "Prepared scripted native-client integration on a real immutable historical Rust server. Real menu actions and received output assertions; not independent acceptance or normal acquisition proof."
+      },
+      "claims": "Seven selected unfinished-potion profiles produced, with correct freed slots, 1000 coins and unchanged XP checked.",
+      "limitations": "Offline-seeded disposable items/levels; bounded selected recipes only. Screenshot alone does not establish exact server timing, all recipes, acquisition or durable restart acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "fd775e81c31cf68509afb0b5e17e7356dab819aa8c41e0f3a1b31e5b458803fd",
+      "published_sha256": "889d6af067a810e6ebad69e9e7432b1525b5e38f2c173ab10b47e87bf77f5e54",
+      "rgb_pixel_sha256": "9f1000722f7938b1f1ba013ee260dc08fa0e3eef04e48f1a21dc39298a50f26a",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "15-dough-menu.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-dough-20261019-001/dough-menu.bmp",
+      "basis": {
+        "run": "showcase-dough-20261019-001",
+        "server_binary_sha256": "B1DC825DE02F34E540EE380C2072383A797D8379785BD69928F43446D8D1AC7F",
+        "client_driver_sha256": "B8EB7A9B3E78DBCCFD00C7D0F0E981EC696558BB1A02B4176BC262CF428CD365",
+        "client_log_sha256": "4f6410f69c093d2361944c2f2ec0aae98b552a02df8b0ff0360ba521d98968b9",
+        "scope": "Prepared scripted native-client integration on a real immutable historical Rust server. Real menu actions and received output assertions; not independent acceptance or normal acquisition proof."
+      },
+      "claims": "Actual native dough-choice interface before selecting the first recipe.",
+      "limitations": "Offline-seeded disposable items/levels; bounded selected recipes only. Screenshot alone does not establish exact server timing, all recipes, acquisition or durable restart acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "e391fe68571e0e3769bd69836c0b852d8982c3b9ea909250013153bf72866c0a",
+      "published_sha256": "2f1e71cf5dd66641a4c468bdaed3b42b76678eed890d0b83e953dd844bd32a2c",
+      "rgb_pixel_sha256": "25444a43cdec988bbb83fe51f6817fbe591d6ca07d32c448de4232bd688ea295",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "16-dough-outputs.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-dough-20261019-001/dough-after.bmp",
+      "basis": {
+        "run": "showcase-dough-20261019-001",
+        "server_binary_sha256": "B1DC825DE02F34E540EE380C2072383A797D8379785BD69928F43446D8D1AC7F",
+        "client_driver_sha256": "B8EB7A9B3E78DBCCFD00C7D0F0E981EC696558BB1A02B4176BC262CF428CD365",
+        "client_log_sha256": "4f6410f69c093d2361944c2f2ec0aae98b552a02df8b0ff0360ba521d98968b9",
+        "scope": "Prepared scripted native-client integration on a real immutable historical Rust server. Real menu actions and received output assertions; not independent acceptance or normal acquisition proof."
+      },
+      "claims": "Nine native dough selections produce three each of bread, pastry and pizza dough, returning nine pots and three each empty vessel; coins/XP checked.",
+      "limitations": "Offline-seeded disposable items/levels; bounded selected recipes only. Screenshot alone does not establish exact server timing, all recipes, acquisition or durable restart acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "f758de38041d799411e9c7319a2cda056836b102d1a30cfe977d46e98963dea9",
+      "published_sha256": "ec5593cc23169639e1fb9544ceaf0d6ffc0c6208a9e230dcff6744bf04e0453c",
+      "rgb_pixel_sha256": "4153017b3dfd7d1a482f0d01b12e57e1ec535ff8834f9f3d3b6a3f7d37ebf67c",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    }
+  ],
+  "show_boxes": [
+    {
+      "label": "World, login and NPCs",
+      "files": [
+        "01-rust-world.png",
+        "09-rust-interior.png"
+      ]
+    },
+    {
+      "label": "Banking",
+      "files": [
+        "02-bank-transfers.png"
+      ]
+    },
+    {
+      "label": "Gathering and mining",
+      "files": [
+        "03-copper-mining.png"
+      ]
+    },
+    {
+      "label": "Cooking preparation",
+      "files": [
+        "15-dough-menu.png",
+        "16-dough-outputs.png"
+      ]
+    },
+    {
+      "label": "Herblore: cleaning and potion making",
+      "files": [
+        "04-herbs-before.png",
+        "05-herbs-after.png",
+        "12-potions-before.png",
+        "13-potions-menu.png",
+        "14-potions-after.png"
+      ]
+    },
+    {
+      "label": "Food and consumables",
+      "files": [
+        "06-crab-food.png",
+        "07-wine-effects.png"
+      ]
+    },
+    {
+      "label": "Scenery interactions",
+      "files": [
+        "08-empty-search.png"
+      ]
+    },
+    {
+      "label": "Kotlin reference only: combat comparisons",
+      "files": [
+        "10-kotlin-ranged-reference.png",
+        "11-kotlin-magic-reference.png"
+      ]
     }
   ]
 }

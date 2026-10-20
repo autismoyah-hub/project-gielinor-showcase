@@ -3,11 +3,59 @@
   "png_images": 68,
   "gif_animations": 4,
   "bbcode_replies": 3,
-  "strict_bbcode_parse": "pass; exact BBCode renderer generated all three previews",
+  "strict_bbcode_parse": "pass; all 72 images inside titled SPOILER boxes; balanced nesting, unchanged original prose, captions and URLs",
   "source_pixels_dimensions_frames_and_timing": "pass",
   "existing_repository_files_preserved": 58,
   "image_urls": "72 immutable raw GitHub URLs verified HTTP 200, image content types and matching SHA-256; see TOWER_REMOTE_VERIFICATION.json",
   "actual_rune_server_editor_tested": false,
   "local_browser_preview": "blocked by file-URL policy; no bypass attempted",
-  "forum_submissions": 0
+  "forum_submissions": 0,
+  "category_show_boxes": {
+    "tower-gameplay": {
+      "images": 18,
+      "show_boxes": 7,
+      "categories": [
+        "Arrival and sanctuary",
+        "Mining, smelting and smithing",
+        "Fishing, cooking and altar restoration",
+        "Journal and preparation progress",
+        "Ash Imp and Ash Warden encounters",
+        "Victory, rewards and banking",
+        "Recovery and reconnects"
+      ],
+      "captions_text_and_urls_preserved": true
+    },
+    "tower-map": {
+      "images": 26,
+      "show_boxes": 9,
+      "categories": [
+        "Whole-floor overview",
+        "Early floor and layout experiments",
+        "Enclosed architecture and art direction",
+        "Workshop before and after",
+        "Sanctuary, provisions and extraction",
+        "Water return, waterworks and stock court",
+        "Encounter chambers and furnace works",
+        "Receiving bay and provision stores",
+        "Machinery, upper shell and native rendering"
+      ],
+      "captions_text_and_urls_preserved": true
+    },
+    "custom-model-pipeline": {
+      "images": 28,
+      "show_boxes": 8,
+      "categories": [
+        "Blender conversion and first live placement",
+        "Anvil reference and original machinery",
+        "Architecture and pump refinement",
+        "Workshop machinery and static creature study",
+        "Creature construction and custom animation",
+        "Ashhorn reference-to-model reconstruction",
+        "Equipment and Glasswake Surveyor",
+        "Siltcoil Matriarch experimental boss"
+      ],
+      "captions_text_and_urls_preserved": true
+    }
+  },
+  "spoiler_syntax_reference": "https://rune-server.org/help/bb-codes/"
 }

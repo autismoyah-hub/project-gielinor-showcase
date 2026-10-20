@@ -1,1 +1,150 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>custom-model-pipeline</title><style>body{margin:32px auto;padding:0 24px;max-width:1000px;background:#171b20;color:#e5e8eb;font:17px/1.65 system-ui}p{margin:28px 0}strong{color:#f0c889}em{color:#b8c5cf;font-size:14px}img{display:block;max-width:100%;height:auto;margin:16px auto 48px}.title{font-size:28px}a{color:#b5d6ff}</style><body><p><span class="title"><strong>Blender to the native Rust client — custom asset experiments</strong></span></p><p>Hi everyone! We have also been experimenting with an AI-assisted authoring workbench for original RuneScape-inspired 3D assets. The useful test is how a model looks and moves in the native Rust client, so Blender beauty renders and native results are kept separate.</p><p><strong>The first conversion proof</strong></p><p>An early procedural arch went from an editable Blender scene into the native model format, then into an isolated live world. The lighting changes between the Blender and native images are real; conversion does not carry Blender’s whole material system with it.</p><p><em>Blender render — The first procedural Cinderworks arch, shown in Blender studio lighting.</em><br><img src="../images/custom-models/01-first-blender.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — The same original arch after conversion, through the native software renderer.</em><br><img src="../images/custom-models/02-first-native.png" alt="Development evidence" loading="lazy"></p><p><em>Live native gameplay — The original arch placed in an isolated live Rust client/server test.</em><br><img src="../images/custom-models/03-first-live.png" alt="Development evidence" loading="lazy"></p><p><strong>Reference checks and original machinery</strong></p><p>An authentic anvil provides a small reconstruction check; the comparison labels the reference and the independently built candidate. The riveting station and screw press are original designs. A successful export or silhouette score is not artistic approval.</p><p><em>Prepared native comparison — Authentic Jagex anvil on the left; independently authored reconstruction on the right. Same native camera and light.</em><br><img src="../images/custom-models/04-anvil-reference.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — An original split-die riveting station.</em><br><img src="../images/custom-models/05-riveting-station.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — An original counterweighted screw press with an authored helical thread.</em><br><img src="../images/custom-models/06-screw-press.png" alt="Development evidence" loading="lazy"></p><p><strong>Refining construction instead of adding surface noise</strong></p><p>Matched native views of the entrance and pump show successive passes on proportions, supports, ironwork and mechanical connections. The assembled vignette checks whether the parts work together at a player-oriented camera.</p><p><em>Prepared native render — Earlier Ember-lock entrance mesh; matched native view.</em><br><img src="../images/custom-models/07-entrance-first.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Refined Ember-lock entrance: deeper construction and connected ironwork.</em><br><img src="../images/custom-models/08-entrance-refined.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Earlier original pump assembly; matched native view.</em><br><img src="../images/custom-models/09-pump-first.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Refined pump assembly with fitted supports, valves and pipework.</em><br><img src="../images/custom-models/10-pump-refined.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Original architecture, machinery and Cindermaw assembled in a prepared native scene.</em><br><img src="../images/custom-models/11-native-vignette.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — An original clamping workstation, rendered natively.</em><br><img src="../images/custom-models/12-clamping-workstation.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — An original adjustable plate mill, rendered natively.</em><br><img src="../images/custom-models/13-plate-mill.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Slagclaw: an original static furnace-scorpion study.</em><br><img src="../images/custom-models/14-slagclaw.png" alt="Development evidence" loading="lazy"></p><p><strong>Organic forms and authored motion</strong></p><p>Cindermaw uses a more developed anatomical mesh and custom action groups. The clay image is a Blender diagnostic; the still and animations that follow come from the native renderer. Joint transitions, stance and foot contact remain areas to improve.</p><p><em>Blender diagnostic render — Cindermaw in Blender clay lighting: a construction diagnostic, not a native appearance.</em><br><img src="../images/custom-models/15-clay-construction.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Cindermaw after refinement, through the native renderer.</em><br><img src="../images/custom-models/16-native-creature.png" alt="Development evidence" loading="lazy"></p><p><em>Native animation preview — Cindermaw: complete authored attack playback in the native animation harness.</em><br><img src="../images/custom-models/17-custom-attack.gif" alt="Development evidence" loading="lazy"></p><p><em>Native animation preview — Cindermaw: authored walk playback; rigid-joint and foot-contact limits remain.</em><br><img src="../images/custom-models/18-custom-walk.gif" alt="Development evidence" loading="lazy"></p><p><strong>Working from an original 2D reference</strong></p><p>Ashhorn tests a different approach: retain an original AI-generated turnaround and rebuild against its front, side and quarter views. The earlier interpretation and later static reconstruction below share the same native quarter camera. The face, plate hierarchy and anatomy still fall short of the illustration; this study has no animation or playable encounter.</p><p><em>AI concept illustration — Ashhorn: the preserved AI-generated turnaround used as an original design reference.</em><br><img src="../images/custom-models/19-concept-reference.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Earlier interpretation of Ashhorn, at the common quarter camera.</em><br><img src="../images/custom-models/20-earlier-interpretation.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Later static reconstruction of Ashhorn at the same camera. Artistic fidelity remains incomplete.</em><br><img src="../images/custom-models/21-reference-reconstruction.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Ashhorn reconstruction: front view, exposing the chest, facial and plate construction.</em><br><img src="../images/custom-models/22-reference-front.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Ashhorn reconstruction: side view, exposing stance and body proportions.</em><br><img src="../images/custom-models/23-reference-side.png" alt="Development evidence" loading="lazy"></p><p><strong>Equipment and experimental creatures</strong></p><p>The Surveyor, shield and segmented Matriarch explore other silhouettes and equipment construction. Their action previews are native animation studies, not evidence of completed in-game bosses.</p><p><em>Prepared native render — Lockkeeper shield: an original equipment design study.</em><br><img src="../images/custom-models/28-lockkeeper-shield.png" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Glasswake Surveyor: an original equipped figure with a measuring fork and mantle.</em><br><img src="../images/custom-models/24-surveyor.png" alt="Development evidence" loading="lazy"></p><p><em>Native animation preview — Surveyor sounding-sweep action, played by the native animation harness.</em><br><img src="../images/custom-models/25-surveyor-action.gif" alt="Development evidence" loading="lazy"></p><p><em>Prepared native render — Siltcoil Matriarch: an original segmented experimental boss design.</em><br><img src="../images/custom-models/26-matriarch.png" alt="Development evidence" loading="lazy"></p><p><em>Native animation preview — Matriarch sieve-breach action; this is animation research, not a playable boss encounter.</em><br><img src="../images/custom-models/27-matriarch-action.gif" alt="Development evidence" loading="lazy"></p><p>Authentic-asset studies also exposed failures. The Fire Giant club-variant test reached a static comparison and a separate corrected motion retest after the first motion attempt failed; it does not establish a finished original NPC or independently authored choreography. Convincing organic creatures and consistent high artistic fidelity remain active research problems.</p><p>The pipeline is increasingly useful for structures and machinery. We are still learning how to make creature shapes, faces, materials and motion feel authored rather than procedural. Thanks for looking — criticism of the native results is especially welcome.</p><p><em>Only review images and original animation previews are included here. Authentic anvil imagery is credited to Jagex; no cache meshes or extracted reference animations are distributed. RuneScape / OSRS belongs to Jagex. Unofficial project, unaffiliated with Jagex.</em><br></p></body></html>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>custom-model-pipeline</title><style>body{margin:32px auto;padding:0 24px;max-width:1000px;background:#171b20;color:#e5e8eb;font:17px/1.65 system-ui}.post{white-space:pre-line}strong{color:#f0c889}em{color:#b8c5cf;font-size:14px}img{display:block;max-width:100%;height:auto;margin:16px auto 40px}.title{font-size:28px}details{white-space:pre-line;border:1px solid #44515e;border-radius:5px;padding:12px 18px;margin:14px 0}summary{cursor:pointer;color:#b5d6ff;font-weight:600}summary::marker{color:#f0c889}</style><body><div class="post"><span class="title"><strong>Blender to the native Rust client — custom asset experiments</strong></span>
+
+Hi everyone! We have also been experimenting with an AI-assisted authoring workbench for original RuneScape-inspired 3D assets. The useful test is how a model looks and moves in the native Rust client, so Blender beauty renders and native results are kept separate.
+
+<strong>The first conversion proof</strong>
+
+An early procedural arch went from an editable Blender scene into the native model format, then into an isolated live world. The lighting changes between the Blender and native images are real; conversion does not carry Blender’s whole material system with it.
+
+<details><summary>Show: Blender conversion and first live placement</summary>
+
+<em>Blender render — The first procedural Cinderworks arch, shown in Blender studio lighting.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/01-first-blender.png">
+
+<em>Prepared native render — The same original arch after conversion, through the native software renderer.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/02-first-native.png">
+
+<em>Live native gameplay — The original arch placed in an isolated live Rust client/server test.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/03-first-live.png">
+
+</details>
+
+<strong>Reference checks and original machinery</strong>
+
+An authentic anvil provides a small reconstruction check; the comparison labels the reference and the independently built candidate. The riveting station and screw press are original designs. A successful export or silhouette score is not artistic approval.
+
+<details><summary>Show: Anvil reference and original machinery</summary>
+
+<em>Prepared native comparison — Authentic Jagex anvil on the left; independently authored reconstruction on the right. Same native camera and light.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/04-anvil-reference.png">
+
+<em>Prepared native render — An original split-die riveting station.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/05-riveting-station.png">
+
+<em>Prepared native render — An original counterweighted screw press with an authored helical thread.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/06-screw-press.png">
+
+</details>
+
+<strong>Refining construction instead of adding surface noise</strong>
+
+Matched native views of the entrance and pump show successive passes on proportions, supports, ironwork and mechanical connections. The assembled vignette checks whether the parts work together at a player-oriented camera.
+
+<details><summary>Show: Architecture and pump refinement</summary>
+
+<em>Prepared native render — Earlier Ember-lock entrance mesh; matched native view.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/07-entrance-first.png">
+
+<em>Prepared native render — Refined Ember-lock entrance: deeper construction and connected ironwork.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/08-entrance-refined.png">
+
+<em>Prepared native render — Earlier original pump assembly; matched native view.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/09-pump-first.png">
+
+<em>Prepared native render — Refined pump assembly with fitted supports, valves and pipework.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/10-pump-refined.png">
+
+<em>Prepared native render — Original architecture, machinery and Cindermaw assembled in a prepared native scene.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/11-native-vignette.png">
+
+</details>
+
+<details><summary>Show: Workshop machinery and static creature study</summary>
+
+<em>Prepared native render — An original clamping workstation, rendered natively.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/12-clamping-workstation.png">
+
+<em>Prepared native render — An original adjustable plate mill, rendered natively.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/13-plate-mill.png">
+
+<em>Prepared native render — Slagclaw: an original static furnace-scorpion study.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/14-slagclaw.png">
+
+</details>
+
+<strong>Organic forms and authored motion</strong>
+
+Cindermaw uses a more developed anatomical mesh and custom action groups. The clay image is a Blender diagnostic; the still and animations that follow come from the native renderer. Joint transitions, stance and foot contact remain areas to improve.
+
+<details><summary>Show: Creature construction and custom animation</summary>
+
+<em>Blender diagnostic render — Cindermaw in Blender clay lighting: a construction diagnostic, not a native appearance.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/15-clay-construction.png">
+
+<em>Prepared native render — Cindermaw after refinement, through the native renderer.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/16-native-creature.png">
+
+<em>Native animation preview — Cindermaw: complete authored attack playback in the native animation harness.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/17-custom-attack.gif">
+
+<em>Native animation preview — Cindermaw: authored walk playback; rigid-joint and foot-contact limits remain.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/18-custom-walk.gif">
+
+</details>
+
+<strong>Working from an original 2D reference</strong>
+
+Ashhorn tests a different approach: retain an original AI-generated turnaround and rebuild against its front, side and quarter views. The earlier interpretation and later static reconstruction below share the same native quarter camera. The face, plate hierarchy and anatomy still fall short of the illustration; this study has no animation or playable encounter.
+
+<details><summary>Show: Ashhorn reference-to-model reconstruction</summary>
+
+<em>AI concept illustration — Ashhorn: the preserved AI-generated turnaround used as an original design reference.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/19-concept-reference.png">
+
+<em>Prepared native render — Earlier interpretation of Ashhorn, at the common quarter camera.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/20-earlier-interpretation.png">
+
+<em>Prepared native render — Later static reconstruction of Ashhorn at the same camera. Artistic fidelity remains incomplete.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/21-reference-reconstruction.png">
+
+<em>Prepared native render — Ashhorn reconstruction: front view, exposing the chest, facial and plate construction.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/22-reference-front.png">
+
+<em>Prepared native render — Ashhorn reconstruction: side view, exposing stance and body proportions.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/23-reference-side.png">
+
+</details>
+
+<strong>Equipment and experimental creatures</strong>
+
+The Surveyor, shield and segmented Matriarch explore other silhouettes and equipment construction. Their action previews are native animation studies, not evidence of completed in-game bosses.
+
+<details><summary>Show: Equipment and Glasswake Surveyor</summary>
+
+<em>Prepared native render — Lockkeeper shield: an original equipment design study.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/28-lockkeeper-shield.png">
+
+<em>Prepared native render — Glasswake Surveyor: an original equipped figure with a measuring fork and mantle.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/24-surveyor.png">
+
+<em>Native animation preview — Surveyor sounding-sweep action, played by the native animation harness.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/25-surveyor-action.gif">
+
+</details>
+
+<details><summary>Show: Siltcoil Matriarch experimental boss</summary>
+
+<em>Prepared native render — Siltcoil Matriarch: an original segmented experimental boss design.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/26-matriarch.png">
+
+<em>Native animation preview — Matriarch sieve-breach action; this is animation research, not a playable boss encounter.</em>
+<img loading="lazy" alt="Development evidence" src="../images/custom-models/27-matriarch-action.gif">
+
+</details>
+
+Authentic-asset studies also exposed failures. The Fire Giant club-variant test reached a static comparison and a separate corrected motion retest after the first motion attempt failed; it does not establish a finished original NPC or independently authored choreography. Convincing organic creatures and consistent high artistic fidelity remain active research problems.
+
+The pipeline is increasingly useful for structures and machinery. We are still learning how to make creature shapes, faces, materials and motion feel authored rather than procedural. Thanks for looking — criticism of the native results is especially welcome.
+
+<em>Only review images and original animation previews are included here. Authentic anvil imagery is credited to Jagex; no cache meshes or extracted reference animations are distributed. RuneScape / OSRS belongs to Jagex. Unofficial project, unaffiliated with Jagex.</em>
+</div></body></html>
