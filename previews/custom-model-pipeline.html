@@ -1,10 +1,10 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>custom-model-pipeline</title><style>body{margin:32px auto;padding:0 24px;max-width:1000px;background:#171b20;color:#e5e8eb;font:17px/1.65 system-ui}.post{white-space:pre-line}strong{color:#f0c889}em{color:#b8c5cf;font-size:14px}img{display:block;max-width:100%;height:auto;margin:16px auto 40px}.title{font-size:28px}details{white-space:pre-line;border:1px solid #44515e;border-radius:5px;padding:12px 18px;margin:14px 0}summary{cursor:pointer;color:#b5d6ff;font-weight:600}summary::marker{color:#f0c889}</style><body><div class="post"><span class="title"><strong>Blender to the native Rust client — custom asset experiments</strong></span>
 
-Hi everyone! We have also been experimenting with an AI-assisted authoring workbench for original RuneScape-inspired 3D assets. The useful test is how a model looks and moves in the native Rust client, so Blender beauty renders and native results are kept separate.
+AI-assisted Blender authoring and native-format conversion for original RuneScape-inspired assets. Images distinguish Blender renders, native previews and live placements.
 
-<strong>The first conversion proof</strong>
+<strong>Blender-to-native conversion</strong>
 
-An early procedural arch went from an editable Blender scene into the native model format, then into an isolated live world. The lighting changes between the Blender and native images are real; conversion does not carry Blender’s whole material system with it.
+The first procedural arch was exported from Blender, converted to the native model format and placed in an isolated live world. Blender lighting and materials do not transfer unchanged.
 
 <details><summary>Show: Blender conversion and first live placement</summary>
 
@@ -21,24 +21,24 @@ An early procedural arch went from an editable Blender scene into the native mod
 
 <strong>Reference checks and original machinery</strong>
 
-An authentic anvil provides a small reconstruction check; the comparison labels the reference and the independently built candidate. The riveting station and screw press are original designs. A successful export or silhouette score is not artistic approval.
+The anvil compares an authentic reference with an independently modeled reconstruction. The riveting station and screw press are original designs. Export success and silhouette scores do not establish artistic quality.
 
 <details><summary>Show: Anvil reference and original machinery</summary>
 
 <em>Prepared native comparison — Authentic Jagex anvil on the left; independently authored reconstruction on the right. Same native camera and light.</em>
 <img loading="lazy" alt="Development evidence" src="../images/custom-models/04-anvil-reference.png">
 
-<em>Prepared native render — An original split-die riveting station.</em>
+<em>Prepared native render — Original split-die riveting station.</em>
 <img loading="lazy" alt="Development evidence" src="../images/custom-models/05-riveting-station.png">
 
-<em>Prepared native render — An original counterweighted screw press with an authored helical thread.</em>
+<em>Prepared native render — Original counterweighted screw press with an authored helical thread.</em>
 <img loading="lazy" alt="Development evidence" src="../images/custom-models/06-screw-press.png">
 
 </details>
 
-<strong>Refining construction instead of adding surface noise</strong>
+<strong>Architecture and machinery refinement</strong>
 
-Matched native views of the entrance and pump show successive passes on proportions, supports, ironwork and mechanical connections. The assembled vignette checks whether the parts work together at a player-oriented camera.
+Matched entrance and pump views show changes to proportions, supports, ironwork and mechanical connections. The assembled scene shows the assets at a player-oriented camera.
 
 <details><summary>Show: Architecture and pump refinement</summary>
 
@@ -61,10 +61,10 @@ Matched native views of the entrance and pump show successive passes on proporti
 
 <details><summary>Show: Workshop machinery and static creature study</summary>
 
-<em>Prepared native render — An original clamping workstation, rendered natively.</em>
+<em>Prepared native render — Original clamping workstation, rendered natively.</em>
 <img loading="lazy" alt="Development evidence" src="../images/custom-models/12-clamping-workstation.png">
 
-<em>Prepared native render — An original adjustable plate mill, rendered natively.</em>
+<em>Prepared native render — Original adjustable plate mill, rendered natively.</em>
 <img loading="lazy" alt="Development evidence" src="../images/custom-models/13-plate-mill.png">
 
 <em>Prepared native render — Slagclaw: an original static furnace-scorpion study.</em>
@@ -72,9 +72,9 @@ Matched native views of the entrance and pump show successive passes on proporti
 
 </details>
 
-<strong>Organic forms and authored motion</strong>
+<strong>Creature modeling and animation</strong>
 
-Cindermaw uses a more developed anatomical mesh and custom action groups. The clay image is a Blender diagnostic; the still and animations that follow come from the native renderer. Joint transitions, stance and foot contact remain areas to improve.
+Cindermaw has custom geometry and animation groups. The clay image is a Blender diagnostic; subsequent images use the native renderer. Joints, stance and foot contact still need refinement.
 
 <details><summary>Show: Creature construction and custom animation</summary>
 
@@ -92,9 +92,9 @@ Cindermaw uses a more developed anatomical mesh and custom action groups. The cl
 
 </details>
 
-<strong>Working from an original 2D reference</strong>
+<strong>2D reference reconstruction</strong>
 
-Ashhorn tests a different approach: retain an original AI-generated turnaround and rebuild against its front, side and quarter views. The earlier interpretation and later static reconstruction below share the same native quarter camera. The face, plate hierarchy and anatomy still fall short of the illustration; this study has no animation or playable encounter.
+Ashhorn was reconstructed against a preserved AI-generated turnaround. Earlier and later models share the same quarter-view camera. Facial detail, armor and anatomy remain approximate. The model is static and has no playable encounter.
 
 <details><summary>Show: Ashhorn reference-to-model reconstruction</summary>
 
@@ -117,7 +117,7 @@ Ashhorn tests a different approach: retain an original AI-generated turnaround a
 
 <strong>Equipment and experimental creatures</strong>
 
-The Surveyor, shield and segmented Matriarch explore other silhouettes and equipment construction. Their action previews are native animation studies, not evidence of completed in-game bosses.
+The shield, Surveyor and Matriarch demonstrate equipment construction and alternative body shapes. Action previews show native animation playback, not completed boss encounters.
 
 <details><summary>Show: Equipment and Glasswake Surveyor</summary>
 
@@ -142,9 +142,7 @@ The Surveyor, shield and segmented Matriarch explore other silhouettes and equip
 
 </details>
 
-Authentic-asset studies also exposed failures. The Fire Giant club-variant test reached a static comparison and a separate corrected motion retest after the first motion attempt failed; it does not establish a finished original NPC or independently authored choreography. Convincing organic creatures and consistent high artistic fidelity remain active research problems.
-
-The pipeline is increasingly useful for structures and machinery. We are still learning how to make creature shapes, faces, materials and motion feel authored rather than procedural. Thanks for looking — criticism of the native results is especially welcome.
+The Fire Giant study reached static comparison and a corrected motion retest after the first animation attempt failed. It is not an approved original NPC or independently authored choreography. Organic modeling and consistent artistic fidelity remain unresolved.
 
 <em>Only review images and original animation previews are included here. Authentic anvil imagery is credited to Jagex; no cache meshes or extracted reference animations are distributed. RuneScape / OSRS belongs to Jagex. Unofficial project, unaffiliated with Jagex.</em>
 </div></body></html>

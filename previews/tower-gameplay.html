@@ -1,6 +1,6 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tower-gameplay</title><style>body{margin:32px auto;padding:0 24px;max-width:1000px;background:#171b20;color:#e5e8eb;font:17px/1.65 system-ui}.post{white-space:pre-line}strong{color:#f0c889}em{color:#b8c5cf;font-size:14px}img{display:block;max-width:100%;height:auto;margin:16px auto 40px}.title{font-size:28px}details{white-space:pre-line;border:1px solid #44515e;border-radius:5px;padding:12px 18px;margin:14px 0}summary{cursor:pointer;color:#b5d6ff;font-weight:600}summary::marker{color:#f0c889}</style><body><div class="post"><span class="title"><strong>The Tower — making the first floor playable</strong></span>
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>tower-gameplay</title><style>body{margin:32px auto;padding:0 24px;max-width:1000px;background:#171b20;color:#e5e8eb;font:17px/1.65 system-ui}.post{white-space:pre-line}strong{color:#f0c889}em{color:#b8c5cf;font-size:14px}img{display:block;max-width:100%;height:auto;margin:16px auto 40px}.title{font-size:28px}details{white-space:pre-line;border:1px solid #44515e;border-radius:5px;padding:12px 18px;margin:14px 0}summary{cursor:pointer;color:#b5d6ff;font-weight:600}summary::marker{color:#f0c889}</style><body><div class="post"><span class="title"><strong>The Tower — gameplay development</strong></span>
 
-Hi everyone! Alongside the Rust client and server, we have been developing The Tower: the original game we want to build on this foundation. Its long-term shape is a floor-by-floor adventure with permanent character growth, preparation and encounters that make use of the world around you.
+The Tower is an original game built on the Rust client and server. The intended progression combines authored floors, permanent character development, resource preparation and boss encounters.
 
 <details><summary>Show: Arrival and sanctuary</summary>
 
@@ -9,9 +9,9 @@ Hi everyone! Alongside the Rust client and server, we have been developing The T
 
 </details>
 
-<strong>Prepare, repair, then push onward</strong>
+<strong>Preparation and restoration</strong>
 
-Floor One is The Cinderworks. The current preparation route connects mining, bronze working, fishing, cooking and an altar offering; restoring the workshop, kitchen and altar opens the way toward the guardians. These captures show working activities in the newer custom-art floor.
+The Cinderworks preparation route uses mining, smelting, smithing, fishing, cooking and bone offerings. Restoring the workshop, kitchen and altar unlocks the guardians. These captures show working services in the rebuilt floor.
 
 <details><summary>Show: Mining, smelting and smithing</summary>
 
@@ -39,9 +39,9 @@ Floor One is The Cinderworks. The current preparation route connects mining, bro
 
 </details>
 
-<strong>The earlier playable journey</strong>
+<strong>Earlier gameplay checkpoint</strong>
 
-Before the custom-art rebuild, we tested complete earned clears on the earlier floor. These historical captures show its journal, restored services, Ash Imp and Ash Warden; they are not a claim that the rebuilt floor has completed the same acceptance run.
+The earlier map has completed earned Imp and Warden clears. The following captures show that checkpoint. The rebuilt map still requires a complete boss-to-reward validation run.
 
 <details><summary>Show: Journal and preparation progress</summary>
 
@@ -66,11 +66,11 @@ Before the custom-art rebuild, we tested complete earned clears on the earlier f
 
 </details>
 
-Preparation can be tackled in different orders. In combat, smoke marks danger and a coolant barrel can interrupt the Warden’s charge, giving the player an opening to attack.
+Preparation objectives can be completed in different orders. Smoke marks hazardous tiles. Coolant interrupts the Warden’s charge and creates an attack opening.
 
-<strong>Victory, rewards and returning safely</strong>
+<strong>Rewards and persistence</strong>
 
-The earlier earned-clear tests cover restoration after victory, a reward that waits for inventory space, and a paid claim that cannot be collected again. Earned skills, items and personal progress survive ordinary reconnects; committed-state restart recovery was also tested.
+Earlier tests verify victory restoration, full-inventory reward refusal and duplicate-claim prevention. Skills, items and personal progress survive reconnects and recovery from a restart with committed saves.
 
 <details><summary>Show: Victory, rewards and banking</summary>
 
@@ -88,23 +88,21 @@ The earlier earned-clear tests cover restoration after victory, a reward that wa
 
 </details>
 
-The newer floor already has real hazard recovery and service restoration. Its complete boss-to-reward journey still needs a fresh end-to-end pass.
+The rebuilt floor has tested hazard recovery and service restoration. Its complete boss and reward loop remains unverified.
 
 <details><summary>Show: Recovery and reconnects</summary>
 
-<em>Live native gameplay — The newer floor: sanctuary recovery after a real hazard defeat.</em>
+<em>Live native gameplay — Rebuilt floor: sanctuary recovery after a real hazard defeat.</em>
 <img loading="lazy" alt="Development evidence" src="../images/tower-gameplay/17-recovery.png">
 
-<em>Live native gameplay — The newer floor: a normal waterworks reconnect with the original paving and machinery present.</em>
+<em>Live native gameplay — Rebuilt floor: a normal waterworks reconnect with the original paving and machinery present.</em>
 <img loading="lazy" alt="Development evidence" src="../images/tower-gameplay/18-relogin.png">
 
 </details>
 
-<strong>Where this is heading</strong>
+<strong>Remaining work</strong>
 
-Permanent skill and character development is the foundation for the longer ascent. More floors, broader progression rewards and group modes are future work; the current shared floor tracks personal progress and encounter ownership. We are still refining pacing, performance and the visual design, and regular-tree gathering remains unfinished in the newest setup.
-
-Thanks for taking a look — feedback on how clearly the preparation and encounter loop reads would be useful.
+Additional floors, broader progression rewards and group modes are planned. The current shared floor tracks personal progress and encounter ownership. Pacing, performance, visual design and regular-tree gathering remain unfinished.
 
 <em>Development captures from isolated Rust client/server sessions. RuneScape / OSRS and the depicted authentic assets belong to Jagex; this project is unofficial and unaffiliated.</em>
 </div></body></html>
