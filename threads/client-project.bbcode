@@ -4,6 +4,29 @@ Hi everyone! Here is our native Rust OSRS 239.1 client, from early cache experim
 
 Live captures use an isolated Kotlin reference server. Offline renders and test harnesses are labeled; these checkpoints do not establish complete parity.
 
+[B][SIZE=4]Parity progress[/SIZE][/B]
+
+Current validated checkpoint: 18 October 2026. Checks cover specific cases; no area below implies complete parity.
+
+[TABLE]
+[TR][TH]Area[/TH][TH]Implemented / checked[/TH][TH]Still open[/TH][/TR]
+[TR][TD]Login and sessions[/TD][TD]Native login, authenticator and controlled token flows.[/TD][TD]Real token issuer, launcher handoff, reconnect/hop endurance.[/TD][/TR]
+[TR][TD]239.1 protocol[/TD][TD]149 incoming / 117 outgoing packet declarations match; framing and encryption tested.[/TD][TD]Complete payload, dispatch and server-effect coverage; reflection checks.[/TD][/TR]
+[TR][TD]JS5, cache and assets[/TD][TD]Archive decoding, validated recovery and bounded cold-cache loading.[/TD][TD]Remaining formats, delayed consumers and sustained loading lifecycle.[/TD][/TR]
+[TR][TD]Terrain and scenes[/TD][TD]Normal/instance maps, buildings, bridges and runtime scene changes.[/TD][TD]Broader reconstruction, roof and integrated scene coverage.[/TD][/TR]
+[TR][TD]Native software rendering[/TD][TD]Terrain/model ordering, picking and scoped Java pixel comparisons.[/TD][TD]Actual scene occluders, full-frame and dynamic geometry parity.[/TD][/TR]
+[TR][TD]Models, animation and actors[/TD][TD]Textured models, NPC/player composition, classic/skeletal animation and effects.[/TD][TD]Broader customization, animated geometry and delayed asset coverage.[/TD][/TR]
+[TR][TD]Child worlds[/TD][TD]Selected-view routing, separate state, ownership and lifecycle fixtures.[/TD][TD]Broader transformed views, nested lifetimes and native server traffic.[/TD][/TR]
+[TR][TD]Scripts, widgets and menus[/TD][TD]Cache scripts, widget geometry, event ordering and interaction dispatch checks.[/TD][TD]Remaining opcode, string, exception and remote-service behavior.[/TD][/TR]
+[TR][TD]Inventory, equipment and bank[/TD][TD]Native Wield/Drop/Take checks; equipment and bank interfaces render.[/TD][TD]End-to-end banking transactions and broader interface interactions.[/TD][/TR]
+[TR][TD]World map and minimap[/TD][TD]Detailed/overview maps, icons, heatmaps and server-confirmed minimap walking.[/TD][TD]Broader map interactions and cross-view edge cases.[/TD][/TR]
+[TR][TD]Movement and combat[/TD][TD]Native walking/NPC interactions; historical melee, ranged and magic captures.[/TD][TD]Sustained combat, multiplayer and wider gameplay acceptance.[/TD][/TR]
+[TR][TD]Sound and music[/TD][TD]Effects, music, jingles and independent audio scheduling; scoped PCM comparisons.[/TD][TD]Delayed assets, device recovery and sustained audible playback acceptance.[/TD][/TR]
+[TR][TD]Desktop and input[/TD][TD]Windows windowing, resize, mouse, keyboard, clipboard and focus checks.[/TD][TD]Full platform lifecycle, locale edges and other operating systems.[/TD][/TR]
+[TR][TD]Social, market and persistence[/TD][TD]Friend/clan/market modules, script queries, preferences and saved state.[/TD][TD]Broader live ordering, reset and persistence scenarios.[/TD][/TR]
+[TR][TD]Testing and stability[/TD][TD]1,111 tests passed across 566 suites; 819-frame native acceptance run.[/TD][TD]One legacy test ignored; semantic coverage and long-session stability remain open.[/TD][/TR]
+[/TABLE]
+
 [SPOILER=Show current native client]
 [I]Live native client — Current checkpoint: native world, actors, inventory, chat and minimap.[/I]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/01-current-native.png[/IMG]
