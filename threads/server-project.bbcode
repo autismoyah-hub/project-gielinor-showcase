@@ -7,6 +7,26 @@ This thread will follow the server’s development and the OpenRune content port
 
 The pictures include Rust-server sessions, scripted native-client tests and Kotlin reference comparisons. Test accounts have prepared items and levels.
 
+[SIZE=4][B]How the headless testing works[/B][/SIZE]
+The testing pipeline starts with small gameplay checks, then moves into real client/server sessions driven by scripts.
+
+[LIST=1]
+[*][B]Test the rules and world actions.[/B] Rust tests check things such as item costs, outputs, XP, tick delays, requirements and rejected actions.
+[*][B]Prepare a repeatable run.[/B] Pin the server and client builds, record their identities, and create an isolated test account and database with known starting items and stats.
+[*][B]Drive the native client headlessly.[/B] Scripts log in over the real connection and use native controls: inventory actions, NPC/object menus and production interfaces. The server processes the resulting packets normally.
+[*][B]Check the results.[/B] Compare received inventory, equipment, stats, messages and other updates with the expected server effects. Some runs also render screenshots of the native interfaces and world.
+[*][B]Check interruptions and saved state.[/B] Depending on the feature, cases cover full inventories, stale actions, cancellation, death, logout, server restart and logging back in. Saved state is compared with the expected result.
+[*][B]Run independent verification.[/B] A separate agent re-checks the pinned implementation: registration, behavior, native integration, lifecycle and source/Wiki rules. Kotlin-reference comparisons are used where available.
+[/LIST]
+Runs keep their build IDs, inputs, logs and results. A failure can be turned into a reproducible issue, and fixes get a fresh run with the earlier evidence retained.
+
+[SIZE=4][B]Current plan[/B][/SIZE]
+[LIST=1]
+[*][B]Complete the full OpenRune port.[/B] Finish the remaining content and dependencies, with implementation and gameplay testing continuing together.
+[*][B]Consolidate the repository issues.[/B] Once the port is complete, assign an agent to review all issues, combine duplicates, link related reports, check older reports against the code and test evidence, and organize the remaining work.
+[*][B]Build a broad Wiki-based combat and skilling backlog.[/B] Then generate issues covering substantial parts of combat and skilling from the OSRS Wiki: combat styles, accuracy/damage, equipment, spells, prayer and NPC behavior; gathering, processing, recipes, tools, requirements, XP and timing. Each issue should state the expected behavior and how it will be tested.
+[/LIST]
+
 [SIZE=4][B]OpenRune port progress[/B][/SIZE]
 The ledger currently tracks 173 implementation units. Porting and testing continue alongside each other.
 

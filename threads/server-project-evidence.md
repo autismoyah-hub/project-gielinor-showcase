@@ -58,3 +58,9 @@ Both runs used fresh disposable copies, acknowledged saves and clean client/serv
 The post uses shorter introductory text and captions, with the detailed test qualifications retained in these evidence notes and the image manifest. Rust-server and Kotlin-reference labels remain explicit. The 10-row OpenRune table groups implemented features and describes their testing/next steps; it reports no completion percentage. Its 173-unit count comes from the unique implementation IDs in the pinned queue, rather than the 185 append-only revision records or the source discovery inventory. Crafting-cape worn Boost and empty-search verification refer to their separately accepted, bounded exact-build scopes. Other native checks are not described as independent acceptance.
 
 The table uses Rune-Server’s documented [TABLE/TR/TH/TD BBCode](https://rune-server.org/help/bb-codes/). No screenshots, game code or test fixtures changed for this wording update.
+
+## Headless pipeline and planned phases
+
+The top-of-post pipeline overview describes the existing rule/World tests, immutable build/run identities, disposable state, scripted real native-client/server sessions, observed outputs, feature-specific lifecycle/persistence tests and independent verification. Its basis is the server native integration journals, `docs/openrune/verification/README.md` and the independent `PROVING_GROUND.md` process. Reference comparisons are used where available; individual contracts retain their actual exercised scope.
+
+The plan is user-directed future work, in order: complete the full OpenRune port; assign an agent to consolidate all repository issues; then generate broad Wiki-backed combat and skilling issues with expected behavior and test criteria. This publication documents that sequence. It does not launch an agent, change issue states, create the future backlog or change gameplay implementation.
