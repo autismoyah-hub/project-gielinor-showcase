@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-19",
+  "purpose": "Main Rune-Server server project thread; screenshot provenance only, no raw source/cache/assets/database/private test fixtures.",
+  "review": "Every image visually inspected; new captures are scripted native integration runs with real Rust server effects. UI-only/incomplete scene captures explicitly labelled.",
+  "images": [
+    {
+      "file": "01-rust-world.png",
+      "category": "live_native_client",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "rust-render-002/world.bmp",
+      "basis": {
+        "server_binary_sha256": "259DE919AD13E3BEC65A9DBFBEFFC804F65FD58ED501126139C4025DB348B4D7"
+      },
+      "claims": "Historical logged-in world and nearby NPCs.",
+      "limitations": "A still frame shows received/rendered state, not every system, timing, acquisition path or current-build parity.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "8506f0a1aeeca2f9194d9b2517197c68e7f595d27eb8419873c8ece630584bdf",
+      "published_sha256": "e55f4063a5603d414159aff42c4211a2c99ef31b10052dabe5ac56cc9d2bf925",
+      "rgb_pixel_sha256": "d471c6d5a5a6ff35ef6dd2d3b8ed2354bc910dd79e09b22d1e849f7e0163e92e",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "02-bank-transfers.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-bank-20261019-002/bank-after.bmp",
+      "basis": {
+        "run": "showcase-bank-20261019-002",
+        "server_binary_sha256": "7A8814BACF8DDA95C6120A7C6C9903E21A5AB93FCFDFC4E17A468E54CBAEE802",
+        "client_driver_sha256": "310FCDC19473359357E62A3C23B0B06A955E4AE4F57F208BC7DF235288CF652E",
+        "client_log_sha256": "ec19acfd0f00067e2814a7d433b1b21d1b8c7d044809676d6a3e28c84459046e",
+        "scope": "Scripted real native menus over a real TCP session against an immutable historical Rust server archive; disposable offline-seeded account. Showcase run, not independent acceptance of latest HEAD."
+      },
+      "claims": "Actual three single deposits and two withdrawals; nine coins carried, one banked.",
+      "limitations": "Same-session native bank display and asserted counts. This fresh run is not a restart/durability test; earlier bank/relogin campaigns are separate.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "c0370f0f1fa35f2b2a1beb20eadc23855ad2d49aef6eec81324bb539fa4b84aa",
+      "published_sha256": "54742701d21af9138d14148c3e19d8fc2327601d9b2f4fdb7075ec684a2df0be",
+      "rgb_pixel_sha256": "7382894a57490c808f9dcccd443a72914b864a59a7a50f2c87ac08e461f67bd9",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "03-copper-mining.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-mining-20261019-001/mining-ore.bmp",
+      "basis": {
+        "run": "showcase-mining-20261019-001",
+        "server_binary_sha256": "257FD300F0297869CBEB21B16EE1F89FF64F09B73C5F7178569D9B0F0D9EBE29",
+        "client_driver_sha256": "CEFFB0E89EA5D42D69EB0DE02E05992F7B85C2767DB94C4B46F84CC8476C74FA",
+        "client_log_sha256": "11c7eb1bf7b5fdab295bfd88639e0140839fb4dc6e86f771feb2cf05662fc895",
+        "scope": "Scripted real native menus over a real TCP session against an immutable historical Rust server archive; disposable offline-seeded account. Showcase run, not independent acceptance of latest HEAD."
+      },
+      "claims": "Native Mine click, one ore and displayed XP growth; run separately observed depletion and respawn.",
+      "limitations": "Prepared custom mining-area/tool/level fixture. Screenshot alone does not prove server cadence, authoritative fine XP, persistence or Kotlin parity.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "b8521f3f998d9ef334129f73440feddf299ff717120b6b14ce8a9aeaf4272801",
+      "published_sha256": "0898467a2a752e0d3594eda7d16b637a1b223d542cfaafeba696d1f0e13008f4",
+      "rgb_pixel_sha256": "b8710edce5ff0dfc235e2c90d079fdbe135a9665305d4f4d294645d12f7ce940",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "04-herbs-before.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-herbs-20261019-001/herbs-before.bmp",
+      "basis": {
+        "run": "showcase-herbs-20261019-001",
+        "server_binary_sha256": "358F0AD94E130053CF7DE71ADF59F699EB42C6023366F961F4D3BB1C90A97D3B",
+        "client_driver_sha256": "5E2295509CB86FD7CD262F2659539A3A48E33F8DF0208E5DA61832F7A342B1AF",
+        "client_log_sha256": "f0868c1cfcdf0b17c3a73a3c2c462f086fdf46e675518447a9643221368eab90",
+        "scope": "Scripted real native menus over a real TCP session against an immutable historical Rust server archive; disposable offline-seeded account. Showcase run, not independent acceptance of latest HEAD."
+      },
+      "claims": "Two native selected Clean actions convert marrentill and guam; full28 backpack and checked Herblore XP388->419 in the driver representation.",
+      "limitations": "Prepared membership, levels and inventory; does not demonstrate herb acquisition, all herb profiles or latest-HEAD native acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "13899562e4f1d1af2806253cf9418ee54b1a1545b9eee6fc54006da82389f6ed",
+      "published_sha256": "d09116fa2fd7699ba65554e8c6e272cb540369c0b38308eea2822ece7a46b26e",
+      "rgb_pixel_sha256": "5fbd43d353271ccd035aec760cdece3e610984dc039a091d1eafa793e1c4e2ed",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "05-herbs-after.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "showcase-herbs-20261019-001/herbs-after.bmp",
+      "basis": {
+        "run": "showcase-herbs-20261019-001",
+        "server_binary_sha256": "358F0AD94E130053CF7DE71ADF59F699EB42C6023366F961F4D3BB1C90A97D3B",
+        "client_driver_sha256": "5E2295509CB86FD7CD262F2659539A3A48E33F8DF0208E5DA61832F7A342B1AF",
+        "client_log_sha256": "f0868c1cfcdf0b17c3a73a3c2c462f086fdf46e675518447a9643221368eab90",
+        "scope": "Scripted real native menus over a real TCP session against an immutable historical Rust server archive; disposable offline-seeded account. Showcase run, not independent acceptance of latest HEAD."
+      },
+      "claims": "Two native selected Clean actions convert marrentill and guam; full28 backpack and checked Herblore XP388->419 in the driver representation.",
+      "limitations": "Prepared membership, levels and inventory; does not demonstrate herb acquisition, all herb profiles or latest-HEAD native acceptance.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "fcbad5737606202e65c8e04ce0afba2e073d0c0138ad1b45b5e8947755d5aa60",
+      "published_sha256": "56468d8c83c3dbaf56c04f2c8eebc02833e9d84f2c7d9c2d57511728de6ce387",
+      "rgb_pixel_sha256": "8e320e5aa1a5293d860d91bd794ee7596ffd6cb89b518aa8e36831e73dd9c316",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "06-crab-food.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "native-giant-crab-food/native-001/giant-crab-food-inventory.bmp",
+      "basis": {
+        "tested_commit": "76a011f52a9f2dcaf85eec08e64c9282d0602ced",
+        "assessment": "deep-giant-crab-food/native-001/independent-assessment.json"
+      },
+      "claims": "Independent native five-stage selected food consumption, inventory and health checks.",
+      "limitations": "UI-focused frame with incomplete scene camera. Health/timing and preservation claims depend on campaign observations, not the screenshot alone; broader contract obligations are separate.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "d7189d50d1fb32956abfc8cf885d1d92fa2890f809f57076d4518958a9d4ac96",
+      "published_sha256": "7c03eb1d3d86bc4dbd240494aee1585e3434d8ed30a8e1b1357af87fdbc8cfe0",
+      "rgb_pixel_sha256": "a65c7b4aeb16fbbf79e491975a334aadfb0d1b3ec0ed02a67a32e9c79e5b3ff3",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "07-wine-effects.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "native-wine-drink/native-002/wine-skills-attack0.bmp",
+      "basis": {
+        "tested_commit": "dfc2a1667c6c97e4d525a1aaea1ba7154d9aaad7",
+        "assessment": "deep-wine-drink/native-002/independent-assessment.json"
+      },
+      "claims": "Native Drink actions with received Attack0 display; run checked capped healing and jug retention.",
+      "limitations": "UI-focused incomplete scene camera. Later normal restoration means Attack0 is not claimed to remain frozen across logout/save.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "26e8767e8b16bc9e6e7bf00d6f8bfb57639f49bc72ca2c915a4bbc407aeff0f8",
+      "published_sha256": "e60c06048cd564c608aef82116ec6cc2c21f8458397ba970aa3ed8ed948bf3dc",
+      "rgb_pixel_sha256": "87e4ac4a7b9872ae011097fbb386468f7cef56580e68cb630c54485e970c2d10",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "08-empty-search.png",
+      "category": "native_client_integration",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "native-empty-search-approach/native-002/empty-search-approach-final.bmp",
+      "basis": {
+        "tested_commit": "b06e3079d14f44f6f9ce25674f2e983d863af177",
+        "assessment": "empty-search-final-disposition.json"
+      },
+      "claims": "Reached native Search and exact nothing reply; independent movement/cancellation campaign.",
+      "limitations": "Bounded seven native239 search identities, not every configured source241 location or all scenery behavior. Still frame does not prove movement/cancellation by itself.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "75afe7dfa603d6bf79f5e23f1e194c378ec1f530b7beb61d5a233950b70dff66",
+      "published_sha256": "9471bde641f41b7f2578df094af30afbed668a9552a14a9590d260ed6933b863",
+      "rgb_pixel_sha256": "78003eebda3de2c2369ea5da77641596fbbc38200ec4313c13293b62da38e6e8",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "09-rust-interior.png",
+      "category": "live_native_client",
+      "backend": "Rust",
+      "prepared_test_setup": true,
+      "source_identifier": "rust-floor-render-001/world.bmp",
+      "basis": {
+        "server_binary_sha256": "FE498B14E83832D0FB93A4812BBB97C898CA872E5826B97319A01B0735A9932F"
+      },
+      "claims": "Historical live Rust-server interior with actors and inventory.",
+      "limitations": "A still frame shows received/rendered state, not every system, timing, acquisition path or current-build parity.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "264e0b512a5fd92f57018595652638a27a76630eff2fe07d5c8e24921e15fbd0",
+      "published_sha256": "241a99c55a7c10c27ef70f3c2de5583e48853b322518afc44753f98dec27eb7c",
+      "rgb_pixel_sha256": "42033a51d828b2113bc49b01f719b95f2baa0b33c0a5069dc711e09b76d77434",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "10-kotlin-ranged-reference.png",
+      "category": "live_native_client",
+      "backend": "Kotlin reference",
+      "prepared_test_setup": false,
+      "source_identifier": "03-ranged-encounter.png",
+      "basis": {
+        "existing_public_manifest": "IMAGE_MANIFEST.md"
+      },
+      "claims": "Kotlin-reference ranged encounter.",
+      "limitations": "Historical client comparison capture against Kotlin. Does not demonstrate Rust-server combat.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "ad0c288284972226a6ae73102361c972432d299b09d1e90c5f79981edca50a81",
+      "published_sha256": "bfdca55c6740e32268676be6735db7db16de7e1c95e396db56614c8255ed5f5a",
+      "rgb_pixel_sha256": "be3dc3bc49db756df49bd268c35e55f51d1258cca0a4e2e25721634cacdbced8",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    },
+    {
+      "file": "11-kotlin-magic-reference.png",
+      "category": "live_native_client",
+      "backend": "Kotlin reference",
+      "prepared_test_setup": false,
+      "source_identifier": "04-magic-encounter.png",
+      "basis": {
+        "existing_public_manifest": "IMAGE_MANIFEST.md"
+      },
+      "claims": "Kotlin-reference Wind Strike encounter.",
+      "limitations": "Historical client comparison capture against Kotlin. Does not demonstrate Rust-server combat.",
+      "width": 765,
+      "height": 503,
+      "source_sha256": "35b34913b3676ec61730e05f2f68ece81ffc274b2d40f8d1e3dcb199560a5629",
+      "published_sha256": "aec9542625a2b269714cabf4fbc641e892f3a87ddacc427cba2971dc78ebf98c",
+      "rgb_pixel_sha256": "34fb7c9e65207c9b6d3ec660ede57f5d4369a6ce3c73a4aa7d6bc1980bc23b16",
+      "transformation": "Lossless RGB PNG encoding only; original rendered pixels and dimensions preserved; metadata removed."
+    }
+  ]
+}
