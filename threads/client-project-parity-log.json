@@ -1,0 +1,828 @@
+{
+  "checkpoint": "2026-10-18",
+  "implementation_commit": "1ac14511f7501f512e50d5623e3aeacc18749df8",
+  "source": "CLIENT_PARITY_MATRIX.csv",
+  "source_sha256": "2079bf87d7d83004844babf5610853a4d8ed7f49a50c2c3d76a00fd26c7cab2b",
+  "scope": "BEHAVIOR records only; mixed discovery, static packet contracts and packet behavior inventories are counted separately. This is not a completion percentage. Matched requirements retain their individual scope limits.",
+  "status_labels": {
+    "VERIFIED_PARITY": "Matched within recorded scope",
+    "PARTIAL": "Partial",
+    "IMPLEMENTED_UNVERIFIED": "Implemented; full verification pending",
+    "UNKNOWN": "Unclassified"
+  },
+  "behavior_total": 155,
+  "behavior_status_totals": {
+    "IMPLEMENTED_UNVERIFIED": 55,
+    "PARTIAL": 44,
+    "UNKNOWN": 6,
+    "VERIFIED_PARITY": 50
+  },
+  "areas": [
+    {
+      "area": "Login and sessions",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 3,
+        "IMPLEMENTED_UNVERIFIED": 6,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-SESSION-PASSWORD",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-TOKEN",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-SESSION-RETRY",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-POLICY",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-SESSION-TRANSFER",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-RECONNECT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-HOP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-LOGOUT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SESSION-TIMEOUT",
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "area": "Networking",
+      "counts": {
+        "VERIFIED_PARITY": 1,
+        "PARTIAL": 3,
+        "IMPLEMENTED_UNVERIFIED": 1,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-CRYPTO",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-FRAMING",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-PACKET-GROUP",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-PACKET-ERROR",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-OUTGOING-BATCH",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "Cache and assets",
+      "counts": {
+        "VERIFIED_PARITY": 4,
+        "PARTIAL": 1,
+        "IMPLEMENTED_UNVERIFIED": 1,
+        "UNKNOWN": 1
+      },
+      "requirements": [
+        {
+          "id": "REQ-CACHE-DISK",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-CACHE-LIVE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-CACHE-DEFINITIONS",
+          "status": "UNKNOWN"
+        },
+        {
+          "id": "REQ-CACHE-FLAGS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-CACHE-REVISION",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-CACHE-ARCHIVE-READY",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-CACHE-REFERENCE",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "Terrain, scenes and rendering",
+      "counts": {
+        "VERIFIED_PARITY": 32,
+        "PARTIAL": 8,
+        "IMPLEMENTED_UNVERIFIED": 7,
+        "UNKNOWN": 2
+      },
+      "requirements": [
+        {
+          "id": "REQ-SCENE-REBUILD",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-SCENE-LIGHT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SCENE-SLOTS",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-MODEL",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-RASTER",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-TEXTURE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-ROOFS",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-OCCLUSION",
+          "status": "UNKNOWN"
+        },
+        {
+          "id": "REQ-CAMERA",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-PICK",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-SKYBOX",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-EFFECTS",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-PARTICLES",
+          "status": "UNKNOWN"
+        },
+        {
+          "id": "REQ-LOCATION-READY",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-CHILD-GRAPHICS-DRAW",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ROOT-GRAPHICS-DRAW",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-PROJECTILE-DRAW",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-SCRIPTED-PROJECTILE-SPAWN",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ROOT-CHILD-DRAW",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-WORLD-SCENE-LIFETIME",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-WORLD-EMPTY-SCENE-BOUNDS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-WORLD-DRAW-LIFETIME",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ROOT-TERRAIN-ADMISSION",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ROOT-OBJECT-PASS-ADMISSION",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-MODEL-PHASE-PICK-ORDER",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ROOT-OBJECT-FIRST-PASS-ORDER",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-OBJECT-LATER-PASS-TRAVERSAL",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-MODEL-LATER-PASS-INVOCATIONS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-MODEL-FIRST-PASS-INVOCATIONS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-OBJECT-TRAVERSAL-IDENTITY-LIFETIME",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ORDINARY-OBJECT-TEMPORARY-DEPENDENCIES",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ACTOR-BODY-SCENE-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ACTOR-SPOT-SCENE-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-STANDALONE-EFFECT-SCENE-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-STEERING-SCENE-CALL-IDENTITY",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-CHILD-MODEL-SCENE-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-BOUNDARY-MODEL-TRAVERSAL-CORE",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NATIVE-BOUNDARY-MODEL-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-LOCATION-PERSISTENT-DRAW-POSITION",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NATIVE-DECORATION-MODEL-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-GROUND-ITEM-TRAVERSAL-CORE",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NATIVE-GROUND-MODEL-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NATIVE-ITEM-MODEL-CALLS",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-TERRAIN-MODEL-TRAVERSAL-CORE",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-SCENE-SELECTION-PLANE",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NATIVE-TERRAIN-MODEL-RASTER",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-HIDDEN-TERRAIN-SELECTION",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ITEM-PACKET-ALLOCATION",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-SAVED-BRIDGE-TERRAIN-RESET",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "Actors and animation",
+      "counts": {
+        "VERIFIED_PARITY": 7,
+        "PARTIAL": 2,
+        "IMPLEMENTED_UNVERIFIED": 5,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-PLAYER-SYNC",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-NPC-SYNC",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-ACTOR-MOVE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-ACTOR-TURN",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ACTOR-ANIMATION",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-ANIMATION-DECODE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-ANIMATION-READY",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-ACTOR-OVERLAY",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-NPC-REGISTRY-ORDER",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-NPC-LIVE-TARGET",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ACTOR-PLAYER-NPC-PHASE",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-PLAYER-LIVE-TARGET",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ACTOR-CROSS-VIEW-TARGET",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-ENTITY-ANIMATION-PHASE",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "Child worlds",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 2,
+        "IMPLEMENTED_UNVERIFIED": 1,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-CHILD-OWNERSHIP",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-CHILD-OVERLAP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WORLD-GLOBAL-IDENTITY",
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "area": "Scripts and text",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 7,
+        "IMPLEMENTED_UNVERIFIED": 4,
+        "UNKNOWN": 1
+      },
+      "requirements": [
+        {
+          "id": "REQ-VM-CORE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-VM-DECODE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-VM-IDENTITY",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-VM-SORT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-VM-ERROR",
+          "status": "UNKNOWN"
+        },
+        {
+          "id": "REQ-VM-DB",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-STRING-UTF16",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-STRING-CASE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-STRING-LANGUAGE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-STRING-DATE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-STRING-APPEARANCE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-STRING-LONG",
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "area": "Widgets and interfaces",
+      "counts": {
+        "VERIFIED_PARITY": 1,
+        "PARTIAL": 11,
+        "IMPLEMENTED_UNVERIFIED": 7,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-WIDGET-CREATE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-INITIAL",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-WIDGET-OPEN",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-RESIZE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-DEFERRED",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-EVENT-LIFETIME",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-EVENT-TRANSMIT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-INPUT",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-DRAG",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-SCROLL",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-RENDER",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-EDITOR",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-REMOTE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-SHORTCUT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WIDGET-CS1",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-REMOTE-CRM",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-REMOTE-CONTENT",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WIDGET-REMOTE-IMPRESSION",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-REMOTE-BEHAVIOUR",
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "area": "Inventory and gameplay state",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 0,
+        "IMPLEMENTED_UNVERIFIED": 3,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-INVENTORY",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-MARKET",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-GROUP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "area": "Movement and interactions",
+      "counts": {
+        "VERIFIED_PARITY": 1,
+        "PARTIAL": 2,
+        "IMPLEMENTED_UNVERIFIED": 3,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-APPEARANCE-SUBMIT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-MENU",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-DIALOG",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WORLD-ACTIONS",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-ROUTE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-STEERING-ACTIONABLE-HIT-EQUIVALENCE",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "World map and minimap",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 2,
+        "IMPLEMENTED_UNVERIFIED": 3,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-MINIMAP",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-WORLDMAP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-MAP-INTERACTION",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-MAP-TREEBIN",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-HEATMAP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "area": "Sound and music",
+      "counts": {
+        "VERIFIED_PARITY": 2,
+        "PARTIAL": 1,
+        "IMPLEMENTED_UNVERIFIED": 4,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-AUDIO-SYNTH",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-AUDIO-VORBIS",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-AUDIO-MUSIC",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-AUDIO-SPATIAL",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-AUDIO-PUMP",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-AUDIO-DEVICE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-AUDIO-LOCAL-INDEX",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    },
+    {
+      "area": "Windowing and input",
+      "counts": {
+        "VERIFIED_PARITY": 1,
+        "PARTIAL": 2,
+        "IMPLEMENTED_UNVERIFIED": 4,
+        "UNKNOWN": 1
+      },
+      "requirements": [
+        {
+          "id": "REQ-CLOCK",
+          "status": "VERIFIED_PARITY"
+        },
+        {
+          "id": "REQ-WINDOW",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WINDOW-RESIZE",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-INPUT",
+          "status": "PARTIAL"
+        },
+        {
+          "id": "REQ-CLIPBOARD",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-TITLE",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-WORLDLIST",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-PLATFORM-SCOPE",
+          "status": "UNKNOWN"
+        }
+      ]
+    },
+    {
+      "area": "Social and saved settings",
+      "counts": {
+        "VERIFIED_PARITY": 0,
+        "PARTIAL": 0,
+        "IMPLEMENTED_UNVERIFIED": 6,
+        "UNKNOWN": 0
+      },
+      "requirements": [
+        {
+          "id": "REQ-VARP",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-VARCS",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-PREFERENCES",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-SOCIAL",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-CLAN",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        },
+        {
+          "id": "REQ-CHAT",
+          "status": "IMPLEMENTED_UNVERIFIED"
+        }
+      ]
+    },
+    {
+      "area": "Test setup and acceptance",
+      "counts": {
+        "VERIFIED_PARITY": 1,
+        "PARTIAL": 0,
+        "IMPLEMENTED_UNVERIFIED": 0,
+        "UNKNOWN": 1
+      },
+      "requirements": [
+        {
+          "id": "REQ-ACCEPTANCE",
+          "status": "UNKNOWN"
+        },
+        {
+          "id": "REQ-REPRODUCE",
+          "status": "VERIFIED_PARITY"
+        }
+      ]
+    }
+  ],
+  "separate_packet_inventories": {
+    "Protocol tables": {
+      "VERIFIED_PARITY": 266
+    },
+    "Protocol IN": {
+      "IMPLEMENTED_UNVERIFIED": 119,
+      "PARTIAL": 27,
+      "UNKNOWN": 2,
+      "MISSING": 1
+    },
+    "Protocol OUT": {
+      "UNKNOWN": 115,
+      "PARTIAL": 1,
+      "IMPLEMENTED_UNVERIFIED": 1
+    }
+  },
+  "evidence_manifests": [
+    "audit/2391/w11-item-history.json",
+    "audit/2391/w11-terrain-raster.json"
+  ],
+  "note": "Public count summary only. Private gamepacks, cache assets, reference fixtures and raw logs are not included."
+}

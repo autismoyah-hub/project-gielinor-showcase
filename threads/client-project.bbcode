@@ -1,31 +1,51 @@
 [B][SIZE=6]Project Gielinor — Native Rust OSRS 239.1 Client[/SIZE][/B]
 
-Hi everyone! Here is our native Rust OSRS 239.1 client, from early cache experiments to the current development build. It runs without a JVM. Client parity work continues.
+Hi everyone! We have been building an OSRS 239.1 client in Rust. It runs without Java. This thread follows it from the first bits of terrain to the client we have running now. There is still plenty to finish.
 
-Live captures use an isolated Kotlin reference server. Offline renders and test harnesses are labeled; these checkpoints do not establish complete parity.
+The live screenshots use our local Kotlin test server. Other pictures come from renderer or interface tests, and are labeled so you can tell them apart.
 
-[B][SIZE=4]Parity progress[/SIZE][/B]
+[B][SIZE=4]Where things stand[/SIZE][/B]
 
-Current validated checkpoint: 18 October 2026. Checks cover specific cases; no area below implies complete parity.
+Here is the breakdown from the 18 October parity log. Each number is a tracked behavior, not a whole feature or a percentage of the client.
+
+Matched means the recorded checks agree with Java. Partial means there is more to finish or test. Needs checking means the code is there, but the full behavior has not been verified. Unclassified means we still need to work out the coverage.
 
 [TABLE]
-[TR][TH]Area[/TH][TH]Implemented / checked[/TH][TH]Still open[/TH][/TR]
-[TR][TD]Login and sessions[/TD][TD]Native login, authenticator and controlled token flows.[/TD][TD]Real token issuer, launcher handoff, reconnect/hop endurance.[/TD][/TR]
-[TR][TD]239.1 protocol[/TD][TD]149 incoming / 117 outgoing packet declarations match; framing and encryption tested.[/TD][TD]Complete payload, dispatch and server-effect coverage; reflection checks.[/TD][/TR]
-[TR][TD]JS5, cache and assets[/TD][TD]Archive decoding, validated recovery and bounded cold-cache loading.[/TD][TD]Remaining formats, delayed consumers and sustained loading lifecycle.[/TD][/TR]
-[TR][TD]Terrain and scenes[/TD][TD]Normal/instance maps, buildings, bridges and runtime scene changes.[/TD][TD]Broader reconstruction, roof and integrated scene coverage.[/TD][/TR]
-[TR][TD]Native software rendering[/TD][TD]Terrain/model ordering, picking and scoped Java pixel comparisons.[/TD][TD]Actual scene occluders, full-frame and dynamic geometry parity.[/TD][/TR]
-[TR][TD]Models, animation and actors[/TD][TD]Textured models, NPC/player composition, classic/skeletal animation and effects.[/TD][TD]Broader customization, animated geometry and delayed asset coverage.[/TD][/TR]
-[TR][TD]Child worlds[/TD][TD]Selected-view routing, separate state, ownership and lifecycle fixtures.[/TD][TD]Broader transformed views, nested lifetimes and native server traffic.[/TD][/TR]
-[TR][TD]Scripts, widgets and menus[/TD][TD]Cache scripts, widget geometry, event ordering and interaction dispatch checks.[/TD][TD]Remaining opcode, string, exception and remote-service behavior.[/TD][/TR]
-[TR][TD]Inventory, equipment and bank[/TD][TD]Native Wield/Drop/Take checks; equipment and bank interfaces render.[/TD][TD]End-to-end banking transactions and broader interface interactions.[/TD][/TR]
-[TR][TD]World map and minimap[/TD][TD]Detailed/overview maps, icons, heatmaps and server-confirmed minimap walking.[/TD][TD]Broader map interactions and cross-view edge cases.[/TD][/TR]
-[TR][TD]Movement and combat[/TD][TD]Native walking/NPC interactions; historical melee, ranged and magic captures.[/TD][TD]Sustained combat, multiplayer and wider gameplay acceptance.[/TD][/TR]
-[TR][TD]Sound and music[/TD][TD]Effects, music, jingles and independent audio scheduling; scoped PCM comparisons.[/TD][TD]Delayed assets, device recovery and sustained audible playback acceptance.[/TD][/TR]
-[TR][TD]Desktop and input[/TD][TD]Windows windowing, resize, mouse, keyboard, clipboard and focus checks.[/TD][TD]Full platform lifecycle, locale edges and other operating systems.[/TD][/TR]
-[TR][TD]Social, market and persistence[/TD][TD]Friend/clan/market modules, script queries, preferences and saved state.[/TD][TD]Broader live ordering, reset and persistence scenarios.[/TD][/TR]
-[TR][TD]Testing and stability[/TD][TD]1,111 tests passed across 566 suites; 819-frame native acceptance run.[/TD][TD]One legacy test ignored; semantic coverage and long-session stability remain open.[/TD][/TR]
+[TR][TH]Area[/TH][TH]Matched[/TH][TH]Partial[/TH][TH]Needs checking[/TH][TH]Unclassified[/TH][/TR]
+[TR][TD]Login and sessions[/TD][TD]0[/TD][TD]3[/TD][TD]6[/TD][TD]0[/TD][/TR]
+[TR][TD]Networking[/TD][TD]1[/TD][TD]3[/TD][TD]1[/TD][TD]0[/TD][/TR]
+[TR][TD]Cache and assets[/TD][TD]4[/TD][TD]1[/TD][TD]1[/TD][TD]1[/TD][/TR]
+[TR][TD]Terrain, scenes and rendering[/TD][TD]32[/TD][TD]8[/TD][TD]7[/TD][TD]2[/TD][/TR]
+[TR][TD]Actors and animation[/TD][TD]7[/TD][TD]2[/TD][TD]5[/TD][TD]0[/TD][/TR]
+[TR][TD]Child worlds[/TD][TD]0[/TD][TD]2[/TD][TD]1[/TD][TD]0[/TD][/TR]
+[TR][TD]Scripts and text[/TD][TD]0[/TD][TD]7[/TD][TD]4[/TD][TD]1[/TD][/TR]
+[TR][TD]Widgets and interfaces[/TD][TD]1[/TD][TD]11[/TD][TD]7[/TD][TD]0[/TD][/TR]
+[TR][TD]Inventory and gameplay state[/TD][TD]0[/TD][TD]0[/TD][TD]3[/TD][TD]0[/TD][/TR]
+[TR][TD]Movement and interactions[/TD][TD]1[/TD][TD]2[/TD][TD]3[/TD][TD]0[/TD][/TR]
+[TR][TD]World map and minimap[/TD][TD]0[/TD][TD]2[/TD][TD]3[/TD][TD]0[/TD][/TR]
+[TR][TD]Sound and music[/TD][TD]2[/TD][TD]1[/TD][TD]4[/TD][TD]0[/TD][/TR]
+[TR][TD]Windowing and input[/TD][TD]1[/TD][TD]2[/TD][TD]4[/TD][TD]1[/TD][/TR]
+[TR][TD]Social and saved settings[/TD][TD]0[/TD][TD]0[/TD][TD]6[/TD][TD]0[/TD][/TR]
+[TR][TD]Test setup and acceptance[/TD][TD]1[/TD][TD]0[/TD][TD]0[/TD][TD]1[/TD][/TR]
+[TR][TD][B]Total: 155[/B][/TD][TD][B]50[/B][/TD][TD][B]44[/B][/TD][TD][B]55[/B][/TD][TD][B]6[/B][/TD][/TR]
 [/TABLE]
+
+Banking, longer combat sessions, reconnects, world hopping and proper scene occlusion still need work. A working screen or a passing test does not close those out.
+
+[B]Some concrete results from the log[/B]
+
+[TABLE]
+[TR][TH]Check[/TH][TH]Recorded result[/TH][/TR]
+[TR][TD]Packet IDs and lengths[/TD][TD]149 incoming + 117 outgoing declarations match Java. Packet behavior is tracked separately.[/TD][/TR]
+[TR][TD]Incoming packet behavior[/TD][TD]27 partial, 119 implemented but not fully verified, 2 unclassified, 1 missing (reflection checks).[/TD][/TR]
+[TR][TD]Outgoing packet behavior[/TD][TD]1 partial, 1 implemented but not fully verified, 115 still awaiting full audit.[/TD][/TR]
+[TR][TD]Terrain/model drawing order[/TD][TD]128 controlled images matched Java pixel for pixel. This is a small renderer test, not a full game frame.[/TD][/TR]
+[TR][TD]Ground-item tile lifetime[/TD][TD]512 packet transitions, 128 item-layer lifecycles and 128 bridge-terrain lifecycles checked against Java.[/TD][/TR]
+[TR][TD]Latest regression run[/TD][TD]1,111 tests passed across 566 suites; one old approximation test remains ignored.[/TD][/TR]
+[TR][TD]Latest native run[/TD][TD]819 frames, 3 server-confirmed actions and 0 audio errors. Longer play sessions still need testing.[/TD][/TR]
+[/TABLE]
+
+These counts come from the behavior checklist. The larger method, module and script-candidate inventories are still being reviewed and are not included in the 155. The numbers will change as that work is broken down. [URL=https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/threads/client-project-parity-log.json]Checkpoint counts and requirement IDs[/URL]
 
 [SPOILER=Show current native client]
 [I]Live native client — Current checkpoint: native world, actors, inventory, chat and minimap.[/I]
@@ -46,7 +66,7 @@ Early steps: JS5, cache decoding and asset loading, before the scene and interfa
 
 [B][SIZE=4]Login, protocol and audio[/SIZE][/B]
 
-Native login, authentication and encrypted networking target revision 239.1. Packet tables match; broader protocol and session parity remain ongoing.
+The client can log in and talk to a revision 239.1 server. The packet IDs and lengths match the original; we are still checking what happens when each packet is handled.
 
 [SPOILER=Show login, protocol and audio]
 [I]Offline title test — Cached title artwork, fonts and animated fire.[/I]
@@ -56,11 +76,11 @@ Native login, authentication and encrypted networking target revision 239.1. Pac
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/05-authenticator.png[/IMG]
 [/SPOILER]
 
-Music, jingles and positional effects mix on an independent native audio worker. Token login has controlled coverage; real-issuer acceptance remains open.
+Music, jingles and nearby sound effects run on their own audio thread. Token login has been tested with a local service, but still needs checking with a real issuer.
 
 [B][SIZE=4]Places taking shape[/SIZE][/B]
 
-The native software rasterizer brings together terrain, buildings, textures and multiple floors. Historical offline scenes:
+The software renderer handles terrain, buildings, textures and multiple floors. These are older offline renders from different places around the map.
 
 [SPOILER=Show places taking shape]
 [I]Historical offline scene render — Lumbridge: terrain becomes buildings, trees and a complete scene.[/I]
@@ -113,10 +133,10 @@ The native software rasterizer brings together terrain, buildings, textures and 
 
 [B][SIZE=4]Scripts, interfaces and native input[/SIZE][/B]
 
-Cache scripts drive widgets, menus and interfaces, alongside native mouse/keyboard input, dragging, clipboard handling and resizable Windows rendering.
+The client runs scripts from the cache to build its interfaces and menus. Mouse and keyboard input, dragging, clipboard support and window resizing are also in place.
 
 [SPOILER=Show scripts, interfaces and native input]
-[I]Live native client — Inventory and native drag/input acceptance.[/I]
+[I]Live native client — Inventory, with dragging and input tested.[/I]
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/19-live-inventory.png[/IMG]
 
 [I]Offline UI test — Bank initialization scripts and empty panel.[/I]
@@ -129,11 +149,11 @@ Cache scripts drive widgets, menus and interfaces, alongside native mouse/keyboa
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/22-live-editor.png[/IMG]
 [/SPOILER]
 
-Banking transactions remain unfinished; these empty bank/equipment panels demonstrate UI initialization only.
+The bank and equipment screens load, but these empty panels only show the interface. Depositing and withdrawing still need to be finished and tested.
 
 [B][SIZE=4]World map and minimap[/SIZE][/B]
 
-Map drawing and icons, with server-confirmed minimap walking in bounded native tests.
+The world map draws its geography and icons. Clicking the minimap to walk has also been checked with the server.
 
 [SPOILER=Show world map and minimap]
 [I]Live native client — World map inside the logged-in client.[/I]
@@ -151,7 +171,7 @@ Map drawing and icons, with server-confirmed minimap walking in bounded native t
 
 [B][SIZE=4]Movement, interactions and combat presentation[/SIZE][/B]
 
-Native checks confirm walking, NPC interaction, Wield, Drop and Take. Historical melee/ranged/magic tests use real server updates; below are viewport-only captures.
+We have checked walking, talking to NPCs, equipping items, dropping them and picking them up. The older combat tests used real server updates; these pictures show just the game viewport.
 
 [SPOILER=Show movement, interactions and combat presentation]
 [I]Live-session viewport capture — Shortbow encounter: equipment, animation and hit updates.[/I]
@@ -163,7 +183,7 @@ Native checks confirm walking, NPC interaction, Wield, Drop and Take. Historical
 
 [B][SIZE=4]Child worlds and overlapping scenes[/SIZE][/B]
 
-Separate world views and overlap visibility in injected local test scenes, not server-generated encounters.
+These local test scenes check how separate world views overlap. They were set up by the test code rather than by a server encounter.
 
 [SPOILER=Show child worlds and overlapping scenes]
 [I]Controlled scene test — Child-world overlap: hidden state.[/I]
@@ -175,7 +195,7 @@ Separate world views and overlap visibility in injected local test scenes, not s
 
 [B][SIZE=4]Comparing against the original[/SIZE][/B]
 
-Original-Java comparisons cover packets, scripts, animation, audio and rendering. Below: one synthetic 100 × 100 raster case. All 128 cases matched, within this bounded test.
+We compare packets, scripts, animation, audio and drawing against the original Java client. Below is one small 100 × 100 drawing test. All 128 cases in that test matched.
 
 [SPOILER=Show original-Java comparison]
 [I]Original-Java reference test — Original Java: controlled terrain/model order, case 1.[/I]
@@ -185,10 +205,10 @@ Original-Java comparisons cover packets, scripts, animation, audio and rendering
 [IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/30-rust-comparison.png[/IMG]
 [/SPOILER]
 
-Latest validated checkpoint: 1,111 tests passed, one legacy test ignored; native acceptance completed 819 frames with three server-confirmed actions and zero audio errors.
+The test totals and remaining gaps are listed above. They help us catch regressions, but there is still a lot to check through normal play.
 
 [B][SIZE=4]Still in development[/SIZE][/B]
 
-Broader rendering and occlusion, session recovery, gameplay coverage and sustained stability remain active work. Feedback is welcome as client parity continues.
+Next up is more rendering work, reconnects and world hopping, and longer gameplay testing. We are still working toward matching the original client. Feedback is welcome.
 
 [SIZE=2]Credits: Project Gielinor / RS Mod, RSProt, RuneLite and RSProx contributors. Development primarily with GPT Astra under human direction and review. RuneScape and the depicted game assets belong to Jagex; this is an unofficial, unaffiliated project.[/SIZE]
