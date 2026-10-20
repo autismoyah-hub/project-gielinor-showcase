@@ -1,0 +1,549 @@
+{
+  "title": "Project Gielinor native client gallery",
+  "review_date": "2026-10-19",
+  "current_implementation": "1ac14511f7501f512e50d5623e3aeacc18749df8",
+  "current_evidence": "32d8dcbbf5e527c0e5254b96b88c061fe35e8c50",
+  "processing": "Lossless RGB PNG export, original dimensions and rendered RGB pixels preserved. Metadata removed. No generated or retouched gameplay.",
+  "images": [
+    {
+      "name": "01-current-native",
+      "classification": "Live native client",
+      "caption": "Current checkpoint: native world, actors, inventory, chat and minimap.",
+      "evidence": "audit/2391/w11-item-history.json",
+      "limitation": "Isolated Kotlin reference server; bounded smoke acceptance, not sustained gameplay or Rust-server interoperability.",
+      "file": "images/client-parity/01-current-native.png",
+      "source_identifier": "w11-item-history-native.bmp",
+      "source_sha256": "5a5a513b029369044dd09ead0ebc8b56a523f75ab76778b3303cd66df9dcbc61",
+      "png_sha256": "d47a2447f8c6565610d862a470ee9bf5285e2de0d72bdf970ccf111420357805",
+      "pixel_sha256": "909a86abd356e1781e4280426cd733c8ef1b759aaa673933cd0a555744125309",
+      "dimensions": [
+        960,
+        640
+      ],
+      "bytes": 280184,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/01-current-native.png"
+    },
+    {
+      "name": "02-early-terrain",
+      "classification": "Offline renderer test",
+      "caption": "Early terrain decoding: Lumbridge before the scene was assembled.",
+      "evidence": "README.md; native-world-terrain.bmp",
+      "limitation": "Terrain export, not a live world.",
+      "file": "images/client-parity/02-early-terrain.png",
+      "source_identifier": "native-world-terrain.bmp",
+      "source_sha256": "e7d2ee57878723c5084a3547ff0833a1679fb4564dbea1809088497c5209d315",
+      "png_sha256": "8cf1f69edc26ddb02b9deaa87b5f11a7a68324bf6e342f7cbcd460d62a51a05e",
+      "pixel_sha256": "bd654bbe139138c6693de0d9af2508cb14744222acb593c6cf972c4846ff8b76",
+      "dimensions": [
+        416,
+        416
+      ],
+      "bytes": 17065,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/02-early-terrain.png"
+    },
+    {
+      "name": "03-early-live",
+      "classification": "Historical live native client",
+      "caption": "Early live viewport: scene loaded; minimap and interface work still ahead.",
+      "evidence": "PROGRESS.md: Live integration checkpoint (2026-10-11); work/live-native-clipped.log",
+      "limitation": "Historical incomplete HUD, retained intentionally for progression.",
+      "file": "images/client-parity/03-early-live.png",
+      "source_identifier": "live-native-clipped.png",
+      "source_sha256": "ae25af5868632b74664f4882a033c416aa66a6a33070ae3a99c679031fa7dcc2",
+      "png_sha256": "eaace325879aaad2f72400d7719381caafa06a0017478b79f97171f9d1f9ce7c",
+      "pixel_sha256": "d46dbea369b14f7c8993f08efb3a48d7981597d80c7075f9f39f3f00d23d5a94",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 366228,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/03-early-live.png"
+    },
+    {
+      "name": "04-title",
+      "classification": "Offline title test",
+      "caption": "Cached title artwork, fonts and animated fire.",
+      "evidence": "examples/title_fire_cache.rs; work/title-fire-cache.log",
+      "limitation": "Title render harness; not authentication acceptance or audio evidence.",
+      "file": "images/client-parity/04-title.png",
+      "source_identifier": "title-fire-cache.bmp",
+      "source_sha256": "2c99697ebfbe2a27b6c0d5814b985ee20551700f8d639be1a7f5fbb54eb346b8",
+      "png_sha256": "5baa319cb176ea4947c6ac1e4cb8a16b3868fd9977c05642d0aa0cf38427d733",
+      "pixel_sha256": "3a23a24419977572a2cd4d7fce3e116d17d081f6fd22e33b00226f2e3fe1cbc5",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 427249,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/04-title.png"
+    },
+    {
+      "name": "05-authenticator",
+      "classification": "Controlled session test",
+      "caption": "Authenticator rejection and retry screen.",
+      "evidence": "examples/reconnect_session.rs; PROGRESS.md: Login response and authenticator continuation",
+      "limitation": "Controlled response replay; not real issuer acceptance. PIN remains masked by the client.",
+      "file": "images/client-parity/05-authenticator.png",
+      "source_identifier": "title-authenticator.bmp",
+      "source_sha256": "f29f92571a8a65d2e737f07ab2cc0b75b7a19a9a28b9c414a3c11d67e78f3f18",
+      "png_sha256": "174890b29528a978c55515e9e4b2b9e172ea7542c1a64e28d3b0f22ffab77b13",
+      "pixel_sha256": "438c34f99f898b78435595d575a97d7ca77597d9d96e3e8fc0ae0990f658afb8",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 411787,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/05-authenticator.png"
+    },
+    {
+      "name": "06-lumbridge-castle",
+      "classification": "Historical offline scene render",
+      "caption": "Lumbridge: terrain becomes buildings, trees and a complete scene.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json",
+      "limitation": "Cache scene harness; no network session. No whole-scene Java image parity claim.",
+      "file": "images/client-parity/06-lumbridge-castle.png",
+      "source_identifier": "11-lumbridge-castle.png",
+      "source_sha256": "29807ca3971bacf97e63a17c814a37a17155b0914bbf6f80cd7d597b7f8e7e03",
+      "png_sha256": "29807ca3971bacf97e63a17c814a37a17155b0914bbf6f80cd7d597b7f8e7e03",
+      "pixel_sha256": "e26fae4ec4797f22ded4a6a07fbc221a30383086c442cd392d00b9bdce015200",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 1125123,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/06-lumbridge-castle.png"
+    },
+    {
+      "name": "07-falador-castle",
+      "classification": "Historical offline scene render",
+      "caption": "Falador: towers, roofs and courtyards.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json",
+      "limitation": "Cache scene harness; no network session. No whole-scene Java image parity claim.",
+      "file": "images/client-parity/07-falador-castle.png",
+      "source_identifier": "13-falador-castle.png",
+      "source_sha256": "6d11eecedaae9d629be395373e689ff46e087c765a4dbfac54d97ebc7053c571",
+      "png_sha256": "6d11eecedaae9d629be395373e689ff46e087c765a4dbfac54d97ebc7053c571",
+      "pixel_sha256": "e6877b4233c5e74519d24b7998db627994122d76b9ab0ee301ba6d56f33deecc",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 1625413,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/07-falador-castle.png"
+    },
+    {
+      "name": "08-draynor-village",
+      "classification": "Historical offline scene render",
+      "caption": "Draynor: village buildings and waterfront.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json",
+      "limitation": "Cache scene harness; no network session. No whole-scene Java image parity claim.",
+      "file": "images/client-parity/08-draynor-village.png",
+      "source_identifier": "14-draynor-village.png",
+      "source_sha256": "0e8e478ab341bcc81d3ee69df6186c59e271d1590f1513caf33e70d98d78ccb7",
+      "png_sha256": "0e8e478ab341bcc81d3ee69df6186c59e271d1590f1513caf33e70d98d78ccb7",
+      "pixel_sha256": "8c3df1c6f42c35aee847783094153351828ca0068d4069b1380fa9e24f29ed0b",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 1212711,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/08-draynor-village.png"
+    },
+    {
+      "name": "09-al-kharid-palace",
+      "classification": "Historical offline scene render",
+      "caption": "Al Kharid: desert materials and palace geometry.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json",
+      "limitation": "Cache scene harness; no network session. No whole-scene Java image parity claim.",
+      "file": "images/client-parity/09-al-kharid-palace.png",
+      "source_identifier": "15-al-kharid-palace.png",
+      "source_sha256": "75224919546d37bd94dab830af28fc58c84d78b0f6d90fe28160da469b32dbfd",
+      "png_sha256": "75224919546d37bd94dab830af28fc58c84d78b0f6d90fe28160da469b32dbfd",
+      "pixel_sha256": "532efc5a930fc52dbf9d5f8b2af858dbe259824f8a878fd382d02698ba475a19",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 789727,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/09-al-kharid-palace.png"
+    },
+    {
+      "name": "10-castle-interior",
+      "classification": "Historical offline scene render",
+      "caption": "Castle interior: furnished upper floors.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json",
+      "limitation": "Cache scene harness; no network session. No whole-scene Java image parity claim.",
+      "file": "images/client-parity/10-castle-interior.png",
+      "source_identifier": "16-castle-interior.png",
+      "source_sha256": "c38e2cbe796d3422e2e678752f4f686c38a6b06249e5fecb705b4bf36c1532c6",
+      "png_sha256": "c38e2cbe796d3422e2e678752f4f686c38a6b06249e5fecb705b4bf36c1532c6",
+      "pixel_sha256": "2ef01e0d8b644b014570d7ec6ef7033bfcbdc84ba5da749fa782cb795e2ab5a8",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 948027,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/10-castle-interior.png"
+    },
+    {
+      "name": "11-goblin-model",
+      "classification": "Offline renderer test",
+      "caption": "Goblin: assembled and animated NPC parts.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "NPC animation harness; no world simulation or AI.",
+      "file": "images/client-parity/11-goblin-model.png",
+      "source_identifier": "09-goblin-model.png",
+      "source_sha256": "e23a3bd995882a06ce454e101324aff67254d5866fd026823b17fa2d733adaab",
+      "png_sha256": "e23a3bd995882a06ce454e101324aff67254d5866fd026823b17fa2d733adaab",
+      "pixel_sha256": "c70c34bc6f3a64f41c2a5198920872fc60276ff3c5c281375cfde855e6c98f34",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "bytes": 39326,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/11-goblin-model.png"
+    },
+    {
+      "name": "12-green-dragon",
+      "classification": "Offline renderer test",
+      "caption": "Green dragon: a different rig and silhouette.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "NPC animation harness; no server encounter.",
+      "file": "images/client-parity/12-green-dragon.png",
+      "source_identifier": "20-green-dragon.png",
+      "source_sha256": "e4ec395633ea9b4dd9d9e0b3cb2bcd3a223291959735a8899c67922d794b79f5",
+      "png_sha256": "e4ec395633ea9b4dd9d9e0b3cb2bcd3a223291959735a8899c67922d794b79f5",
+      "pixel_sha256": "648688313f493e5dac2721a4e9a9e848a4c54ab2796d61c00c7228cf228a3cc6",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "bytes": 59939,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/12-green-dragon.png"
+    },
+    {
+      "name": "13-dragon-equipment",
+      "classification": "Offline renderer test",
+      "caption": "Dragon equipment meshes.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Assembled equipment only; no player base mesh.",
+      "file": "images/client-parity/13-dragon-equipment.png",
+      "source_identifier": "18-dragon-equipment.png",
+      "source_sha256": "a85558a57993409b8a7265cdd505ae61e9b3b2f664d74e9ab4ad8f2f972991b5",
+      "png_sha256": "a85558a57993409b8a7265cdd505ae61e9b3b2f664d74e9ab4ad8f2f972991b5",
+      "pixel_sha256": "5b0f13f6ad0018c5822812b0952d4e8477611501513a5595a9e6376256c10226",
+      "dimensions": [
+        1000,
+        900
+      ],
+      "bytes": 34196,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/13-dragon-equipment.png"
+    },
+    {
+      "name": "14-npc-heads",
+      "classification": "Offline renderer test",
+      "caption": "NPC dialogue-head models.",
+      "evidence": "native-npc-heads.bmp; historical native head-model rendering checkpoint",
+      "limitation": "Isolated model sheet, not live dialogue.",
+      "file": "images/client-parity/14-npc-heads.png",
+      "source_identifier": "native-npc-heads.bmp",
+      "source_sha256": "cc705cb15b2b774155a5a59532e2f20a5dfea0314986649ac020db412edcca2c",
+      "png_sha256": "a845cbc742e7e7298ae0a44d7a78233425ed7b5d204ed8c0de32cda40937b6e4",
+      "pixel_sha256": "a55d1d721a3394af28e54534a586908fa8292499c66180bba5391396544c673f",
+      "dimensions": [
+        760,
+        480
+      ],
+      "bytes": 32728,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/14-npc-heads.png"
+    },
+    {
+      "name": "15-widget-models",
+      "classification": "Offline renderer test",
+      "caption": "Textured item models inside native widgets.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Isolated widget model-rendering test.",
+      "file": "images/client-parity/15-widget-models.png",
+      "source_identifier": "10-widget-models.png",
+      "source_sha256": "d4d70eab6a6253fce7ea995e7e45341b181f7a456c80cbd1494879dd049cb018",
+      "png_sha256": "d4d70eab6a6253fce7ea995e7e45341b181f7a456c80cbd1494879dd049cb018",
+      "pixel_sha256": "7721226e4a20efff2a7e36e1e10005fb22382b51472aeb2b188a53562c66163f",
+      "dimensions": [
+        760,
+        480
+      ],
+      "bytes": 23681,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/15-widget-models.png"
+    },
+    {
+      "name": "16-item-icons",
+      "classification": "Offline renderer test",
+      "caption": "Item icon rendering from cached definitions.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Offline icon rendering; not an inventory session.",
+      "file": "images/client-parity/16-item-icons.png",
+      "source_identifier": "07-item-icons.png",
+      "source_sha256": "f4d75d3dfd1da03307cade054a905cd9ed589003e6fc447a5f13e690e327482c",
+      "png_sha256": "f4d75d3dfd1da03307cade054a905cd9ed589003e6fc447a5f13e690e327482c",
+      "pixel_sha256": "f02253d121b225f026725b7472c3dd0d8b1f2f199193e3d125ac96437a931978",
+      "dimensions": [
+        720,
+        560
+      ],
+      "bytes": 46682,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/16-item-icons.png"
+    },
+    {
+      "name": "17-windmill-start",
+      "classification": "Offline animation test",
+      "caption": "Windmill, tick 0.",
+      "evidence": "osrs-239-visual-report-v2/captures.json:10-windmill-tick-0",
+      "limitation": "Genuine discrete framebuffer; no interpolated or generated motion.",
+      "file": "images/client-parity/17-windmill-start.png",
+      "source_identifier": "10-windmill-tick-0.png",
+      "source_sha256": "dbf124364d39ef76c917cef014a7f98932ff2a14b9b85dc223f561218e330b00",
+      "png_sha256": "c74ec81cc578741ad9a955a29016541db8bb45c30a82a371e4a73c4d2cf2ab76",
+      "pixel_sha256": "45d22d0f46a66e03a99188a38d11f614ececd6f99ad2509e8d8628db66dace94",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 799635,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/17-windmill-start.png"
+    },
+    {
+      "name": "18-windmill-advanced",
+      "classification": "Offline animation test",
+      "caption": "Same camera, tick 60.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md; osrs-239-visual-report-v2/captures.json:12-windmill-tick-60",
+      "limitation": "Genuine discrete framebuffer; no interpolated or generated motion.",
+      "file": "images/client-parity/18-windmill-advanced.png",
+      "source_identifier": "19-windmill-frame.png",
+      "source_sha256": "2314d7f3d22cdb73427e67d6ab3291005d5d954e7f51ac6add7135ba6f4d80a9",
+      "png_sha256": "2314d7f3d22cdb73427e67d6ab3291005d5d954e7f51ac6add7135ba6f4d80a9",
+      "pixel_sha256": "1d402b6840707ef442d4fdd09362f1f1d28ed3e32f34fc093fd7ada950f1d784",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "bytes": 812589,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/18-windmill-advanced.png"
+    },
+    {
+      "name": "19-live-inventory",
+      "classification": "Live native client",
+      "caption": "Inventory and native drag/input acceptance.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Historical isolated Kotlin-server session; screenshot alone does not establish every inventory operation.",
+      "file": "images/client-parity/19-live-inventory.png",
+      "source_identifier": "21-live-inventory.png",
+      "source_sha256": "da3bcf6554fac973d1e36c88c1b52c552872e86f75df82656bf5158748e3be42",
+      "png_sha256": "da3bcf6554fac973d1e36c88c1b52c552872e86f75df82656bf5158748e3be42",
+      "pixel_sha256": "e5945f948311d81a36e4e7e11c38549b91aba169307f27f47848d714815512c5",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 240361,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/19-live-inventory.png"
+    },
+    {
+      "name": "20-bank-interface",
+      "classification": "Offline UI test",
+      "caption": "Bank initialization scripts and empty panel.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Empty bank UI harness, not demonstrated deposit/withdraw gameplay.",
+      "file": "images/client-parity/20-bank-interface.png",
+      "source_identifier": "05-bank-interface.png",
+      "source_sha256": "3191cda616ea9e904601ef069a56fc44195fc0a7e4f0b0c7fdc1a12f7993a83b",
+      "png_sha256": "3191cda616ea9e904601ef069a56fc44195fc0a7e4f0b0c7fdc1a12f7993a83b",
+      "pixel_sha256": "60384effed5012d97d7add113216ed7a546e7e1cd62c88a0948fc5bf5b646fd2",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 42472,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/20-bank-interface.png"
+    },
+    {
+      "name": "21-equipment-interface",
+      "classification": "Offline UI test",
+      "caption": "Equipment slots and controls.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "No equipped items or player appearance supplied to this UI harness.",
+      "file": "images/client-parity/21-equipment-interface.png",
+      "source_identifier": "06-equipment-interface.png",
+      "source_sha256": "faa159890370c04f57636ab4eb134cc64ed2aa2aedcf05c46042a7310bb55b57",
+      "png_sha256": "faa159890370c04f57636ab4eb134cc64ed2aa2aedcf05c46042a7310bb55b57",
+      "pixel_sha256": "0fc4ba9791b959138b48d9391ae0a24ea5d85d44466f18095f30a1b0ef63f09b",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 21758,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/21-equipment-interface.png"
+    },
+    {
+      "name": "22-live-editor",
+      "classification": "UI test in live session",
+      "caption": "Keyboard, focus and editable text in a temporary test widget.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Temporary acceptance widget; not a standard gameplay dialogue.",
+      "file": "images/client-parity/22-live-editor.png",
+      "source_identifier": "23-live-editor.png",
+      "source_sha256": "0ee741f389b4c0c18851b4e5afb718e4fe9a8411c889ff7af2e17f7eceb0d300",
+      "png_sha256": "0ee741f389b4c0c18851b4e5afb718e4fe9a8411c889ff7af2e17f7eceb0d300",
+      "pixel_sha256": "621564718b352fbe57624a5b947410207e85ceabb5c883da2c688c5130e810c9",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 233199,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/22-live-editor.png"
+    },
+    {
+      "name": "23-world-map",
+      "classification": "Live native client",
+      "caption": "World map inside the logged-in client.",
+      "evidence": "work/native-map-interaction-retry.log; Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Historical capture; not a claim of complete subsystem parity.",
+      "file": "images/client-parity/23-world-map.png",
+      "source_identifier": "02-native-world-map.png",
+      "source_sha256": "e8055542047c275ba750f261f7acc56983dc5734b0516e679771046848cdf9ff",
+      "png_sha256": "e8055542047c275ba750f261f7acc56983dc5734b0516e679771046848cdf9ff",
+      "pixel_sha256": "473cbc7fa03eb3b79c743bb80afb254e2b49965b5f0717cf2e6f0e0a3b42be07",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 265673,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/23-world-map.png"
+    },
+    {
+      "name": "24-map-overview",
+      "classification": "Offline map render",
+      "caption": "Full map overview.",
+      "evidence": "Existing showcase IMAGE_MANIFEST.md",
+      "limitation": "Offline map renderer; not live world navigation.",
+      "file": "images/client-parity/24-map-overview.png",
+      "source_identifier": "08-map-overview.png",
+      "source_sha256": "347d36be926e215b3482edc78516b58e6dfa05a31074c8d39b317bc77a6440bb",
+      "png_sha256": "347d36be926e215b3482edc78516b58e6dfa05a31074c8d39b317bc77a6440bb",
+      "pixel_sha256": "0f27dab6b4407b3f25d023ace52f42165078ca199f385fc5d7284eb80875fcb4",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 352202,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/24-map-overview.png"
+    },
+    {
+      "name": "25-ranged",
+      "classification": "Live-session viewport capture",
+      "caption": "Shortbow encounter: equipment, animation and hit updates.",
+      "evidence": "work/live-ranged-combat.log; examples/live_ranged_combat.rs",
+      "limitation": "Historical rendered viewport during a Kotlin-server acceptance encounter. Not the full desktop window, all weapons or sustained combat.",
+      "file": "images/client-parity/25-ranged.png",
+      "source_identifier": "03-ranged-encounter.png",
+      "source_sha256": "ad0c288284972226a6ae73102361c972432d299b09d1e90c5f79981edca50a81",
+      "png_sha256": "ad0c288284972226a6ae73102361c972432d299b09d1e90c5f79981edca50a81",
+      "pixel_sha256": "be3dc3bc49db756df49bd268c35e55f51d1258cca0a4e2e25721634cacdbced8",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 124496,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/25-ranged.png"
+    },
+    {
+      "name": "26-magic",
+      "classification": "Live-session viewport capture",
+      "caption": "Wind Strike: casting, hit updates and rune consumption.",
+      "evidence": "work/live-magic-combat.log; examples/live_magic_combat.rs",
+      "limitation": "Historical Kotlin-server acceptance encounter; viewport-only harness, not the full desktop window or complete combat parity.",
+      "file": "images/client-parity/26-magic.png",
+      "source_identifier": "04-magic-encounter.png",
+      "source_sha256": "35b34913b3676ec61730e05f2f68ece81ffc274b2d40f8d1e3dcb199560a5629",
+      "png_sha256": "35b34913b3676ec61730e05f2f68ece81ffc274b2d40f8d1e3dcb199560a5629",
+      "pixel_sha256": "34fb7c9e65207c9b6d3ec660ede57f5d4369a6ce3c73a4aa7d6bc1980bc23b16",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 130612,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/26-magic.png"
+    },
+    {
+      "name": "27-child-overlap-hidden",
+      "classification": "Controlled scene test",
+      "caption": "Child-world overlap: hidden state.",
+      "evidence": "examples/live_world_overlap.rs; PROGRESS.md: World-entity overlap rendering",
+      "limitation": "Injected local scene in a session harness; not a server-generated encounter. Roof/scene parity remains incomplete.",
+      "file": "images/client-parity/27-child-overlap-hidden.png",
+      "source_identifier": "world-overlap-hidden.bmp",
+      "source_sha256": "37647cca06a082baf8de3353ebe526bac1a20dc87f547843411a4c6e10728e31",
+      "png_sha256": "4d4b7a2797b7944dc8eb1b9710785e2682686979591f8a284456b73ddcaba4c8",
+      "pixel_sha256": "1ffdd253c3442965ace0c635a275424353a3cafd5870f3976dd7ad6d3869050f",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 43864,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/27-child-overlap-hidden.png"
+    },
+    {
+      "name": "28-child-overlap-visible",
+      "classification": "Controlled scene test",
+      "caption": "Child-world overlap: visible state.",
+      "evidence": "examples/live_world_overlap.rs; PROGRESS.md: World-entity overlap rendering",
+      "limitation": "Injected local scene in a session harness; not a server-generated encounter. Roof/scene parity remains incomplete.",
+      "file": "images/client-parity/28-child-overlap-visible.png",
+      "source_identifier": "world-overlap-visible.bmp",
+      "source_sha256": "ef0c8f96fe1164b5e95190087cb59ef7b2c6bb76b518a0c3f71216b2fd84e8b1",
+      "png_sha256": "08d2161aab280ff0eeb0629907e16cbf9b651036c971f5227995f414a492b879",
+      "pixel_sha256": "feb0090e1786c60a6b2a225812fa7ed1e19ecf462578562aa0eb99ad9e950240",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 97504,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/28-child-overlap-visible.png"
+    },
+    {
+      "name": "29-java-reference",
+      "classification": "Original-Java reference test",
+      "caption": "Original Java: controlled terrain/model order, case 1.",
+      "evidence": "tests/terrain_model_raster.rs; audit/2391/w11-terrain-raster.json",
+      "limitation": "100 x 100 synthetic primitive raster from retained JVM fixture; not gameplay or a raw game asset.",
+      "file": "images/client-parity/29-java-reference.png",
+      "source_identifier": "java-terrain-model.ppm",
+      "source_sha256": "089ff4025f91f7e2ff49fd4a24aea8c927e83c4071ed9e02b9ac625dd691148d",
+      "png_sha256": "24a2673439ab55e67c13a83cf53324fc54ba4177354e91e63f26035480b2dd77",
+      "pixel_sha256": "d8ea897598f0d1d860fb4fb4afd377157463c60d8182609ee039a2fa0af68ddf",
+      "dimensions": [
+        100,
+        100
+      ],
+      "bytes": 370,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/29-java-reference.png"
+    },
+    {
+      "name": "30-rust-comparison",
+      "classification": "Rust differential test",
+      "caption": "Rust: the same case, identical RGB pixels.",
+      "evidence": "tests/terrain_model_raster.rs; showcase-review/raster-capture.log",
+      "limitation": "Native production renderer rerun against all 128 retained cases. This image is case 1 only; not complete renderer parity.",
+      "file": "images/client-parity/30-rust-comparison.png",
+      "source_identifier": "rust-terrain-model.ppm",
+      "source_sha256": "089ff4025f91f7e2ff49fd4a24aea8c927e83c4071ed9e02b9ac625dd691148d",
+      "png_sha256": "24a2673439ab55e67c13a83cf53324fc54ba4177354e91e63f26035480b2dd77",
+      "pixel_sha256": "d8ea897598f0d1d860fb4fb4afd377157463c60d8182609ee039a2fa0af68ddf",
+      "dimensions": [
+        100,
+        100
+      ],
+      "bytes": 370,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/30-rust-comparison.png"
+    }
+  ]
+}
