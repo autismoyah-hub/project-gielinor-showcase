@@ -1,0 +1,13 @@
+{
+  "images": 72,
+  "png_images": 68,
+  "gif_animations": 4,
+  "bbcode_replies": 3,
+  "strict_bbcode_parse": "pass; exact BBCode renderer generated all three previews",
+  "source_pixels_dimensions_frames_and_timing": "pass",
+  "existing_repository_files_preserved": 58,
+  "image_urls": "72 immutable raw GitHub URLs verified HTTP 200, image content types and matching SHA-256; see TOWER_REMOTE_VERIFICATION.json",
+  "actual_rune_server_editor_tested": false,
+  "local_browser_preview": "blocked by file-URL policy; no bypass attempted",
+  "forum_submissions": 0
+}

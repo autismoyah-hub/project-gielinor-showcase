@@ -1,0 +1,1157 @@
+{
+  "scope": "Three Tower documentation replies; source-safe image evidence only",
+  "images": [
+    {
+      "file": "images/tower-gameplay/01-arrival.png",
+      "caption": "The newer enclosed sanctuary, in the live Rust client.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "interior-production/review/index.html; floor-handoff/index.html",
+      "source_image": "00-sanctuary-0.png",
+      "source_sha256": "ee4454602caff360820cee4f4b4ac58687254cc28318c18ac94a4b87b6add91d",
+      "published_sha256": "6880bf39e2feda9a0e748a300e481d0bd5c42a70cac91ce9ddccfe37724ffab6",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/02-mining.png",
+      "caption": "Copper earned through ordinary mining.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "mined-copper.png",
+      "source_sha256": "c67eb74c8da7eb38006357c6d955ca29549047990e04efcd2a47e3c603576c10",
+      "published_sha256": "0bb4199fb37a5ac18a5361ac2394e3fdb7ef4439b818c3467fcf60ef736b03ec",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/03-smelting.png",
+      "caption": "Smelting uses the working furnace interface.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "furnace-dialogue.png",
+      "source_sha256": "bbe8f0efe73d772497b064bda861e5d4a48282ba6dbaf3aa9383641e31cd1557",
+      "published_sha256": "f769f63fb9e7c01222d9426e4df63e858aef30bb19808fc8f2e37624141636f1",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/04-smithing.png",
+      "caption": "The anvil opens the smithing choices during the preparation route.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "anvil-dialogue.png",
+      "source_sha256": "d11e500179bdf65c52349b034429b0b70b0e1168bdfdf3bd892949c68f648dd6",
+      "published_sha256": "c739a112df776e448cac3691460e147502a608dc9401a6399108bc2a9a883055",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/05-fishing.png",
+      "caption": "Net fishing supplies food for preparation.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "fish.png",
+      "source_sha256": "8a88855092542829ceb6949858443b225422b8c052492bba184e817918e22b66",
+      "published_sha256": "ba796366064f0f69779a4cc4f76a72e03179338e1cec9361d5ff36a547611d2b",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/06-kitchen.png",
+      "caption": "Cooking restores the kitchen service.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "kitchen-restored.png",
+      "source_sha256": "218a30c08656f327af6ceb7966937ce659435959cd10c6d81ad4e2d3dae5fd2f",
+      "published_sha256": "e00d9b9a0d7c69ed72a224ddef9b59ef6ddc5f658ff385ad10afaf9a903ef4b7",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/07-altar.png",
+      "caption": "Using earned bones restores the altar service.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; selected native service audits",
+      "source_image": "altar-restored.png",
+      "source_sha256": "5d6a2f90589436530af1f1959bd097d7740a9d28fb0acd622bf1ec1796fd0924",
+      "published_sha256": "7e0d260a38cc24038c5fc87ade4f52f27c355e783d2bfbefbf77c93e3fd07749",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/08-before-services.png",
+      "caption": "Earlier playable floor: the journal and dormant services before preparation.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-267.bmp",
+      "source_sha256": "23b3397b2bb03211728a16479ec57cb3d900657d500deff971dfd547b4f6ef60",
+      "published_sha256": "538bbeeace8d401aec9fe481005226e2fcfbd3d1c6b3146d31928325ca36aeee",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/09-workshop-restored.png",
+      "caption": "Earlier playable floor: workshop service restored; preparation can be completed in different orders.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-497.bmp",
+      "source_sha256": "fb6f330815d23b59f380a615188f7e9eca452b6ec1f5fac1c0b2f52dcea4e375",
+      "published_sha256": "086c961e7b44b3726181c28f0d9afbba1e5e769a889c7a790c15444df1456657",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/10-imp.png",
+      "caption": "Earlier playable floor: the Ash Imp warns with a line of smoke.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-1217.bmp",
+      "source_sha256": "ae6411de1f7ea14060f2f1c858181607f4357268f5889a2d7e14945e04a52cc9",
+      "published_sha256": "9340691fbded90daafbafbab0767a6ae2169789cdcd61c9be721dd7919af9abd",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/11-warden-warning.png",
+      "caption": "Earlier playable floor: the Ash Warden encounter and its smoke telegraph.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-1602.bmp",
+      "source_sha256": "5a49d12020e566ece817c31b564baa264d259788aa9f75e77ac59a0debb60790",
+      "published_sha256": "9efd994c2693a0219b8c3a6101ae1129f233139d0f59228a73f1bf7da2800a1e",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/12-warden-coolant.png",
+      "caption": "Earlier playable floor: coolant clears the charge and exposes the Warden.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-1606.bmp",
+      "source_sha256": "6e9452d66ead16fed075b8dd0ea26a261e678c2df8c2b273718dc4dd08164e13",
+      "published_sha256": "d436b2450cfa59ae92749478ac442922d1fbf769a943f50131815e2ad499c5ee",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/13-victory.png",
+      "caption": "Earlier playable floor: earned victory restores the floor and marks the reward as ready.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-2516.bmp",
+      "source_sha256": "f8bccb6c75a380aafff933ba3d20bf93a6e73ab460a6910c6359ecf8345dacf9",
+      "published_sha256": "eabdc5ea3a0200068e04f14dcdb0c21900b6d484a4da5e962812f1be966ad02b",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/14-full-pack.png",
+      "caption": "Earlier playable floor: the reward waits while the inventory is full.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-2631.bmp",
+      "source_sha256": "22de23f986e72abc91d4063e8b07b433e99ee1d34078a399943734eb38f86639",
+      "published_sha256": "2d576993f7faae8e3ce70c5247c04f4477cd335d62dedb7770a42b9024b32929",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/15-paid-relogin.png",
+      "caption": "Earlier playable floor: the settled journal after reward payment and ordinary reconnect.",
+      "kind": "Live native gameplay",
+      "stage": "Historical earned-clear checkpoint aedd586",
+      "evidence": "evidence\\native-sanctuary28-fresh\\journey.html",
+      "source_image": "frame-65.bmp",
+      "source_sha256": "0a9cf7e70b9c08eda7857994f40b70cf83c9f8b59994e2b82945c26fbba9b968",
+      "published_sha256": "2bb368de9520f0084a0d9f086549956d143b52d43b985ba016de5c4bb070fba3",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/16-bank.png",
+      "caption": "Earlier playable floor: a real axe deposited through the bank interface.",
+      "kind": "Live native gameplay",
+      "stage": "Historical banking checkpoint 08BB264E",
+      "evidence": "evidence/native-bank26-roundtrip/summary.json",
+      "source_image": "frame-61.bmp",
+      "source_sha256": "4fe7fb2a1ac597cacb6a15d40f5fe1d045be671decb99e572814e67f35035f32",
+      "published_sha256": "bc1748352b3e428fb4b9cf874f35ca8f9849ebaa0cb5177b48fa89430f87c617",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/17-recovery.png",
+      "caption": "The newer floor: sanctuary recovery after a real hazard defeat.",
+      "kind": "Live native gameplay",
+      "stage": "Custom-art floor",
+      "evidence": "floor-handoff/index.html; recovery audit",
+      "source_image": "recovered-sanctuary.png",
+      "source_sha256": "7cf64acc2c5ead9b31d72824962d1631aec28c564ba623d78fed5c47182d95fe",
+      "published_sha256": "89187c49d110e3992507fcef2de4cdc62696f807680d100932b9a4593eb9b426",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-gameplay/18-relogin.png",
+      "caption": "The newer floor: a normal waterworks reconnect with the original paving and machinery present.",
+      "kind": "Live native gameplay",
+      "stage": "Final handoff client a31c18d; runtime c78e2a8",
+      "evidence": "floor-handoff/index.html",
+      "source_image": "complete-region-after-relogin-scene.png",
+      "source_sha256": "6533f2ff9c1533cd8b9e7a11eed46e5428146259405b7747019d15633a83e273",
+      "published_sha256": "0987a2b5b436553fb34f4e4a9572c0bf77bec5d84f477a6e0839a52ea9235895",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/01-whole-floor.png",
+      "caption": "The enclosed interior candidate: a prepared overview of the complete floor.",
+      "kind": "Prepared native render",
+      "stage": "Interior candidate",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "whole-floor.png",
+      "source_sha256": "d2116318a34cdb590cdc54389e30a4d96c0dd801eec8783de311ab9c25113ac3",
+      "published_sha256": "7836e73fe8365e528fdbb47768902004b74f4af2eef10d2e89cbf60459d384db",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/02-early-live-floor.png",
+      "caption": "The earlier playable Cinderworks, before the original enclosed interior.",
+      "kind": "Live native gameplay",
+      "stage": "Historical guarded-quay checkpoint c7e4230",
+      "evidence": "evidence\\native-waterline30-journey\\journey.html",
+      "source_image": "frame-265.bmp",
+      "source_sha256": "c150c619ccdc89488f6a8f622a4350f9104221bfa0632d9bf62fb2707cf21c19",
+      "published_sha256": "9683fe269cc5cf8deb67d8092b0ce8b123e38cc67718f1b4246f0bbc3b9a9589",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/03-layout-a.png",
+      "caption": "Layout A: an early offline composition study, retained as a concept rather than an approved map.",
+      "kind": "Prepared native render",
+      "stage": "Historical layout experiment",
+      "evidence": "work/floor-one-design-review/render-manifest.json",
+      "source_image": "overview.png",
+      "source_sha256": "29ad44bd60035b075d08cd085396581b6bc2bd22dcc6f127bf06a7220e8cf4d0",
+      "published_sha256": "29ad44bd60035b075d08cd085396581b6bc2bd22dcc6f127bf06a7220e8cf4d0",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/03-layout-b.png",
+      "caption": "Layout B: an early offline composition study, retained as a concept rather than an approved map.",
+      "kind": "Prepared native render",
+      "stage": "Historical layout experiment",
+      "evidence": "work/floor-one-design-review/render-manifest.json",
+      "source_image": "overview.png",
+      "source_sha256": "e9798ff1288b59c4bc31d9c46f7fe5ef9852225887cb6672fc59b70576299fd1",
+      "published_sha256": "e9798ff1288b59c4bc31d9c46f7fe5ef9852225887cb6672fc59b70576299fd1",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/03-layout-c.png",
+      "caption": "Layout C: an early offline composition study, retained as a concept rather than an approved map.",
+      "kind": "Prepared native render",
+      "stage": "Historical layout experiment",
+      "evidence": "work/floor-one-design-review/render-manifest.json",
+      "source_image": "overview.png",
+      "source_sha256": "848c2efe80b3dce2c68b0ba7b523cbb5456341bffbb314a153522b2d446a10f8",
+      "published_sha256": "848c2efe80b3dce2c68b0ba7b523cbb5456341bffbb314a153522b2d446a10f8",
+      "dimensions": [
+        1600,
+        1200
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/04-original-open-study.png",
+      "caption": "An original open sanctuary-to-foundry study, before the enclosed architectural direction.",
+      "kind": "Prepared native render",
+      "stage": "Advanced-mastery historical art study",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\advanced-mastery\\index.html",
+      "source_image": "overview-detail.png",
+      "source_sha256": "a88e8977acbb880f507e1dfb293e8947bc8d7b337434bf7bfc37f99fab8a252d",
+      "published_sha256": "f1181c7e27aa0f34e5a061c7a701e1952632f42da09ca9bde8a900ab3572bab4",
+      "dimensions": [
+        2200,
+        1800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/05-enclosed-foundation.png",
+      "caption": "The enclosed foundation before the fitted paving and furnishing pass; same prepared camera as the opening overview.",
+      "kind": "Prepared native render",
+      "stage": "Protected enclosed foundation",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "whole-floor.png",
+      "source_sha256": "27164d0c8c87d876417eddfab073683da8a38928a92343f2b78fb0b0de80b310",
+      "published_sha256": "ee02a1652761e0ccbd470e4e7f605fb47fcc27b4b42e227751ce895d4855372a",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/06-art-direction.png",
+      "caption": "AI-generated concept illustration used as an art-direction target. This is not implemented geometry.",
+      "kind": "AI concept illustration",
+      "stage": "Reference only",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "canonical-concept.png",
+      "source_sha256": "efd7e488c08e6a98b2ac7361f547036663d47e086e5a7e8860f34af65f6bd0d2",
+      "published_sha256": "f627244f2b8e429327299c65552ca52314baf2b9214ed79456319ab46aa95146",
+      "dimensions": [
+        1358,
+        1158
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/07-floor-plan.png",
+      "caption": "Prepared overhead of the interior candidate: the bridge and service rooms connect the two sides.",
+      "kind": "Prepared native render",
+      "stage": "Interior candidate",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "overhead.png",
+      "source_sha256": "1a432cc6041d10c404d30716bf482eaa07b81959a87aab8a0e6781a59269a953",
+      "published_sha256": "ace4bc92b548dc1742ccd0ea4c3d191a57cd52a91a6afacf8f51f391995a387e",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/08-workshop-before.png",
+      "caption": "Workshop before: the protected foundation.",
+      "kind": "Prepared native render",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "workshop-south.png",
+      "source_sha256": "0cba1499bb69b2bfe33b0a33c5a97629e0e5fc682f5f32deb4839d0d27b2205d",
+      "published_sha256": "220ea9933c27712695775a2d2cddf13b8d8b47db1daf1e680f1e583e06d4bc78",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/09-workshop-after.png",
+      "caption": "Workshop after: fitted slate, machine pads and manual workstations; the old rails are removed.",
+      "kind": "Prepared native render",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "workshop-south.png",
+      "source_sha256": "e30aceeb0cdea9e2787c27756c58dd0fb9450caf28ee0b1a03f3250525347a14",
+      "published_sha256": "b23e19b6443c87db5c9deff9674b0063a8240c8faeca29996c243b1a34404979",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/10-sanctuary.png",
+      "caption": "Arrival Sanctuary: bank, altar, hearths and a distinct stone-and-carpet floor.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "00-sanctuary-0.png",
+      "source_sha256": "ee4454602caff360820cee4f4b4ac58687254cc28318c18ac94a4b87b6add91d",
+      "published_sha256": "6880bf39e2feda9a0e748a300e481d0bd5c42a70cac91ce9ddccfe37724ffab6",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/11-kitchen.png",
+      "caption": "Provision Rooms: the range, preparation surfaces and shared table.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "07-provision-0.png",
+      "source_sha256": "d74dfdf4d421447f4a8fed5998397dd80f954668ea6d9cc88bc2316d518325b3",
+      "published_sha256": "bd1f329a8d1e39d181209e06b35a09f2bd9f44f4a7d8ed97e784bdeecf9970d1",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/12-extraction.png",
+      "caption": "Slate Extraction: ore and the fixed lifting equipment.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "04-extraction-0.png",
+      "source_sha256": "44f1ad4f612befa53aaaf66f172c49cf9a4023c35a465f871abed76520850e92",
+      "published_sha256": "b09d1bbe0b894950ebd90fbed943f1287d7d2c928396f5b95d3195dc82dbad4b",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/13-drainage.png",
+      "caption": "Broken Water Return: the dressed bridge across the drainage cut.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "06-drainage-0.png",
+      "source_sha256": "03420591a10d009f87119740e47abe07287cbb723aad24b1ef8ba2629bf14509",
+      "published_sha256": "72b294e30cb67548613aee06dc1c28d99aa98a53dd3dca7829ae186a5b9dbc06",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/14-waterworks.png",
+      "caption": "Cooling & Waterworks: pump, drive, barrels and the channel-side working area.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "10-waterworks-0.png",
+      "source_sha256": "db458e3ce28c2e104fcdd3c7ee067e435b367bcdc084ea65f692cafd17c0b3ea",
+      "published_sha256": "f88328e8053c43be114430398d1a249cca2ca854c0cc94e2a08fac0b2a7061d0",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/15-nursery.png",
+      "caption": "Reclaimed Stock Court: planted beds and the livestock route.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "05-nursery-0.png",
+      "source_sha256": "0af84a4f8fa0ac1148b7e420e65d13cbc3fe4f7ab5dc3365a8066c66835eafce",
+      "published_sha256": "383e1c5513c9ac311c8a0766e8762d307d8be08e731a902f8ee1afd5a5dd0c82",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/16-imp-gallery.png",
+      "caption": "Vent & Pressure Gallery: the Imp court beside the pressure equipment.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "11-imp-0.png",
+      "source_sha256": "d36633ebc9d0fe5ca65bc40dc6984d3823c785c1dc655be5977fd77f3bc47823",
+      "published_sha256": "03017144c5fd784ef51df763b0a38674b288b3d34c80b8c8a34b61f996cab2e4",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/17-receiver.png",
+      "caption": "Great Receiver: the circular encounter floor and four coolant stations.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "13-receiver-8192.png",
+      "source_sha256": "f27e8582d685646d2c5dbcd314891909cfad1fdf264a4c700ec713fb6845f298",
+      "published_sha256": "eed6f2eb5b5b636a08e68f4094284520acac40b157afb5dc993886e552d838ca",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/18-furnaces.png",
+      "caption": "Furnace Works: a separate refractory apron around the furnace mouths.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "14-furnace-8192.png",
+      "source_sha256": "4e963eb385f4b0f3c3d46292d939bf06e3c06198d2f771bc70b5ccd9c335369a",
+      "published_sha256": "4f0f09ec8a959e61ce127f558d5dce5bce95ee8e22f751858d38b9003545de0c",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/19-receiving.png",
+      "caption": "Material Receiving Bay: the trackless handcart and sorted supplies.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "02-receiving-0.png",
+      "source_sha256": "57b9290f7b33236a3ffb99ba314f6f44a1444e7ff7a7c1a4f9ecf37007a98097",
+      "published_sha256": "333a26c00ac229cdb30165dbd5a3cfd9355a8d3f9e827eaf7d9556adb621a783",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/20-stores.png",
+      "caption": "Provision Stores: sacks, shelves and a distinct brick floor.",
+      "kind": "Live native gameplay",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "08-stores-0.png",
+      "source_sha256": "47bfa4aeb7d0e0b7582b27f370472abbf1bdbd083a9ebad3cb478150f0af6c4f",
+      "published_sha256": "370676a2ef61907e5ec96955d67d0fa7ed07c6b69cc1ec36e34d97657e984a01",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/21-machinery-detail.png",
+      "caption": "An intact prepared inspection of the original pump assembly.",
+      "kind": "Prepared native render",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "waterworks-pump.png",
+      "source_sha256": "5bdb96d5f0318bf9c0f4fc22beedf389bc658bea95730ce63d85b0298b1025ae",
+      "published_sha256": "0e7a26b0daa9931e9670de071a8636cfefad16aa2beecd96cdfccfb809a266a3",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/22-intact-vault.png",
+      "caption": "The upper shell intact, shown separately from the player cutaway view.",
+      "kind": "Prepared native render",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "intact-vault.png",
+      "source_sha256": "0bea7778c764bfe4579ad2d8c6e0148e07bec5877c6f76396589698f953b2c60",
+      "published_sha256": "f18b8f64b8689af396e79b0fdecd83bb16ee5984f369dd3a7df2815461ca862b",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/23-classic.png",
+      "caption": "Whole-floor study through the Classic native renderer.",
+      "kind": "Prepared native render",
+      "stage": "Interior production review",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\interior-production\\review\\index.html",
+      "source_image": "prepared-whole-floor.png",
+      "source_sha256": "2fb38ae2a5ba5903c6aefb9f287ba4e7af035b4d1c2816616f165e4b49396a9e",
+      "published_sha256": "2a569a651d00aadf797ca573ee473d87e2e8f12c2f4addf8156fb28b799bd75e",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/tower-map/24-live-final-waterworks.png",
+      "caption": "Final handoff capture: actual native Enhanced client after a waterworks reconnect.",
+      "kind": "Live native gameplay",
+      "stage": "Final handoff client a31c18d; runtime c78e2a8",
+      "evidence": "floor-handoff/index.html",
+      "source_image": "complete-region-after-relogin-scene.png",
+      "source_sha256": "6533f2ff9c1533cd8b9e7a11eed46e5428146259405b7747019d15633a83e273",
+      "published_sha256": "0987a2b5b436553fb34f4e4a9572c0bf77bec5d84f477a6e0839a52ea9235895",
+      "dimensions": [
+        1280,
+        900
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/01-first-blender.png",
+      "caption": "The first procedural Cinderworks arch, shown in Blender studio lighting.",
+      "kind": "Blender render",
+      "stage": "Initial pipeline proof",
+      "evidence": "custom-model-pipeline/evidence/gallery.html",
+      "source_image": "BLENDER-preview.png",
+      "source_sha256": "4e0f296a11206567f5d7a57f68a2f564e6eeda5e5a8454b8abd7a0f7f4332022",
+      "published_sha256": "42cc140626694b751050a2a610a0f1536c35bf64c1b4343308316458952e1c8e",
+      "dimensions": [
+        800,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/02-first-native.png",
+      "caption": "The same original arch after conversion, through the native software renderer.",
+      "kind": "Prepared native render",
+      "stage": "Initial pipeline proof",
+      "evidence": "custom-model-pipeline/evidence/gallery.html",
+      "source_image": "three-quarter.png",
+      "source_sha256": "a0d3483ca3e3a736ae0214fb4313dd78e2650102c735072032dda0da7c917248",
+      "published_sha256": "a1230ed14daac3dae6e822240eed649d5f7619d20b7b6095a6cbdc390af43622",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/03-first-live.png",
+      "caption": "The original arch placed in an isolated live Rust client/server test.",
+      "kind": "Live native gameplay",
+      "stage": "Initial pipeline proof",
+      "evidence": "custom-model-pipeline/evidence/gallery.html",
+      "source_image": "main-three-quarter.png",
+      "source_sha256": "50fea64b43291a458c8df15c0d4b22e1f5aba3feb4a06205f5624512831eff5f",
+      "published_sha256": "f343cff9d308c790b82f5e06b0c1ec8a572f89225d5badf34b59082d68d4f114",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/04-anvil-reference.png",
+      "caption": "Authentic Jagex anvil on the left; independently authored reconstruction on the right. Same native camera and light.",
+      "kind": "Prepared native comparison",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\static-production-benchmark\\index.html",
+      "source_image": "pair-quarter.png",
+      "source_sha256": "7e7af1f5e72029fdb00d57e5f5fa4283355e9d69154ef88f9b39c8e83dc0202c",
+      "published_sha256": "ff492050dcaed4eaa72f4bb50942dc3fdbee861a302bf8668facb8f698948a8a",
+      "dimensions": [
+        498,
+        223
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/05-riveting-station.png",
+      "caption": "An original split-die riveting station.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\astra-benchmark\\index.html",
+      "source_image": "B-riveter-quarter.png",
+      "source_sha256": "5140798494c4fef92e71a3449b66bbb348934af9d96625b83d79347f25004cdc",
+      "published_sha256": "ed9f9a6cf334b5d5eae154ac32fac09ff24f161ba61b7c90aac453afdde747d8",
+      "dimensions": [
+        277,
+        310
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/06-screw-press.png",
+      "caption": "An original counterweighted screw press with an authored helical thread.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\astra-benchmark\\index.html",
+      "source_image": "C-stamp-quarter.png",
+      "source_sha256": "03a2252170db43a95db929bddf93bca6d0e89862cb3bdbf7b51583d5538137a7",
+      "published_sha256": "68d3728df906d1a3abdd03e4d926e97cb0874ccbfa8f5710bc2334b0992fcd70",
+      "dimensions": [
+        235,
+        329
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/07-entrance-first.png",
+      "caption": "Earlier Ember-lock entrance mesh; matched native view.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "53d107f427611fcfc7336a78e6cbf77b243168a298880240fa8a1eee69bf59e6",
+      "published_sha256": "06289914f379cebf6ebc63a46c549e223a43e69e0c1325f44cb5ba1f7ff5e193",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/08-entrance-refined.png",
+      "caption": "Refined Ember-lock entrance: deeper construction and connected ironwork.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "3e924b299760f2603760f70a86e22072c4f77406d6af7984960c87b5244ef2ef",
+      "published_sha256": "8fc284e993f20173b404d835b216c6c3757b1af0287b8b62c6284851f9d047de",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/09-pump-first.png",
+      "caption": "Earlier original pump assembly; matched native view.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "244782df6ef592b3fc9a55b4c89eaf16b94656f414e958f484ef8fbd4b3e56e1",
+      "published_sha256": "d159609c7c3f55b8003d27fd2976e37da83a07d381fecab1695ab902a25fb0bf",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/10-pump-refined.png",
+      "caption": "Refined pump assembly with fitted supports, valves and pipework.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "0ada4ef30482e1364c16bb319c8f50d2e52daf6b3c3cadb37515528b1858f3c1",
+      "published_sha256": "bd2a12c3426b1601c657d12d3eebe3da55e80a323a1c54d8c903da57a835bcb9",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/11-native-vignette.png",
+      "caption": "Original architecture, machinery and Cindermaw assembled in a prepared native scene.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "player-east.png",
+      "source_sha256": "09589502727cc8b4a8f3a1b74c5fad9eeec1c6bdc04fa52a7a014d23b2d4fc6d",
+      "published_sha256": "90079759fbf8e255d9febe939001a7719079c6cb80dabf8e6d538f93ae513c51",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/12-clamping-workstation.png",
+      "caption": "An original clamping workstation, rendered natively.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\static-production-benchmark\\index.html",
+      "source_image": "front.png",
+      "source_sha256": "06fa9ff1c801cbaedef6f02a38abb444842f1741144e274cf9074fba11762385",
+      "published_sha256": "a677aa3b88a0a643fa84fce9990596e0fe471fb8d0802b2b38dd364459e8b0b3",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/13-plate-mill.png",
+      "caption": "An original adjustable plate mill, rendered natively.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\static-production-benchmark\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "2d7125c75c8995acc8b2942ebf37c5e059fccd1cbaaac65dea877cb312b767bd",
+      "published_sha256": "a788c51c20f05abd19ae0187bcf41bdc4a18a356390e891be51a1821e25f2843",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/14-slagclaw.png",
+      "caption": "Slagclaw: an original static furnace-scorpion study.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\static-production-benchmark\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "55aadd3391339781ed8e005aa5809cd082fc4e58a2401719be9248e3e0bb346f",
+      "published_sha256": "70045ba08f14c0680611341c116fa792d14299dc4925f07859a3ad8860cbb264",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/15-clay-construction.png",
+      "caption": "Cindermaw in Blender clay lighting: a construction diagnostic, not a native appearance.",
+      "kind": "Blender diagnostic render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "clay.png",
+      "source_sha256": "638429b17d32823a47b4dbb92d83d7db961716e4ec74333942fe6f4840d20666",
+      "published_sha256": "582835114f51632b0d156918127984761cd36356b16b12601294234222cbbbff",
+      "dimensions": [
+        1100,
+        850
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/16-native-creature.png",
+      "caption": "Cindermaw after refinement, through the native renderer.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "e6edc01640c8d9f2758a7ce51737127a7924f95653b3c989221483d628174c9d",
+      "published_sha256": "f508a8047bfb5cfef5cc17d0604b32941c1f237547058c301ee95a53d19ca8b8",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/17-custom-attack.gif",
+      "caption": "Cindermaw: complete authored attack playback in the native animation harness.",
+      "kind": "Native animation preview",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "attack.gif",
+      "source_sha256": "0b2244abd4126025f901feeb66842bebd44bd299bb232ebaa14fc54028783d0f",
+      "published_sha256": "0b2244abd4126025f901feeb66842bebd44bd299bb232ebaa14fc54028783d0f",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 25,
+      "processing": "Unchanged animation bytes"
+    },
+    {
+      "file": "images/custom-models/18-custom-walk.gif",
+      "caption": "Cindermaw: authored walk playback; rigid-joint and foot-contact limits remain.",
+      "kind": "Native animation preview",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\high-fidelity-mastery\\index.html",
+      "source_image": "walk.gif",
+      "source_sha256": "4a5af2db68ebbf57a1882feed72a54ebbaae91d8eda79d02574a53870873e3d3",
+      "published_sha256": "4a5af2db68ebbf57a1882feed72a54ebbaae91d8eda79d02574a53870873e3d3",
+      "dimensions": [
+        1000,
+        800
+      ],
+      "frames": 31,
+      "processing": "Unchanged animation bytes"
+    },
+    {
+      "file": "images/custom-models/19-concept-reference.png",
+      "caption": "Ashhorn: the preserved AI-generated turnaround used as an original design reference.",
+      "kind": "AI concept illustration",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\ashhorn-reference-reconstruction\\index.html",
+      "source_image": "turnaround-v2.png",
+      "source_sha256": "641deae27cb342fba8e5e15f5e51d795a866cb5dff8b637c7d1012afdf17f105",
+      "published_sha256": "43ccc0146a71a6cd4856dcc9cd9161753b9647c439fb751d6d6b97509abfabe7",
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/20-earlier-interpretation.png",
+      "caption": "Earlier interpretation of Ashhorn, at the common quarter camera.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\ashhorn-reference-reconstruction\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "e1a58e1f62f681ceffb958ef94f7649c7c45ba4bfeb14ad678f19f7483610c6a",
+      "published_sha256": "91a0e310a3beee294be648e6177b7f3ee0cc8357ffc20ac28e374a96eab0d2a0",
+      "dimensions": [
+        952,
+        512
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/21-reference-reconstruction.png",
+      "caption": "Later static reconstruction of Ashhorn at the same camera. Artistic fidelity remains incomplete.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\ashhorn-reference-reconstruction\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "da65228a7d6cd4e49f54cd6138c6a2041cbe36240ca75c611df3af8dfa832129",
+      "published_sha256": "32d2e28baef2c342cf08f8ee2d2dfcf9bc63716d91de972a0ee375dc7f1aeba9",
+      "dimensions": [
+        952,
+        512
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/22-reference-front.png",
+      "caption": "Ashhorn reconstruction: front view, exposing the chest, facial and plate construction.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\ashhorn-reference-reconstruction\\index.html",
+      "source_image": "front.png",
+      "source_sha256": "99412140910dbaf1635f1179613fb82a300d6507a2ec11e658d8010b2e0c7424",
+      "published_sha256": "1de070f9dc77ab90503d633e778bc201ae74af0decb1b236d0d85bce151a6886",
+      "dimensions": [
+        584,
+        512
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/23-reference-side.png",
+      "caption": "Ashhorn reconstruction: side view, exposing stance and body proportions.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\ashhorn-reference-reconstruction\\index.html",
+      "source_image": "left.png",
+      "source_sha256": "715cb4fe4b91a0834ab9d3cee7fbff596490bf952d72b9fe6bdacdc76eeed089",
+      "published_sha256": "f0c13411be6d5a9c2ad6a93b6bf3276798dbb80eda609a25817daa2410bd240c",
+      "dimensions": [
+        952,
+        512
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/24-surveyor.png",
+      "caption": "Glasswake Surveyor: an original equipped figure with a measuring fork and mantle.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\advanced-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "07ffc2edadde899e4286ecd34457ab63958eb0f85cd345c61612f826c2b8953c",
+      "published_sha256": "471a6ed38dcb5fac02b8bc7665c88036eb2e7065c31ab7fbfe7009506d377bef",
+      "dimensions": [
+        700,
+        650
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/25-surveyor-action.gif",
+      "caption": "Surveyor sounding-sweep action, played by the native animation harness.",
+      "kind": "Native animation preview",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\advanced-mastery\\index.html",
+      "source_image": "sounding_sweep.gif",
+      "source_sha256": "3a72944ccd574f6cbd9b44c94fc63390a2b08f931ede403f96f3d010509d61af",
+      "published_sha256": "3a72944ccd574f6cbd9b44c94fc63390a2b08f931ede403f96f3d010509d61af",
+      "dimensions": [
+        560,
+        550
+      ],
+      "frames": 61,
+      "processing": "Unchanged animation bytes"
+    },
+    {
+      "file": "images/custom-models/26-matriarch.png",
+      "caption": "Siltcoil Matriarch: an original segmented experimental boss design.",
+      "kind": "Prepared native render",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\advanced-mastery\\index.html",
+      "source_image": "quarter.png",
+      "source_sha256": "f5cac428092a85c8a1d2b8157edb32af9c1e342c9b41fecb3e518fa6f478a32d",
+      "published_sha256": "f44df34ecef4bf8b5097584a4615dddb68ebd6f9bcbf055f17b74fec5466be9a",
+      "dimensions": [
+        700,
+        650
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    },
+    {
+      "file": "images/custom-models/27-matriarch-action.gif",
+      "caption": "Matriarch sieve-breach action; this is animation research, not a playable boss encounter.",
+      "kind": "Native animation preview",
+      "stage": "Original asset research; see source report",
+      "evidence": "experiments\\custom-model-pipeline\\cinderworks-design-correction-server\\art\\tower\\advanced-mastery\\index.html",
+      "source_image": "sieve_breach.gif",
+      "source_sha256": "02f41770e44ee33b6be7e3756db1a530a9947e6ac4650c0c4c1b7fe3a1f79c29",
+      "published_sha256": "02f41770e44ee33b6be7e3756db1a530a9947e6ac4650c0c4c1b7fe3a1f79c29",
+      "dimensions": [
+        560,
+        550
+      ],
+      "frames": 61,
+      "processing": "Unchanged animation bytes"
+    },
+    {
+      "file": "images/custom-models/28-lockkeeper-shield.png",
+      "caption": "Lockkeeper shield: an original equipment design study.",
+      "kind": "Prepared native render",
+      "stage": "Advanced-mastery original equipment",
+      "evidence": "advanced-mastery/manifest.json",
+      "source_image": "quarter.png",
+      "source_sha256": "0509af9a61767125a39bcc49ed729558e647e9ef1a208774eb0c969469d197a1",
+      "published_sha256": "565db58aa912b397652c3599cdee4c8a102314a70e6859dd90553ac1ff757084",
+      "dimensions": [
+        700,
+        650
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG; exact decoded source pixels and dimensions"
+    }
+  ]
+}
