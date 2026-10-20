@@ -52,3 +52,9 @@ Five additional images come from two new prepared native integration runs, prese
 - `showcase-dough-20261019-001`: nine real native choice selections produce three each bread/pastry/pizza dough and return nine pots and three each empty vessel, preserving1000coins and XP. The native choice interface and final inventory are captured. This does not demonstrate baking or every cooking recipe.
 
 Both runs used fresh disposable copies, acknowledged saves and clean client/server exits. The screenshot-only drivers retained their existing action/assertion code and compiled against the unchanged isolated client library under the measured resource guard. No gameplay source changed. Raw BMPs, logs, databases and fixtures remain private; only lossless reviewed PNGs and provenance notes are published.
+
+## Forum wording and progress table
+
+The post uses shorter introductory text and captions, with the detailed test qualifications retained in these evidence notes and the image manifest. Rust-server and Kotlin-reference labels remain explicit. The 10-row OpenRune table groups implemented features and describes their testing/next steps; it reports no completion percentage. Its 173-unit count comes from the unique implementation IDs in the pinned queue, rather than the 185 append-only revision records or the source discovery inventory. Crafting-cape worn Boost and empty-search verification refer to their separately accepted, bounded exact-build scopes. Other native checks are not described as independent acceptance.
+
+The table uses Rune-Server’s documented [TABLE/TR/TH/TD BBCode](https://rune-server.org/help/bb-codes/). No screenshots, game code or test fixtures changed for this wording update.
