@@ -1,0 +1,86 @@
+[CENTER][SIZE=6][B]Project Gielinor — Rust Server[/B][/SIZE]
+[SIZE=4]Revision 239.1 • OpenRune content migration[/SIZE][/CENTER]
+
+Project Gielinor is an in-progress Rust server project. The work started with networking, login, saved characters and a ticking world, then expanded into gameplay and OpenRune content.
+
+The aim is steady, tested progress. Content migration and gameplay verification continue; this is not a full-parity announcement.
+
+New banking, mining and herb images are scripted native-client integration captures from prepared accounts on real Rust servers. Headless rule tests and Kotlin-reference captures are identified separately.
+
+[SIZE=4][B]A Rust server you can log into[/B][/SIZE]
+Rust handles the connection, world simulation, movement, player/NPC updates and character storage. Inventory, equipment and banking are connected to the gameplay runtime.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/01-rust-world.png[/IMG]
+[I]Live Rust-server gameplay — an early logged-in world capture with nearby NPCs. Historical build, not the latest content checkpoint.[/I]
+
+[SIZE=4][B]Banking and saved characters[/B][/SIZE]
+Native deposit and withdrawal actions are exercised against Rust. Earlier same-save login tests also checked saved bank and inventory state.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/02-bank-transfers.png[/IMG]
+[I]Rust-server native integration capture, prepared account — three single deposits and two withdrawals left nine coins carried and one banked. Captured after the actual transfers.[/I]
+
+[SIZE=4][B]Gathering and resource processing[/B][/SIZE]
+Selected mining and woodcutting profiles include tool requirements, XP, resource depletion and restoration. Smelting and smithing have separate material, output and failure checks.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/03-copper-mining.png[/IMG]
+[I]Rust-server native integration capture, prepared mining fixture — a native Mine action produced copper ore and displayed XP growth. The run also checked depletion and respawn; a still frame alone does not prove their timing.[/I]
+
+[SIZE=4][B]Herblore and item interactions[/B][/SIZE]
+Manual herb cleaning, unfinished potions, selected finished potions, grinding and dose upgrades have implemented paths and bounded tests. Native potion runs also exercise the selected ingredients and resulting items.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/04-herbs-before.png[/IMG]
+[I]Rust-server native integration capture, prepared account — selected grimy herbs before cleaning, with a full backpack.[/I]
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/05-herbs-after.png[/IMG]
+[I]The same run after two native Clean actions: both selected herbs changed, the backpack stayed full, and the server awarded the checked XP. Items and levels were prepared for the demonstration.[/I]
+
+[SIZE=4][B]Food and consumables[/B][/SIZE]
+Selected foods and drinks cover healing, multiple bites, returned containers and stat effects. Individual item rules are checked rather than treating every consumable alike.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/06-crab-food.png[/IMG]
+[I]Rust-server native integration capture — an independent giant-crab-meat test after five selected Eat actions. UI-focused capture; the scene camera is incomplete. Health and item transitions were checked alongside the image.[/I]
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/07-wine-effects.png[/IMG]
+[I]Rust-server native integration capture — a separate wine test showing Attack drained to zero. The run checked healing and retained jugs. This is a UI-focused verification capture, not a complete world-rendering demonstration.[/I]
+
+[SIZE=4][B]Scenery and everyday interactions[/B][/SIZE]
+Recent content includes selected searches, pickables, chests, drawers, ladders, stairs and other small interactions. Each needs its own bindings and verification.
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/08-empty-search.png[/IMG]
+[I]Rust-server native integration capture — native movement followed by a reached Search action and the “nothing” reply. This bounded search feature has separate independent verification.[/I]
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/09-rust-interior.png[/IMG]
+[I]Live Rust-server gameplay — a historical interior capture. It shows the loaded scene and actors; it does not demonstrate every newer ladder or scenery script.[/I]
+
+[SIZE=4][B]Other implemented work[/B][/SIZE]
+These areas have development or integration tests, but are not all demonstrated by the screenshots above:
+[LIST]
+[*]Melee, ranged and elemental-spell rules; rune/ammunition checks, combat XP and prayer selection/drain.
+[*]Cooking and baking, dough and pie assembly, gem cutting, glassblowing, pottery, jewellery, spinning, weaving and selected leatherwork.
+[*]Equipment changes, NPC routing and dialogue, death/loot handling, item packs and selected use-item interactions.
+[*]Shop transaction and stock rules. Broad world-shop registration is still incomplete.
+[/LIST]
+These are selected implementations and bounded checks, not claims that every skill, NPC, item or encounter is finished. Broader native combat and loot verification remains work in progress.
+
+[SIZE=4][B]Reference comparison captures[/B][/SIZE]
+The next two images use the [B]Kotlin reference server[/B]. They show comparison scenarios used during client/integration development and are [B]not Rust-server combat proof[/B].
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/10-kotlin-ranged-reference.png[/IMG]
+[I]Live Kotlin-reference gameplay — ranged encounter.[/I]
+
+[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/11-kotlin-magic-reference.png[/IMG]
+[I]Live Kotlin-reference gameplay — Wind Strike encounter.[/I]
+
+[SIZE=4][B]OpenRune migration and verification[/B][/SIZE]
+OpenRune behavior is independently adapted to the existing Rust architecture and revision 239.1 target. It is not a drop-in plugin copy. Item definitions, interfaces and source/Wiki differences need explicit checks.
+
+The migration ledger tracks implementation and registration. Independent verification checks exact builds and includes native actions, saved state and reference comparisons. Headless tests help, but do not replace playing through the native client. Prepared demonstrations use disposable accounts and seeded items; they do not prove those items can already be acquired normally.
+
+The discovery inventory is a source-review list, not a gameplay completion percentage. Many obligations remain open, including native verification of newer content. The ordinary spade action is one recent implementation checkpoint; its quest and boss hooks are still unported.
+
+[URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/tree/agent2/openrune-content]Server development[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/blob/agent2/openrune-content/docs/openrune/verification/IMPLEMENTATION_STATUS.md]Migration status[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-showcase/blob/main/threads/server-project-evidence.md]Capture labels and evidence notes[/URL]
+
+[SIZE=4][B]Credits[/B][/SIZE]
+Thanks to the Project Gielinor, RS Mod, OpenRune, RSProt, RuneLite, RSProx and OSRS Wiki contributors whose projects and research support this work. Development is AI-assisted under human direction and review. RuneScape, Old School RuneScape and the depicted game assets belong to Jagex. This is an unofficial project, unaffiliated with Jagex. Software licences do not grant a licence to the depicted game assets.
+
+More content and verification updates will follow in this thread.

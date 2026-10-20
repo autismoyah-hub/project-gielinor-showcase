@@ -544,6 +544,44 @@
       ],
       "bytes": 370,
       "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/30-rust-comparison.png"
+    },
+    {
+      "name": "31-detailed-map",
+      "classification": "Controlled native map test",
+      "caption": "Fresh capture: detailed map labels, geography and icons.",
+      "evidence": "Task-only capture adapted from examples/map_view_host.rs against current production library; cache reuse, heatmap movement and disable restoration assertions passed.",
+      "limitation": "Map renderer harness with JS5 asset recovery; no gameplay login. Heatmap positions are synthetic, not player telemetry.",
+      "file": "images/client-parity/31-detailed-map.png",
+      "source_identifier": "detailed-map.bmp",
+      "source_sha256": "2e002eb05ab47cef1617340545ed532c760a2a601b1f82a60d51732fc3f07854",
+      "png_sha256": "ec61b69ceeec75c10e7ff5d2c9d10e52ac1eadba188a1655f16bb263891ff318",
+      "pixel_sha256": "4490d472148bc3faa84281cff98d08e3d8e6276ed3ceb8fc468ae7c5536d7d73",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 408981,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/31-detailed-map.png",
+      "capture_date": "2026-10-19"
+    },
+    {
+      "name": "32-map-heatmap",
+      "classification": "Controlled native map test",
+      "caption": "Fresh capture: heatmap compositing with synthetic sample positions.",
+      "evidence": "Task-only capture adapted from examples/map_view_host.rs against current production library; cache reuse, heatmap movement and disable restoration assertions passed.",
+      "limitation": "Map renderer harness with JS5 asset recovery; no gameplay login. Heatmap positions are synthetic, not player telemetry.",
+      "file": "images/client-parity/32-map-heatmap.png",
+      "source_identifier": "map-heatmap.bmp",
+      "source_sha256": "9d5756f2a6e43212c61d7d8c1850fbef7134abbce37228d178477743dc49e9da",
+      "png_sha256": "8bf4b252e4df333a742b07af813739bef1958fff749f630d9a6be6c596b14e60",
+      "pixel_sha256": "fc2cd1368b19f025e8e8a81a2dfa2c16e2851aadf421810ca7b6051faca2433f",
+      "dimensions": [
+        765,
+        503
+      ],
+      "bytes": 349458,
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/32-map-heatmap.png",
+      "capture_date": "2026-10-19"
     }
   ]
 }

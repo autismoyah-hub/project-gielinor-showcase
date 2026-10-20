@@ -102,3 +102,8 @@ Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC; Copyright 20
 
 ![Temporary text-editor acceptance widget inside the logged-in native client; not a standard gameplay dialogue.](images/23-live-editor.png)
 
+
+
+## Server project thread
+
+The [ready-to-post main server thread](threads/server-project.bbcode) has a separate [server gallery and image links](threads/server-project-images.md). It includes actual Rust-server integration captures, prepared test setups, historical live views and explicitly labelled Kotlin-reference comparison images. See the [scope and evidence notes](threads/server-project-evidence.md). The original gallery above and its image manifest are preserved.
