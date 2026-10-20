@@ -1,0 +1,520 @@
+{
+  "image_urls_verified": 72,
+  "all_http_200": true,
+  "all_image_mime_types": true,
+  "all_remote_bytes_match_local_manifest": true,
+  "reply_and_gallery_files_match_remote": [
+    "threads/tower-gameplay.bbcode",
+    "threads/tower-map.bbcode",
+    "threads/custom-model-pipeline.bbcode",
+    "images/tower-gameplay/README.md",
+    "images/tower-map/README.md",
+    "images/custom-models/README.md"
+  ],
+  "images": [
+    {
+      "image": "images/custom-models/01-first-blender.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/01-first-blender.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/02-first-native.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/02-first-native.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/03-first-live.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/03-first-live.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/04-anvil-reference.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/04-anvil-reference.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/05-riveting-station.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/05-riveting-station.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/06-screw-press.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/06-screw-press.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/07-entrance-first.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/07-entrance-first.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/08-entrance-refined.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/08-entrance-refined.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/09-pump-first.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/09-pump-first.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/10-pump-refined.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/10-pump-refined.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/11-native-vignette.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/11-native-vignette.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/12-clamping-workstation.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/12-clamping-workstation.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/13-plate-mill.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/13-plate-mill.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/14-slagclaw.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/14-slagclaw.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/15-clay-construction.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/15-clay-construction.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/16-native-creature.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/16-native-creature.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/17-custom-attack.gif",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/17-custom-attack.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/18-custom-walk.gif",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/18-custom-walk.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/19-concept-reference.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/19-concept-reference.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/20-earlier-interpretation.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/20-earlier-interpretation.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/21-reference-reconstruction.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/21-reference-reconstruction.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/22-reference-front.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/22-reference-front.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/23-reference-side.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/23-reference-side.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/28-lockkeeper-shield.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/28-lockkeeper-shield.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/24-surveyor.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/24-surveyor.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/25-surveyor-action.gif",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/25-surveyor-action.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/26-matriarch.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/26-matriarch.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/custom-models/27-matriarch-action.gif",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/custom-models/27-matriarch-action.gif",
+      "status": 200,
+      "content_type": "image/gif",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/01-arrival.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/01-arrival.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/02-mining.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/02-mining.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/03-smelting.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/03-smelting.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/04-smithing.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/04-smithing.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/05-fishing.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/05-fishing.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/06-kitchen.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/06-kitchen.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/07-altar.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/07-altar.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/08-before-services.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/08-before-services.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/09-workshop-restored.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/09-workshop-restored.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/10-imp.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/10-imp.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/11-warden-warning.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/11-warden-warning.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/12-warden-coolant.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/12-warden-coolant.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/13-victory.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/13-victory.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/14-full-pack.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/14-full-pack.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/15-paid-relogin.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/15-paid-relogin.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/16-bank.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/16-bank.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/17-recovery.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/17-recovery.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-gameplay/18-relogin.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/18-relogin.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/01-whole-floor.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/01-whole-floor.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/02-early-live-floor.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/02-early-live-floor.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/03-layout-a.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/03-layout-a.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/03-layout-b.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/03-layout-b.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/03-layout-c.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/03-layout-c.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/04-original-open-study.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/04-original-open-study.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/05-enclosed-foundation.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/05-enclosed-foundation.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/06-art-direction.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/06-art-direction.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/07-floor-plan.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/07-floor-plan.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/08-workshop-before.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/08-workshop-before.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/09-workshop-after.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/09-workshop-after.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/10-sanctuary.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/10-sanctuary.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/11-kitchen.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/11-kitchen.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/12-extraction.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/12-extraction.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/13-drainage.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/13-drainage.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/14-waterworks.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/14-waterworks.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/15-nursery.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/15-nursery.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/16-imp-gallery.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/16-imp-gallery.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/17-receiver.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/17-receiver.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/18-furnaces.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/18-furnaces.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/19-receiving.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/19-receiving.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/20-stores.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/20-stores.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/21-machinery-detail.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/21-machinery-detail.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/22-intact-vault.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/22-intact-vault.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/23-classic.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/23-classic.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    },
+    {
+      "image": "images/tower-map/24-live-final-waterworks.png",
+      "url": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/24-live-final-waterworks.png",
+      "status": 200,
+      "content_type": "image/png",
+      "sha256_matches": true
+    }
+  ]
+}
