@@ -8,7 +8,7 @@ These are separate replies for the existing project threads. No forum post has b
 | The Cinderworks environment | Main client project thread | [tower-map.bbcode](threads/tower-map.bbcode) | [26 images](images/tower-map) | [Preview](previews/tower-map.html) |
 | Blender/custom models | Main client project thread | [custom-model-pipeline.bbcode](threads/custom-model-pipeline.bbcode) | [28 images and animations](images/custom-models) | [Preview](previews/custom-model-pipeline.html) |
 
-The BBCode uses only size, bold, italic and image tags. Image URLs address raw image bytes at the immutable image commit 83e1b40d52b34bcbe50b5d9662f5a61a37bb2282. HTML previews are for local inspection and do not imply GitHub Pages hosting or an exact Rune-Server theme match.
+The BBCode uses size, bold, italic, image and titled SPOILER tags. Image URLs address raw image bytes at the immutable image commit 83e1b40d52b34bcbe50b5d9662f5a61a37bb2282. Images are grouped into named collapsible show boxes, using the forum’s documented `[SPOILER=Title]` syntax. HTML previews are for local inspection and do not imply GitHub Pages hosting or an exact Rune-Server theme match.
 
 The earlier earned-clear gameplay and newer original-art map are deliberately labeled as separate checkpoints. Prepared native renders, live native gameplay, Blender diagnostics and AI concept illustrations are individually identified. No new gameplay or art was developed for this publication.
 
