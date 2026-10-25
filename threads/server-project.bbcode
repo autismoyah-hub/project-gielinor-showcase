@@ -1,155 +1,58 @@
-[CENTER][SIZE=6][B]Project Gielinor — Rust Server[/B][/SIZE]
-[SIZE=4]Revision 239.1 • OpenRune content migration[/SIZE][/CENTER]
+[size=5][b]Rust Server for OSRS revision 239[/b][/size]
 
-Project Gielinor is an in-progress Rust server project. The work started with networking, login, saved characters and a ticking world, then expanded into gameplay and OpenRune content.
+A game server for Old School RuneScape revision 239, written in Rust. Its main original content is [b]The Tower[/b]: authored floors, permanent progress, skilling preparation and boss fights. The native Rust client has its own [url=https://rune-server.org/threads/ai-project-native-rust-osrs-239-1-client.708916/]thread[/url].
 
-This thread will follow the server’s development and the OpenRune content port.
+[b]Current state[/b]
+[list]
+[*][b]Core[/b]: login, a ticking world, movement, player and NPC updates, inventory, equipment, banking and saved characters
+[*][b]Combat[/b]: melee, ranged and magic, prayer, NPC stats from the game cache, Dragon longsword special against NPCs
+[*][b]World[/b]: aggressive NPCs, respawn timers, drop tables with killer-only drops, ambient NPCs, bank booths and banknotes
+[*][b]Content port[/b]: OpenRune content ported and checked against the OSRS Wiki; not finished yet
+[*][b]Ported so far[/b]: fishing, firemaking, mining (gems, clay, essence), smithing extras, herblore, cooking, crafting, food, shearing, pickpocketing, item packs, scenery
+[*][b]The Tower[/b]: Floor One (the Cinderworks) runs on the main server; one full run from preparation through both bosses to the reward chest, kept after a restart
+[*][b]Testing[/b]: features are played in game by a headless test client against the real server from a fresh test account, then checked again after relogging; update posts mark anything covered by tests only
+[/list]
 
-The pictures include Rust-server sessions, scripted native-client tests and Kotlin reference comparisons. Test accounts have prepared items and levels.
+[SPOILER=The Tower: Floor One]
 
-[SIZE=4][B]How the headless testing works[/B][/SIZE]
-The testing pipeline starts with small gameplay checks, then moves into real client/server sessions driven by scripts.
+[i]Live native gameplay — The enclosed sanctuary on the rebuilt Cinderworks floor.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/01-arrival.png[/img]
 
-[LIST=1]
-[*][B]Test the rules and world actions.[/B] Rust tests check things such as item costs, outputs, XP, tick delays, requirements and rejected actions.
-[*][B]Prepare a repeatable run.[/B] Pin the server and client builds, record their identities, and create an isolated test account and database with known starting items and stats.
-[*][B]Drive the native client headlessly.[/B] Scripts log in over the real connection and use native controls: inventory actions, NPC/object menus and production interfaces. The server processes the resulting packets normally.
-[*][B]Check the results.[/B] Compare received inventory, equipment, stats, messages and other updates with the expected server effects. Some runs also render screenshots of the native interfaces and world.
-[*][B]Check interruptions and saved state.[/B] Depending on the feature, cases cover full inventories, stale actions, cancellation, death, logout, server restart and logging back in. Saved state is compared with the expected result.
-[*][B]Run independent verification.[/B] A separate agent re-checks the pinned implementation: registration, behavior, native integration, lifecycle and source/Wiki rules. Kotlin-reference comparisons are used where available.
-[/LIST]
-Runs keep their build IDs, inputs, logs and results. A failure can be turned into a reproducible issue, and fixes get a fresh run with the earlier evidence retained.
+[i]Live native gameplay — Earlier playable floor: the Ash Warden encounter and its smoke telegraph.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-gameplay/11-warden-warning.png[/img]
 
-[SIZE=4][B]Current plan[/B][/SIZE]
-[LIST=1]
-[*][B]Complete the full OpenRune port.[/B] Finish the remaining content and dependencies, with implementation and gameplay testing continuing together.
-[*][B]Consolidate the repository issues.[/B] Once the port is complete, assign an agent to review all issues, combine duplicates, link related reports, check older reports against the code and test evidence, and organize the remaining work.
-[*][B]Build a broad Wiki-based combat and skilling backlog.[/B] Then generate issues covering substantial parts of combat and skilling from the OSRS Wiki: combat styles, accuracy/damage, equipment, spells, prayer and NPC behavior; gathering, processing, recipes, tools, requirements, XP and timing. Each issue should state the expected behavior and how it will be tested.
-[/LIST]
-
-[SIZE=4][B]OpenRune port progress[/B][/SIZE]
-The ledger currently tracks 173 implementation units. Porting and testing continue alongside each other.
-
-[TABLE]
-[TR][TH]Area[/TH][TH]Ported so far[/TH][TH]Testing and next steps[/TH][/TR]
-[TR][TD][B]Herblore[/B][/TD][TD]Herb cleaning, unfinished/finished potion recipes, grinding, tar and dose upgrades.[/TD][TD]Native checks for selected recipes; more recipe and lifecycle tests to follow.[/TD][/TR]
-[TR][TD][B]Food and drinks[/B][/TD][TD]Healing, multiple bites, returned containers, boosts and drink effects.[/TD][TD]Selected native food/drink checks passed; item coverage is expanding.[/TD][/TR]
-[TR][TD][B]Cooking and preparation[/B][/TD][TD]Dough, pie/pizza assembly, fire and range recipes.[/TD][TD]Native dough and selected assembly runs passed; broader cooking checks continue.[/TD][/TR]
-[TR][TD][B]Crafting[/B][/TD][TD]Gems, glassblowing, pottery, spinning, weaving, jewellery and leatherwork.[/TD][TD]Recipe and quantity tests in place; further native testing planned.[/TD][/TR]
-[TR][TD][B]Mining and woodcutting[/B][/TD][TD]Ore/tree profiles, tool selection, depletion and respawn.[/TD][TD]Copper mining tested natively; wider node and tool checks continue.[/TD][/TR]
-[TR][TD][B]Runecrafting[/B][/TD][TD]Selected rune altars, Daeyalt essence and outfit bonuses.[/TD][TD]World and selected native altar checks; reference work continues.[/TD][/TR]
-[TR][TD][B]Prayer content[/B][/TD][TD]Bone burial, ash scattering and Zealot robe effects.[/TD][TD]Rule and world tests in place; further native/lifecycle checks remain.[/TD][/TR]
-[TR][TD][B]Guilds and services[/B][/TD][TD]Tanning, guild access, deposit boxes, cape sales and worn Boost.[/TD][TD]Crafting-cape worn Boost independently verified; other services are being checked.[/TD][/TR]
-[TR][TD][B]NPC and item interactions[/B][/TD][TD]Pickpocketing, item packs, coin pouches, water filling and milking.[/TD][TD]Selected native item/service runs passed; wider interaction coverage continues.[/TD][/TR]
-[TR][TD][B]Scenery and traversal[/B][/TD][TD]Searches, pickables, chests/drawers, ladders/stairs, signposts and spade Dig.[/TD][TD]Empty-search feature independently verified; newer handlers and quest Dig hooks are next.[/TD][/TR]
-[/TABLE]
-
-[SIZE=4][B]A Rust server you can log into[/B][/SIZE]
-Rust handles the connection, world simulation, movement, player/NPC updates and character storage. Inventory, equipment and banking are connected to the gameplay runtime.
-
-[SPOILER=World, login and NPCs]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/01-rust-world.png[/IMG]
-[I]Early Rust-server login with nearby NPCs.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/09-rust-interior.png[/IMG]
-[I]A Rust-server interior from an earlier development build.[/I]
 [/SPOILER]
 
-[SIZE=4][B]Banking and saved characters[/B][/SIZE]
-Native deposit and withdrawal actions are exercised against Rust. Earlier same-save login tests also checked saved bank and inventory state.
+[SPOILER=Recent gameplay]
 
-[SPOILER=Banking]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/02-bank-transfers.png[/IMG]
-[I]Rust server — three coin deposits and two withdrawals; nine coins carried and one banked.[/I]
+[i]Live native gameplay — Dragon longsword Cleave on a cow, with the special attack bar dropping to 75%.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/10-dls-cleave.png[/img]
+
+[i]Headless client render — An unarmed level-3 player among giant rats: a rat attacks unprovoked.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/18-rat-aggression.png[/img]
+
+[i]Headless client render — Gem rocks at Shilo Village: the mined rock is depleted after giving an uncut gem.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/01-gem-rock-mined.png[/img]
+
 [/SPOILER]
 
-[SIZE=4][B]Gathering and resource processing[/B][/SIZE]
-Mining and woodcutting include tool requirements, XP, resource depletion and restoration. Smelting and smithing have separate material, output and failure checks.
+[b]Source[/b]
+[list]
+[*][url=https://github.com/autismoyah-hub/project-gielinor-rust-server]github.com/autismoyah-hub/project-gielinor-rust-server[/url]: development snapshot with build notes and a Wiki-based task list; no game cache or assets
+[/list]
 
-[SPOILER=Gathering and mining]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/03-copper-mining.png[/IMG]
-[I]Rust-server test — copper ore and XP gained, with depletion and respawn checked during the run.[/I]
-[/SPOILER]
+[b]Latest updates[/b]
+[list]
+[*][url=https://rune-server.org/threads/ai-project-osrs-rust-server.708915/]Server & gameplay update — October 2026[/url]
+[*][url=https://rune-server.org/threads/ai-project-osrs-rust-server.708915/]The Tower — gameplay development[/url]
+[/list]
 
-[SIZE=4][B]Cooking preparation[/B][/SIZE]
-Dough preparation uses the native production interface and returns the appropriate containers.
+[b]What's next[/b]
+[list]
+[*]Shops, NPC aggression tolerance, and retreat and aggression ranges (in progress)
+[*]More special attacks, including PvP
+[*]Finish the OpenRune port, then a Wiki-based combat and skilling backlog
+[*]The Tower: connect saved attempts and life modes to gameplay, then more floors and group modes
+[/list]
 
-[SPOILER=Cooking preparation]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/15-dough-menu.png[/IMG]
-[I]Rust-server test — choosing dough through the native Make interface.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/16-dough-outputs.png[/IMG]
-[I]Nine selections produced bread, pastry and pizza dough, with pots and empty vessels returned.[/I]
-[/SPOILER]
-
-[SIZE=4][B]Herblore and item interactions[/B][/SIZE]
-Herblore work includes herb cleaning, potion making, grinding and dose upgrades. Native tests check the ingredients and resulting items.
-
-[SPOILER=Herblore: cleaning and potion making]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/04-herbs-before.png[/IMG]
-[I]Rust-server test — selected grimy herbs in a full backpack.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/05-herbs-after.png[/IMG]
-[I]After two Clean actions, both selected herbs are clean and the XP has been awarded.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/12-potions-before.png[/IMG]
-[I]Rust-server test — seven herb and water-vial pairs ready to mix.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/13-potions-menu.png[/IMG]
-[I]The native Make interface for an unfinished potion.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/14-potions-after.png[/IMG]
-[I]Seven unfinished potions made, with coins and XP unchanged.[/I]
-[/SPOILER]
-
-[SIZE=4][B]Food and consumables[/B][/SIZE]
-Food and drink work covers healing, multiple bites, returned containers and stat effects. Each item has its own rules.
-
-[SPOILER=Food and consumables]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/06-crab-food.png[/IMG]
-[I]Rust server — five bites of giant crab meat, with inventory and health checks. UI-focused test capture.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/07-wine-effects.png[/IMG]
-[I]Rust server — wine’s Attack drain shown in the Skills tab. UI-focused test capture.[/I]
-[/SPOILER]
-
-[SIZE=4][B]Scenery and everyday interactions[/B][/SIZE]
-Recent additions include searches, pickables, chests, drawers, ladders, stairs and other everyday interactions.
-
-[SPOILER=Scenery interactions]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/08-empty-search.png[/IMG]
-[I]Rust server — walking to a crate and using Search.[/I]
-[/SPOILER]
-
-[SIZE=4][B]Other implemented work[/B][/SIZE]
-Other work with development or integration tests includes:
-[LIST]
-[*]Melee, ranged and elemental-spell rules; rune/ammunition checks, combat XP and prayer selection/drain.
-[*]Cooking and baking, dough and pie assembly, gem cutting, glassblowing, pottery, jewellery, spinning, weaving and selected leatherwork.
-[*]Equipment changes, NPC routing and dialogue, death/loot handling, item packs and selected use-item interactions.
-[*]Shop transaction and stock rules. Broad world-shop registration is still incomplete.
-[/LIST]
-Next steps include broader native combat and loot tests.
-
-[SIZE=4][B]Reference comparison captures[/B][/SIZE]
-These ranged and magic captures are from the [B]Kotlin reference server[/B], used for comparison during integration work.
-
-[SPOILER=Kotlin reference only: combat comparisons]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/10-kotlin-ranged-reference.png[/IMG]
-[I]Kotlin reference server — ranged encounter.[/I]
-
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/server-openrune/11-kotlin-magic-reference.png[/IMG]
-[I]Kotlin reference server — Wind Strike encounter.[/I]
-[/SPOILER]
-
-[SIZE=4][B]OpenRune migration and verification[/B][/SIZE]
-We adapt OpenRune behavior to the existing Rust action, inventory and persistence systems, targeting revision 239.1. Wiki checks help resolve version and gameplay differences.
-
-The ledger records each implementation and its registration. Independent verification uses pinned builds to check native actions, saved state and reference behavior. Current work includes recently ported scenery interactions and quest-specific spade Dig hooks.
-
-[URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/tree/agent2/openrune-content]Server development[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-rust-server/blob/agent2/openrune-content/docs/openrune/verification/IMPLEMENTATION_STATUS.md]Migration status[/URL] • [URL=https://github.com/autismoyah-hub/project-gielinor-showcase/blob/main/threads/server-project-evidence.md]Capture labels and evidence notes[/URL]
-
-[SIZE=4][B]Credits[/B][/SIZE]
-Thanks to the Project Gielinor, RS Mod, OpenRune, RSProt, RuneLite, RSProx and OSRS Wiki contributors whose projects and research support this work. Development is AI-assisted under human direction and review. RuneScape, Old School RuneScape and the depicted game assets belong to Jagex. This is an unofficial project, unaffiliated with Jagex.
-
-More content and verification updates will follow in this thread.
+[size=1]Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC); RSProt / Z-Kris (MIT); OpenRune, RuneLite and RSProx contributors for reference/tooling. RuneScape / Old School RuneScape and the depicted game assets belong to Jagex. This unofficial project is unaffiliated with and not endorsed by Jagex.[/size]

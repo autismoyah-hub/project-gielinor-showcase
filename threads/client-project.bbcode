@@ -1,214 +1,61 @@
-[B][SIZE=6]Project Gielinor — Native Rust OSRS 239.1 Client[/SIZE][/B]
+[size=5][b]Native Rust Client for OSRS revision 239[/b][/size]
 
-Hi everyone! We have been building an OSRS 239.1 client in Rust. It runs without Java. This thread follows it from the first bits of terrain to the client we have running now. There is still plenty to finish.
+A native Old School RuneScape revision 239 client written in Rust that runs without Java. It's also the client for The Tower, and it plays against the project's [url=https://rune-server.org/threads/ai-project-osrs-rust-server.708915/]Rust server[/url].
 
-The live screenshots use our local Kotlin test server. Other pictures come from renderer or interface tests, and are labeled so you can tell them apart.
+[b]Current state[/b]
+[list]
+[*][b]Rendering[/b]: terrain, buildings, textures, multiple floors, animated models, world map and minimap; Classic and experimental Enhanced modes
+[*][b]Accuracy[/b]: a controlled 128-case drawing test matched the original Java client pixel for pixel; packet IDs and lengths match
+[*][b]Interfaces[/b]: built by the game's own cache scripts; inventory, equipment, dragging, clipboard and window resizing
+[*][b]Banking[/b]: bank interface, deposits that survive logout and restart, and the Floor One banker with dialogue
+[*][b]Chat and accounts[/b]: public chat echoed by the server, a working logout button, the character creator for new accounts
+[*][b]The Tower[/b]: Floor One (the Cinderworks) runs end to end against the Rust server
+[*][b]Performance[/b]: start-up to playable down from about 13.4 s to about 12.2 s; the under-10 s target is not yet met
+[*][b]Testing[/b]: mostly automated headless in-game tests so far, not long play sessions
+[/list]
 
-[B][SIZE=4]Where things stand[/SIZE][/B]
+[b]Custom modeling[/b]
+Original Tower assets are modeled in Blender and converted to the client's model format. Newer Hunyuan3D-assisted studies of two raid bosses, eleven NPCs and a lobby hall are drawn by the client's renderer but aren't in the game yet. More in the [url=https://rune-server.org/threads/ai-project-native-rust-osrs-239-1-client.708916/]Client & modeling update[/url].
 
-Here is the breakdown from the 18 October parity log. Each number is a tracked behavior, not a whole feature or a percentage of the client.
+[SPOILER=The Cinderworks in the client]
 
-Matched means the recorded checks agree with Java. Partial means there is more to finish or test. Needs checking means the code is there, but the full behavior has not been verified. Unclassified means we still need to work out the coverage.
+[i]Live native client — Tower Floor One (Cinderworks) running in the Rust client, headless capture.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/cinderworks-floor-in-client.png[/img]
 
-[TABLE]
-[TR][TH]Area[/TH][TH]Matched[/TH][TH]Partial[/TH][TH]Needs checking[/TH][TH]Unclassified[/TH][/TR]
-[TR][TD]Login and sessions[/TD][TD]0[/TD][TD]3[/TD][TD]6[/TD][TD]0[/TD][/TR]
-[TR][TD]Networking[/TD][TD]1[/TD][TD]3[/TD][TD]1[/TD][TD]0[/TD][/TR]
-[TR][TD]Cache and assets[/TD][TD]4[/TD][TD]1[/TD][TD]1[/TD][TD]1[/TD][/TR]
-[TR][TD]Terrain, scenes and rendering[/TD][TD]32[/TD][TD]8[/TD][TD]7[/TD][TD]2[/TD][/TR]
-[TR][TD]Actors and animation[/TD][TD]7[/TD][TD]2[/TD][TD]5[/TD][TD]0[/TD][/TR]
-[TR][TD]Child worlds[/TD][TD]0[/TD][TD]2[/TD][TD]1[/TD][TD]0[/TD][/TR]
-[TR][TD]Scripts and text[/TD][TD]0[/TD][TD]7[/TD][TD]4[/TD][TD]1[/TD][/TR]
-[TR][TD]Widgets and interfaces[/TD][TD]1[/TD][TD]11[/TD][TD]7[/TD][TD]0[/TD][/TR]
-[TR][TD]Inventory and gameplay state[/TD][TD]0[/TD][TD]0[/TD][TD]3[/TD][TD]0[/TD][/TR]
-[TR][TD]Movement and interactions[/TD][TD]1[/TD][TD]2[/TD][TD]3[/TD][TD]0[/TD][/TR]
-[TR][TD]World map and minimap[/TD][TD]0[/TD][TD]2[/TD][TD]3[/TD][TD]0[/TD][/TR]
-[TR][TD]Sound and music[/TD][TD]2[/TD][TD]1[/TD][TD]4[/TD][TD]0[/TD][/TR]
-[TR][TD]Windowing and input[/TD][TD]1[/TD][TD]2[/TD][TD]4[/TD][TD]1[/TD][/TR]
-[TR][TD]Social and saved settings[/TD][TD]0[/TD][TD]0[/TD][TD]6[/TD][TD]0[/TD][/TR]
-[TR][TD]Test setup and acceptance[/TD][TD]1[/TD][TD]0[/TD][TD]0[/TD][TD]1[/TD][/TR]
-[TR][TD][B]Total: 155[/B][/TD][TD][B]50[/B][/TD][TD][B]44[/B][/TD][TD][B]55[/B][/TD][TD][B]6[/B][/TD][/TR]
-[/TABLE]
+[i]Live native client — Bank interface open in the Rust client on the Tower floor.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/bank-interface-in-client.png[/img]
 
-Banking, longer combat sessions, reconnects, world hopping and proper scene occlusion still need work. A working screen or a passing test does not close those out.
+[i]Live native client — Character creator interface rendered by the Rust client for a new account.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/character-creator-in-client.png[/img]
 
-[B]Some concrete results from the log[/B]
+[i]Live native gameplay — The native client in experimental Enhanced mode after a waterworks reconnect.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/83e1b40d52b34bcbe50b5d9662f5a61a37bb2282/images/tower-map/24-live-final-waterworks.png[/img]
 
-[TABLE]
-[TR][TH]Check[/TH][TH]Recorded result[/TH][/TR]
-[TR][TD]Packet IDs and lengths[/TD][TD]149 incoming + 117 outgoing declarations match Java. Packet behavior is tracked separately.[/TD][/TR]
-[TR][TD]Incoming packet behavior[/TD][TD]27 partial, 119 implemented but not fully verified, 2 unclassified, 1 missing (reflection checks).[/TD][/TR]
-[TR][TD]Outgoing packet behavior[/TD][TD]1 partial, 1 implemented but not fully verified, 115 still awaiting full audit.[/TD][/TR]
-[TR][TD]Terrain/model drawing order[/TD][TD]128 controlled images matched Java pixel for pixel. This is a small renderer test, not a full game frame.[/TD][/TR]
-[TR][TD]Ground-item tile lifetime[/TD][TD]512 packet transitions, 128 item-layer lifecycles and 128 bridge-terrain lifecycles checked against Java.[/TD][/TR]
-[TR][TD]Latest regression run[/TD][TD]1,111 tests passed across 566 suites; one old approximation test remains ignored.[/TD][/TR]
-[TR][TD]Latest native run[/TD][TD]819 frames, 3 server-confirmed actions and 0 audio errors. Longer play sessions still need testing.[/TD][/TR]
-[/TABLE]
-
-These counts come from the behavior checklist. The larger method, module and script-candidate inventories are still being reviewed and are not included in the 155. The numbers will change as that work is broken down. [URL=https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/threads/client-project-parity-log.json]Checkpoint counts and requirement IDs[/URL]
-
-[SPOILER=Show current native client]
-[I]Live native client — Current checkpoint: native world, actors, inventory, chat and minimap.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/01-current-native.png[/IMG]
 [/SPOILER]
 
-[B][SIZE=4]From terrain experiments to a native world[/SIZE][/B]
+[SPOILER=Modeling study: Hollow Regent]
 
-Early steps: JS5, cache decoding and asset loading, before the scene and interface came together.
+[i]Game-style offline render — Hollow Regent attack animation. Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames drawn by the Rust client renderer. Not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-attack.gif[/img]
 
-[SPOILER=Show early development]
-[I]Offline renderer test — Early terrain decoding: Lumbridge before the scene was assembled.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/02-early-terrain.png[/IMG]
-
-[I]Historical live native client — Early live viewport: scene loaded; minimap and interface work still ahead.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/03-early-live.png[/IMG]
 [/SPOILER]
 
-[B][SIZE=4]Login, protocol and audio[/SIZE][/B]
+[b]Latest updates[/b]
+[list]
+[*][url=https://rune-server.org/threads/ai-project-native-rust-osrs-239-1-client.708916/]Client & modeling update — October 2026[/url]
+[*][url=https://rune-server.org/threads/ai-project-native-rust-osrs-239-1-client.708916/]The Cinderworks: The Broken Water Return[/url]
+[*][url=https://rune-server.org/threads/ai-project-native-rust-osrs-239-1-client.708916/]Blender to the native Rust client — custom asset experiments[/url]
+[/list]
 
-The client can log in and talk to a revision 239.1 server. The packet IDs and lengths match the original; we are still checking what happens when each packet is handled.
+[b]What's next[/b]
+[list]
+[*]Start-up under 10 seconds and smoother frame pacing
+[*]More interface and parity work toward the original client
+[*]Longer play sessions, reconnects and world hopping
+[*]Bring the boss studies into the game (animation format, NPC definitions, clean-up)
+[*]Finish the Tower lobby design
+[/list]
 
-[SPOILER=Show login, protocol and audio]
-[I]Offline title test — Cached title artwork, fonts and animated fire.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/04-title.png[/IMG]
+The native client isn't publicly released. If you're interested in it, feel free to reach out.
 
-[I]Controlled session test — Authenticator rejection and retry screen.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/05-authenticator.png[/IMG]
-[/SPOILER]
-
-Music, jingles and nearby sound effects run on their own audio thread. Token login has been tested with a local service, but still needs checking with a real issuer.
-
-[B][SIZE=4]Places taking shape[/SIZE][/B]
-
-The software renderer handles terrain, buildings, textures and multiple floors. These are older offline renders from different places around the map.
-
-[SPOILER=Show places taking shape]
-[I]Historical offline scene render — Lumbridge: terrain becomes buildings, trees and a complete scene.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/06-lumbridge-castle.png[/IMG]
-
-[I]Historical offline scene render — Falador: towers, roofs and courtyards.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/07-falador-castle.png[/IMG]
-
-[I]Historical offline scene render — Draynor: village buildings and waterfront.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/08-draynor-village.png[/IMG]
-
-[I]Historical offline scene render — Al Kharid: desert materials and palace geometry.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/09-al-kharid-palace.png[/IMG]
-
-[I]Historical offline scene render — Castle interior: furnished upper floors.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/10-castle-interior.png[/IMG]
-[/SPOILER]
-
-[B][SIZE=4]Models, textures and animation[/SIZE][/B]
-
-[SPOILER=Show NPC models and dialogue heads]
-[I]Offline renderer test — Goblin: assembled and animated NPC parts.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/11-goblin-model.png[/IMG]
-
-[I]Offline renderer test — Green dragon: a different rig and silhouette.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/12-green-dragon.png[/IMG]
-
-[I]Offline renderer test — NPC dialogue-head models.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/14-npc-heads.png[/IMG]
-[/SPOILER]
-
-[SPOILER=Show equipment, textures and item icons]
-[I]Offline renderer test — Dragon equipment meshes.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/13-dragon-equipment.png[/IMG]
-
-[I]Offline renderer test — Textured item models inside native widgets.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/15-widget-models.png[/IMG]
-
-[I]Offline renderer test — Item icon rendering from cached definitions.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/16-item-icons.png[/IMG]
-[/SPOILER]
-
-[SPOILER=Show animation frames]
-[I]Offline animation test — Windmill, tick 0.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/17-windmill-start.png[/IMG]
-
-[I]Offline animation test — Same camera, tick 60.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/18-windmill-advanced.png[/IMG]
-[/SPOILER]
-
-[B][SIZE=4]Scripts, interfaces and native input[/SIZE][/B]
-
-The client runs scripts from the cache to build its interfaces and menus. Mouse and keyboard input, dragging, clipboard support and window resizing are also in place.
-
-[SPOILER=Show scripts, interfaces and native input]
-[I]Live native client — Inventory, with dragging and input tested.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/19-live-inventory.png[/IMG]
-
-[I]Offline UI test — Bank initialization scripts and empty panel.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/20-bank-interface.png[/IMG]
-
-[I]Offline UI test — Equipment slots and controls.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/21-equipment-interface.png[/IMG]
-
-[I]UI test in live session — Keyboard, focus and editable text in a temporary test widget.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/22-live-editor.png[/IMG]
-[/SPOILER]
-
-The bank and equipment screens load, but these empty panels only show the interface. Depositing and withdrawing still need to be finished and tested.
-
-[B][SIZE=4]World map and minimap[/SIZE][/B]
-
-The world map draws its geography and icons. Clicking the minimap to walk has also been checked with the server.
-
-[SPOILER=Show world map and minimap]
-[I]Live native client — World map inside the logged-in client.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/23-world-map.png[/IMG]
-
-[I]Offline map render — Full map overview.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/24-map-overview.png[/IMG]
-
-[I]Controlled native map test — Fresh capture: detailed map labels, geography and icons.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/31-detailed-map.png[/IMG]
-
-[I]Controlled native map test — Fresh capture: heatmap compositing with synthetic sample positions.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/32-map-heatmap.png[/IMG]
-[/SPOILER]
-
-[B][SIZE=4]Movement, interactions and combat presentation[/SIZE][/B]
-
-We have checked walking, talking to NPCs, equipping items, dropping them and picking them up. The older combat tests used real server updates; these pictures show just the game viewport.
-
-[SPOILER=Show movement, interactions and combat presentation]
-[I]Live-session viewport capture — Shortbow encounter: equipment, animation and hit updates.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/25-ranged.png[/IMG]
-
-[I]Live-session viewport capture — Wind Strike: casting, hit updates and rune consumption.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/26-magic.png[/IMG]
-[/SPOILER]
-
-[B][SIZE=4]Child worlds and overlapping scenes[/SIZE][/B]
-
-These local test scenes check how separate world views overlap. They were set up by the test code rather than by a server encounter.
-
-[SPOILER=Show child worlds and overlapping scenes]
-[I]Controlled scene test — Child-world overlap: hidden state.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/27-child-overlap-hidden.png[/IMG]
-
-[I]Controlled scene test — Child-world overlap: visible state.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/28-child-overlap-visible.png[/IMG]
-[/SPOILER]
-
-[B][SIZE=4]Comparing against the original[/SIZE][/B]
-
-We compare packets, scripts, animation, audio and drawing against the original Java client. Below is one small 100 × 100 drawing test. All 128 cases in that test matched.
-
-[SPOILER=Show original-Java comparison]
-[I]Original-Java reference test — Original Java: controlled terrain/model order, case 1.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/29-java-reference.png[/IMG]
-
-[I]Rust differential test — Rust: the same case, identical RGB pixels.[/I]
-[IMG]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/main/images/client-parity/30-rust-comparison.png[/IMG]
-[/SPOILER]
-
-The test totals and remaining gaps are listed above. They help us catch regressions, but there is still a lot to check through normal play.
-
-[B][SIZE=4]Still in development[/SIZE][/B]
-
-Next up is more rendering work, reconnects and world hopping, and longer gameplay testing. We are still working toward matching the original client. Feedback is welcome.
-
-[SIZE=2]Credits: Project Gielinor / RS Mod, RSProt, RuneLite and RSProx contributors. Development primarily with GPT Astra under human direction and review. RuneScape and the depicted game assets belong to Jagex; this is an unofficial, unaffiliated project.[/SIZE]
+[size=1]Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC); RSProt / Z-Kris (MIT); OpenRune, RuneLite and RSProx contributors for reference/tooling. RuneScape / Old School RuneScape and the depicted game assets belong to Jagex. This unofficial project is unaffiliated with and not endorsed by Jagex.[/size]

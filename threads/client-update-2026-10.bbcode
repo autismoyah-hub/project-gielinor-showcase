@@ -1,0 +1,145 @@
+[size=5][b]Client & modeling update[/b][/size]
+
+Since the last update, most of the client-side work went into two things: getting the native Rust client to run the Tower's first floor end to end, and a set of model studies for the Tower's bosses, characters and lobby. Every image below is a real model or a real client capture. "Game-style offline render" means the frames were drawn by the Rust client's own renderer and model lighting, outside a live game session.
+
+[b]Native client progress[/b]
+
+The Rust client now runs the Tower's first floor, the Cinderworks, end to end against the server. Working and verified in this period: banking (the bank interface, deposits that survive logout and restart, and the floor's banker with its dialogue), public chat typed through the client and echoed by the server, a working logout button, the character creator for new accounts, and reliable closing of bank interfaces. Start-up to playable improved from about 13.4 s to about 12.2 s in matched captures; the under-10-second target isn't met yet. Most of this is verified by automated headless tests rather than long play sessions, and interface and parity work continues. Both development machines are now building one shared automated in-game test harness, so client checks become routine.
+
+[SPOILER=Client captures]
+
+[i]Live native client — Tower Floor One (Cinderworks) running in the Rust client, headless capture.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/cinderworks-floor-in-client.png[/img]
+
+[i]Live native client — Cinderworks sanctuary with the Tower banker NPC; banking and dialogue work in the client (PR #55).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/cinderworks-sanctuary-banker.png[/img]
+
+[i]Live native client — Bank interface open in the Rust client on the Tower floor.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/bank-interface-in-client.png[/img]
+
+[i]Live native client — Public chat typed through the client and echoed by the server (PR #135, verified with save and relog).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/chat-in-client.png[/img]
+
+[i]Live native client — Character creator interface rendered by the Rust client for a new account.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/client-progress/character-creator-in-client.png[/img]
+
+[/SPOILER]
+
+[b]Bosses[/b]
+
+Two original raid bosses, each made as a Hunyuan3D 2.1-assisted textured model, rigged and animated in Blender, with every frame drawn by the game client's renderer. The [b]Hollow Regent[/b] is a winged boss (idle hover, fly, attack, hit and death). The [b]Tidemark Sentinel[/b] is a stone-and-brass guardian (idle, walk, attack, hit and death). They're studies, not in the game yet: next comes conversion to the game's own animation format and NPC definitions, plus some clean-up (the Regent's wing edges, and the Sentinel's joints in deep bends).
+
+[SPOILER=Hollow Regent]
+
+[i]Game-style offline render — Hollow Regent idle animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-idle.gif[/img]
+
+[i]Game-style offline render — Hollow Regent fly animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-fly.gif[/img]
+
+[i]Game-style offline render — Hollow Regent attack animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-attack.gif[/img]
+
+[i]Game-style offline render — Hollow Regent hit animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-hit.gif[/img]
+
+[i]Game-style offline render — Hollow Regent death animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/hollow-regent-death.gif[/img]
+
+[/SPOILER]
+
+[SPOILER=Tidemark Sentinel]
+
+[i]Game-style offline render — Tidemark Sentinel idle animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/tidemark-sentinel-idle.gif[/img]
+
+[i]Game-style offline render — Tidemark Sentinel walk animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/tidemark-sentinel-walk.gif[/img]
+
+[i]Game-style offline render — Tidemark Sentinel attack animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/tidemark-sentinel-attack.gif[/img]
+
+[i]Game-style offline render — Tidemark Sentinel hit animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/tidemark-sentinel-hit.gif[/img]
+
+[i]Game-style offline render — Tidemark Sentinel death animation; Hunyuan3D 2.1-assisted mesh, rigged and animated in Blender, frames rasterised by the Rust client renderer; not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/bosses/tidemark-sentinel-death.gif[/img]
+
+[/SPOILER]
+
+[b]NPC studies[/b]
+
+Eleven original Old School-style NPC designs for the Tower, made as complete textured models with Hunyuan3D assistance: the Quarry Warden, Kiln Dwarf, Reed Goblin, Granary Ogre, Forgotten Watchman, Gravebell Keeper, Moorland Drake, Fen Hound, Ashback Beetle, Cavewing Bat and Copperwing Imp, shown at gameplay camera angles. These are studies: they aren't rigged, animated or in the game yet.
+
+[SPOILER=Original NPC designs]
+
+[i]Game-style offline render — Eleven original Tower NPC designs (Hunyuan3D-assisted models) rendered in the game-style offline renderer.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/npc-lineup-offline-render.png[/img]
+
+[i]Blender render — Five creature designs (Gravebell Keeper, Moorland Drake, Fen Hound, Ashback Beetle, Cavewing Bat) in a Blender review render; Hunyuan3D-assisted models.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/creatures-blender-render.png[/img]
+
+[i]Game-style offline render — Quarry Warden at gameplay camera angle in the offline game-style renderer; Hunyuan3D-assisted model.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/quarry-warden-gameplay.png[/img]
+
+[i]Game-style offline render — Kiln Dwarf at gameplay camera angle in the offline game-style renderer; Hunyuan3D-assisted model.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/kiln-dwarf-gameplay.png[/img]
+
+[i]Game-style offline render — Reed Goblin at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/reed-goblin-gameplay.png[/img]
+
+[i]Game-style offline render — Granary Ogre at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/granary-ogre-gameplay.png[/img]
+
+[i]Game-style offline render — Forgotten Watchman at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/forgotten-watchman-gameplay.png[/img]
+
+[i]Game-style offline render — Gravebell Keeper at gameplay camera angle in the offline game-style renderer; Hunyuan3D-assisted model.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/gravebell-keeper-gameplay.png[/img]
+
+[i]Game-style offline render — Moorland Drake at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/moorland-drake-gameplay.png[/img]
+
+[i]Game-style offline render — Fen Hound at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/fen-hound-gameplay.png[/img]
+
+[i]Game-style offline render — Copperwing Imp at gameplay camera angle in the game-style offline renderer; Hunyuan3D-assisted model, not in game.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/npc-studies/copperwing-imp-gameplay.png[/img]
+
+[/SPOILER]
+
+[b]Lobby map study: Waymark Hall[/b]
+
+Waymark Hall is a candidate design for the Tower's lobby: an octagonal hall under a radial roof, with the bank, a preparation area, a raid archive, a progression board and the ascent door into the Tower. It's assembled from cleaned, Hunyuan3D-assisted models, shown with its roof on and then with the roof cut away. It's a non-final candidate and isn't in the game yet; close views still show some repetitive floor tiling and soft detail to fix. The last image is an earlier lobby candidate that did run in the client, now superseded.
+
+[SPOILER=Waymark Hall]
+
+[i]Game-style offline render — Waymark Hall, a candidate Tower lobby, assembled with its radial roof on, offline renderer (study, not in game); built from Hunyuan3D-assisted, cleaned models.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/waymark-hall-with-roof.png[/img]
+
+[i]Game-style offline render — The same hall with the roof cut away, showing the service areas around the central mosaic (study, not in game).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/waymark-hall-cutaway-overview.png[/img]
+
+[i]Game-style offline render — Waymark Hall arrival view with the roof cut away (study, not in game).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/waymark-hall-arrival.png[/img]
+
+[i]Game-style offline render — Close view of the assembled Waymark Hall bank and service area (study, not in game).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/waymark-hall-bank.png[/img]
+
+[i]Game-style offline render — Waymark Hall catalogue (raid archive) area, roof cut away (study, not in game).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/waymark-hall-catalogue.png[/img]
+
+[i]Live native client — An earlier lobby candidate running in the client (classic renderer); historical capture, superseded by the Waymark Hall study.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/client-update-2026-10/lobby-map/earlier-lobby-in-client.png[/img]
+
+[/SPOILER]
+
+[b]Weapons and armour[/b]
+
+Five original weapons and five armour sets for the Tower have been designed; they'll be shown once they're built as real models.
+
+[b]About the client[/b]
+
+The native client isn't publicly released. If you're interested in it, feel free to reach out.
+
+[size=1]Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC); RSProt / Z-Kris (MIT); OpenRune, RuneLite and RSProx contributors for reference/tooling. RuneScape / Old School RuneScape and the depicted game assets belong to Jagex. This unofficial project is unaffiliated with and not endorsed by Jagex.[/size]

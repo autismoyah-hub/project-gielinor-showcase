@@ -1,0 +1,163 @@
+[size=5][b]Server & gameplay update[/b][/size]
+
+Everything new on the server since the last server post (19 October 2026). [b](in-game)[/b] = played and verified in the game through normal controls, including a save and relog. [b](tests)[/b] = covered by automated tests only, not yet shown in game.
+
+[b]Skilling[/b]
+[list]
+[*][b]Fishing[/b]: 94 spot types: nets, bait, rods, cages and harpoons; bait used per catch; stops on a full pack [b](in-game)[/b]
+[*][b]Firemaking[/b]: tinderbox on normal to yew logs, light logs on the ground, fires burn out to ashes and can be cooked on [b](in-game)[/b]
+[*][b]Gem rocks[/b] (level 40, members) with their own gem tables, depletion and 99-tick respawn [b](in-game)[/b]; random gems while mining ordinary rocks [b](tests)[/b]
+[*][b]Clay and essence[/b]: clay respawns after 2 ticks; essence never depletes; pure essence at Mining 30+ for members; mining continues to a full pack [b](in-game)[/b]
+[*][b]Coal bag[/b]: Fill/Open/Check/Empty/Close; mined coal goes into an open bag; furnaces use bag coal [b](in-game)[/b]
+[*][b]Smithing extras[/b]: Goldsmith gauntlets (gold bar XP 22.5 → 56.2), smelting catalysts, ring of forging (140 charges per player), Godsword blade joining [b](in-game)[/b]
+[*][b]Sheep shearing[/b]: wool, regrowth, wool to the ground on a full pack, bleating [b](in-game)[/b]
+[/list]
+
+[SPOILER=Mining: gems, clay and essence]
+
+[i]Headless client render — Gem rocks at Shilo Village: the mined rock (left of the player) is depleted after giving an uncut gem.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/01-gem-rock-mined.png[/img]
+
+[i]Headless client render — The depleted gem rock came back 99 ticks later and was mined again.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/02-gem-rocks-respawned.png[/img]
+
+[i]Headless client render — The gem-rock run as recorded frames: opal, diamond and opal mined, with depletion and respawn.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/03-gem-mining.gif[/img]
+
+[i]Headless client render — Clay mined at the Varrock west mine; the clay rock beside the player is depleted.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/04-clay-mined.png[/img]
+
+[i]Headless client render — The clay rock is back two ticks later and was mined again.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/05-clay-respawned.png[/img]
+
+[i]Headless client render — A member with Mining 30 mines pure essence; one Mine action continued until the pack was full.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/06-pure-essence.png[/img]
+
+[/SPOILER]
+[b]Combat & NPCs[/b]
+[list]
+[*][b]NPC combat stats[/b] now come from the game cache for every NPC [b](in-game)[/b]
+[*][b]Dragon longsword special (Cleave)[/b]: spec bar and orb, 25% cost, regeneration, low-energy refusal; energy kept across restart [b](in-game)[/b]
+[*][b]Goblin (3028)[/b] now has the Wiki's 5 hitpoints; kills, bones and a 35-tick respawn [b](in-game)[/b]
+[/list]
+
+[SPOILER=NPC combat from the cache]
+
+[i]Headless client render — Cow fight in the Lumbridge cow field; NPC combat stats now come from the game cache.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/07-cow-combat.png[/img]
+
+[i]Headless client render — The cow takes 8 damage, dies and respawns; recorded frames from the test run.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/08-cow-combat.gif[/img]
+
+[/SPOILER]
+[SPOILER=Dragon longsword special attack]
+
+[i]Live native gameplay — Dragon longsword wielded through the normal menu: special attack bar at 100% and the Cleave description.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/09-dls-special-bar.png[/img]
+
+[i]Live native gameplay — Cleave on a cow: the special attack pose, with the bar dropping to 75%.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/10-dls-cleave.png[/img]
+
+[i]Live native gameplay — Special attack refused at 5% energy with "You don't have enough power left." This frame was captured a little later, after energy had regenerated to 35%.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/11-dls-low-energy.png[/img]
+
+[/SPOILER]
+[SPOILER=Goblin hitpoints]
+
+[i]Live native gameplay — Nine in-game captures from the goblin run (goblin placed by the test server), shown one second apart (a slideshow, not continuous video).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/12-goblin-run.gif[/img]
+
+[i]Live native gameplay — Two goblin kills, two bones picked up. The goblin's 5 hitpoints and the XP come from the server's records, not from these pixels.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/13-goblin-two-bones.png[/img]
+
+[i]Live native gameplay — After a server restart and logging back in with the same save, both bones are still in the pack.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/14-goblin-relogin.png[/img]
+
+[/SPOILER]
+[b]Drops & loot[/b]
+[list]
+[*][b]Shared drop tables[/b]: herb, gem, rare and mega-rare, plus extra rolls (e.g. clue scrolls) [b](tests)[/b]
+[*][b]Goblins and men/women[/b]: 27 + 27 variants with their own tables; drops private to the killer, then public [b](in-game)[/b]
+[*][b]Cows and calves[/b] always drop cowhide and raw beef [b](in-game)[/b]
+[*][b]Chickens, imps, bears, small spiders[/b]: corrected tables [b](tests)[/b]
+[/list]
+
+[SPOILER=Goblin and man/woman drops]
+
+[i]Headless client render — Goblin drop test in Lumbridge Swamp, with a second account standing by to check that drops stay private to the killer.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/15-goblin-drop-fight.png[/img]
+
+[i]Headless client render — The goblin's drops on the ground after they became visible to other players.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/16-goblin-drop-reveal.png[/img]
+
+[i]Headless client render — Man/Woman drop test in Lumbridge: the first of four kills.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/17-man-drop-fight.png[/img]
+
+[/SPOILER]
+[b]World & NPC behaviour[/b]
+[list]
+[*][b]Aggressive NPCs[/b] hunt players (cache settings, plus giant rats and muggers from the Wiki); they ignore players over twice their level [b](in-game)[/b]
+[*][b]Respawn timers[/b] for chickens, cows, goblins, giant rats and guards; cow respawn at exactly 45 ticks [b](in-game)[/b]
+[*][b]Ambient NPCs[/b]: cows moo and graze, ducks quack, ducklings answer, item refusals [b](in-game)[/b]
+[*][b]Banking[/b]: Lumbridge bank booths open the bank; banknotes turn back into items at booths and bankers [b](in-game)[/b]
+[*][b]Item packs[/b]: 14 new pack types (TzHaar runes, bolts, arrowheads, clay, Hunter traps…); members-only for free accounts [b](in-game)[/b]
+[*][b]Picket gates[/b] open and close from both sides [b](in-game)[/b]; chicken coop eggs [b](tests)[/b]
+[/list]
+
+[SPOILER=Aggression and respawns]
+
+[i]Headless client render — An unarmed combat-level-3 player among giant rats, sending no attack or walk actions: a rat attacks unprovoked.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/18-rat-aggression.png[/img]
+
+[i]Headless client render — The rat aggression run as recorded frames.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/19-rat-aggression.gif[/img]
+
+[i]Headless client render — The same spot with a combat-level-11 player: the rats stay within range for 100 ticks but never attack.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/20-rats-ignore-higher-level.png[/img]
+
+[i]Live native gameplay — Respawn timing test: the cow's health bar reaches zero after 8 damage.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/21-cow-death.png[/img]
+
+[i]Live native gameplay — The cow is back at its spawn point; the server and client records put the respawn at exactly 45 game ticks.[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/22-cow-respawn.png[/img]
+
+[/SPOILER]
+[b]Fixes[/b]
+[list]
+[*]Ordinary-world mode: logging in on the old Tower pad keeps you in the normal world with your items [b](in-game)[/b]
+[*]Free accounts can't pickpocket; interrupted first logins no longer lock an account; public chat and logout handled [b](tests)[/b]
+[*]Death handling tightened: no eating, cooking or other actions while a death resolves; zero-health saves recover [b](tests)[/b]
+[*]Dropped connections log out shortly after, as in OSRS [b](tests)[/b]
+[/list]
+
+[SPOILER=Ordinary-world mode]
+
+[i]Live native gameplay — Ordinary-world mode: logging in on the old Tower recovery pad in Lumbridge leaves the player there, with every item still in the pack (captured during review, one revision before the final merged change).[/i]
+[img]https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/d52a4c27bb4897d1bb53fa97314097a45b151f9d/images/server-update-2026-10/23-recovery-pad-ordinary-world.png[/img]
+
+[/SPOILER]
+[b]The Tower (server side)[/b]
+[list]
+[*]The Cinderworks floor now runs on the main server, sharing the normal skilling and prayer code
+[*]One full run to the reward completed in a headless test: preparation, Ash Imp, Ash Warden, reward chest (500 coins and a beer), clear kept after a restart; a second independent clear is still to come [b](in-game, headless)[/b]
+[*]Floor One banker: Talk-to and examine [b](in-game)[/b]
+[*]Groundwork for Tower attempts (hardcore, softcore and easy life modes, save and restore) [b](tests)[/b]
+[/list]
+
+[b]Behind the scenes[/b]
+[list]
+[*]Every feature is checked in game by a headless test client against the real server, from a fresh test account
+[*]Both development machines are building one shared test setup
+[*]The public server repository now has the current source and release notes
+[/list]
+
+[b]Coming next[/b] (in progress)
+[list]
+[*]NPC aggression tolerance
+[*]NPC retreat and aggression ranges
+[*]Shops
+[/list]
+
+Server source: [url=https://github.com/autismoyah-hub/project-gielinor-rust-server]github.com/autismoyah-hub/project-gielinor-rust-server[/url]
+
+[size=1]Credits: Project Gielinor / Slashx124 and RS Mod contributors (ISC); RSProt / Z-Kris (MIT); OpenRune, RuneLite and RSProx contributors for reference/tooling. RuneScape / Old School RuneScape and the depicted game assets belong to Jagex. This unofficial project is unaffiliated with and not endorsed by Jagex.[/size]
