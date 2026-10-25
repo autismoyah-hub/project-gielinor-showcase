@@ -1,0 +1,485 @@
+{
+  "scope": "Server & gameplay update: machine A server lane plus machine B server-side Tower work. Verified in-game captures only; no client-only work.",
+  "url_template": "https://raw.githubusercontent.com/autismoyah-hub/project-gielinor-showcase/COMMIT_PLACEHOLDER/images/server-update-2026-10/<file name>",
+  "source_root": "source_path and evidence_report are relative to the private local reports folder of the OSRS project; not for publication",
+  "evidence_levels": "6 = in-game run in the headless client against the Rust server, with server records and saved-state/relogin checks; 4 = automated tests plus build/launch checks; 3 = engine tests only",
+  "images": [
+    {
+      "file": "images/01-gem-rock-mined.png",
+      "section": "Skilling",
+      "caption": "Gem rocks at Shilo Village: the mined rock (left of the player) is depleted after giving an uncut gem.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr103-mining/pr103-gem-001/key-0027-gem_1.png",
+      "source_sha256": "516507c208cb1e5b4fabcf5f3bd42dcf5173a550da25ac8cdd0688a23668ebea",
+      "published_sha256": "dbf38c0706eddaf43f0c797e1de69ba6c8ee3f2943e8c6214de3f0e22918a176",
+      "prs": [
+        103,
+        105
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-103.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/02-gem-rocks-respawned.png",
+      "section": "Skilling",
+      "caption": "The depleted gem rock came back 99 ticks later and was mined again.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr103-mining/pr103-gem-001/key-0150-respawn.png",
+      "source_sha256": "3bdb1b9d0b9f58e1370928ded2f6020ab9193d7259a880f86016a6b104ab3399",
+      "published_sha256": "fe61815bced8163922b2f8097314b311a6fa491817d6f2074ab6b1c063da4cfa",
+      "prs": [
+        103,
+        105
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-103.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/03-gem-mining.gif",
+      "section": "Skilling",
+      "caption": "The gem-rock run as recorded frames: opal, diamond and opal mined, with depletion and respawn.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr103-mining/pr103-gem-001/mininggem.gif",
+      "source_sha256": "847a48e2e36264259872ed7102f9e1e2f3afa5255a697c207e03c291d9920dca",
+      "published_sha256": "847a48e2e36264259872ed7102f9e1e2f3afa5255a697c207e03c291d9920dca",
+      "prs": [
+        103,
+        105
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-103.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 158,
+      "processing": "GIF copied byte-identical (all frames and timing retained)"
+    },
+    {
+      "file": "images/04-clay-mined.png",
+      "section": "Skilling",
+      "caption": "Clay mined at the Varrock west mine; the clay rock beside the player is depleted.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr125-clay-essence/pr125-miningclay-001/key-0016-clay_1.png",
+      "source_sha256": "095138a867698a79d492d0f307ad3df06f5b5614a6a11eb0b8fb40339ef902ac",
+      "published_sha256": "8755995e57d667aedbf9d120f1281bff63ee5e4f69d08909d64ac2ed64bcab39",
+      "prs": [
+        125,
+        130
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-125.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/05-clay-respawned.png",
+      "section": "Skilling",
+      "caption": "The clay rock is back two ticks later and was mined again.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr125-clay-essence/pr125-miningclay-001/key-0018-clay_respawn.png",
+      "source_sha256": "6c1cee13fd9a64604e8948d8ab50d8a47db7b66beb94191b7b5e96b7b19ad234",
+      "published_sha256": "4f58689ce80151429e66c0fc2e060f0efbe7d3b2fefd242b583c1240966e496d",
+      "prs": [
+        125,
+        130
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-125.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/06-pure-essence.png",
+      "section": "Skilling",
+      "caption": "A member with Mining 30 mines pure essence; one Mine action continued until the pack was full.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr125-clay-essence/pr125-miningessence-001/key-0044-essence.png",
+      "source_sha256": "2a79350f80ee2f94755a8aebbd2a2f1d0e7790da1f18279c8b0a00dd614be82c",
+      "published_sha256": "5e48cdcbcd78a0cc407c7a71b7d8e4d3fbd4b861fbc5f06c8377838d81d06777",
+      "prs": [
+        125,
+        130
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-125.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/07-cow-combat.png",
+      "section": "Combat & NPCs",
+      "caption": "Cow fight in the Lumbridge cow field; NPC combat stats now come from the game cache.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1141/evidence/pr-36/after/key-0020-cow-gone.png",
+      "source_sha256": "c62465ee4141cbcab13c673f4a1bc5b6c967aae96c01f2479eecde6685f6f8d1",
+      "published_sha256": "423aaa067e942f359da332f5c2c1af9dcf0e5c4d5bc3b6cccd94bc1df2bc70be",
+      "prs": [
+        36,
+        59
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1141/osrs-workspace-pr-36.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/08-cow-combat.gif",
+      "section": "Combat & NPCs",
+      "caption": "The cow takes 8 damage, dies and respawns; recorded frames from the test run.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1141/evidence/pr-36/after/npccombat.gif",
+      "source_sha256": "1b84e5372b939e36469db8e7ddfc4085b6d39da5d157dc0c00694a42db75c016",
+      "published_sha256": "1b84e5372b939e36469db8e7ddfc4085b6d39da5d157dc0c00694a42db75c016",
+      "prs": [
+        36,
+        59
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1141/osrs-workspace-pr-36.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 82,
+      "processing": "GIF copied byte-identical (all frames and timing retained)"
+    },
+    {
+      "file": "images/09-dls-special-bar.png",
+      "section": "Combat & NPCs",
+      "caption": "Dragon longsword wielded through the normal menu: special attack bar at 100% and the Cleave description.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-142/round2/commands-initial/frame-27.png",
+      "source_sha256": "23d257d5c57727118f18f3386754821a4429312cf96b705376cc81bcea318d17",
+      "published_sha256": "23d257d5c57727118f18f3386754821a4429312cf96b705376cc81bcea318d17",
+      "prs": [
+        142
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-142.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/10-dls-cleave.png",
+      "section": "Combat & NPCs",
+      "caption": "Cleave on a cow: the special attack pose, with the bar dropping to 75%.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-142/round2/commands-combat/frame-104.png",
+      "source_sha256": "d7631230fd870c29bf00087e32f51f11133b3d8f42d391ac3ff07852c75609d0",
+      "published_sha256": "d7631230fd870c29bf00087e32f51f11133b3d8f42d391ac3ff07852c75609d0",
+      "prs": [
+        142
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-142.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/11-dls-low-energy.png",
+      "section": "Combat & NPCs",
+      "caption": "Special attack refused at 5% energy with \"You don't have enough power left.\" This frame was captured a little later, after energy had regenerated to 35%.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-142/round2/commands-combat/frame-245.png",
+      "source_sha256": "a5d3d5dc44402f238443020521643f94c8273f22dea33c8c3350b20b710645a6",
+      "published_sha256": "a5d3d5dc44402f238443020521643f94c8273f22dea33c8c3350b20b710645a6",
+      "prs": [
+        142
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-142.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical",
+      "note": "Report: frame 243 shows 5% before the message; frame 245 shows the message at 35% after regeneration and does not prove a contemporaneous 5% display."
+    },
+    {
+      "file": "images/12-goblin-run.gif",
+      "section": "Combat & NPCs",
+      "caption": "Nine in-game captures from the goblin run (goblin placed by the test server), shown one second apart (a slideshow, not continuous video).",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261025-0500/verifier-161/attempt3/capture-gif/combat-discrete-native-captures.gif",
+      "source_sha256": "f21b6e71adad289aed4b0f2e6ad87e2a8afcc1f8cf74ab15b2ce6831a7e3fb3e",
+      "published_sha256": "f21b6e71adad289aed4b0f2e6ad87e2a8afcc1f8cf74ab15b2ce6831a7e3fb3e",
+      "prs": [
+        161
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261025-0500/osrs-workspace-pr-161.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 9,
+      "processing": "GIF copied byte-identical (all frames and timing retained)",
+      "note": "Report: equal editorial one-second delays; not timing proof; no generated or interpolated frames."
+    },
+    {
+      "file": "images/13-goblin-two-bones.png",
+      "section": "Combat & NPCs",
+      "caption": "Two goblin kills, two bones picked up. The goblin's 5 hitpoints and the XP come from the server's records, not from these pixels.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261025-0500/verifier-161/attempt3/commands-combat/frame-85.png",
+      "source_sha256": "8424c7f5b1e92e0b0fe2d3d3707444b72ebab841fad135369088fe7613f564d9",
+      "published_sha256": "8424c7f5b1e92e0b0fe2d3d3707444b72ebab841fad135369088fe7613f564d9",
+      "prs": [
+        161
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261025-0500/osrs-workspace-pr-161.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/14-goblin-relogin.png",
+      "section": "Combat & NPCs",
+      "caption": "After a server restart and logging back in with the same save, both bones are still in the pack.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261025-0500/verifier-161/relogin1/commands-relogin/frame-37.png",
+      "source_sha256": "c148338137b6338d62dd23586d40f5c835567dbb1bf1aecec0d95affdfa1c039",
+      "published_sha256": "c148338137b6338d62dd23586d40f5c835567dbb1bf1aecec0d95affdfa1c039",
+      "prs": [
+        161
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261025-0500/osrs-workspace-pr-161.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/15-goblin-drop-fight.png",
+      "section": "Drops & loot",
+      "caption": "Goblin drop test in Lumbridge Swamp, with a second account standing by to check that drops stay private to the killer.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr106-goblin/pr106-goblin-003/key-0024-kill_1.png",
+      "source_sha256": "ede929ab703046b1bdab4abf02cf0bb9ff0f6c065cd88ba122201097ee68deab",
+      "published_sha256": "0921945ef505fa8c7875b878205e2ef341fdcae79adc744f2fa692e2839688c6",
+      "prs": [
+        106,
+        107
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-106.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/16-goblin-drop-reveal.png",
+      "section": "Drops & loot",
+      "caption": "The goblin's drops on the ground after they became visible to other players.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr106-goblin/pr106-goblin-003/key-0325-reveal.png",
+      "source_sha256": "15a49eec2ab0e929da924c102b827ab297609f3a783923406cccfa9f29308d74",
+      "published_sha256": "c198cee7dc3ecdb11ba65de3a8a444e044c10b7c54fb86dd6d0791bd9c0b2834",
+      "prs": [
+        106,
+        107
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-106.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/17-man-drop-fight.png",
+      "section": "Drops & loot",
+      "caption": "Man/Woman drop test in Lumbridge: the first of four kills.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1924/evidence/pr112-manwoman/pr112-manwoman-009/key-0086-kill_1.png",
+      "source_sha256": "0e227f34be5a8bbb75a5f8af2a04d7607626e6ba0b1f586c9f4d80cee214a6b9",
+      "published_sha256": "65b192cdfdf5e565833ff12392a27eed0526d97c41641253b5e3e5ddac3c69c7",
+      "prs": [
+        112,
+        121
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1924/osrs-workspace-pr-112.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/18-rat-aggression.png",
+      "section": "World & NPC behaviour",
+      "caption": "An unarmed combat-level-3 player among giant rats, sending no attack or walk actions: a rat attacks unprovoked.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1141/evidence/pr-66/aggression/key-0003-player-hit.png",
+      "source_sha256": "d594d37bc314007f97030b7c8f628fd695c754a519bf2085b1bff078fcce9c8a",
+      "published_sha256": "192eac5dece87ca0806fa8f52b7f588f10d86843a4bd5bfbd0f75c32e83f60d2",
+      "prs": [
+        66,
+        78
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1141/osrs-workspace-pr-66.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/19-rat-aggression.gif",
+      "section": "World & NPC behaviour",
+      "caption": "The rat aggression run as recorded frames.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1141/evidence/pr-66/aggression/aggression.gif",
+      "source_sha256": "6c7618181e7af4c71a06995149a6ea13cbf94f035320c8d81a199bd9d61ba37c",
+      "published_sha256": "6c7618181e7af4c71a06995149a6ea13cbf94f035320c8d81a199bd9d61ba37c",
+      "prs": [
+        66,
+        78
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1141/osrs-workspace-pr-66.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 8,
+      "processing": "GIF copied byte-identical (all frames and timing retained)"
+    },
+    {
+      "file": "images/20-rats-ignore-higher-level.png",
+      "section": "World & NPC behaviour",
+      "caption": "The same spot with a combat-level-11 player: the rats stay within range for 100 ticks but never attack.",
+      "capture_class": "Headless Rust client render (scripted test driver + Rust server)",
+      "source_path": "reports/run-20261024-1141/evidence/pr-66/aggressionhigh/key-0101-quiet.png",
+      "source_sha256": "02ec9a49689895afe151c2a7d8c43e2934029e9440896c98e54ad721f2b79649",
+      "published_sha256": "8f2be5502e15a9a85fde1e8bb51e3aa826b1bf3cd38e4edca39a97e6d5258218",
+      "prs": [
+        66,
+        78
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-1141/osrs-workspace-pr-66.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: pHYs); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/21-cow-death.png",
+      "section": "World & NPC behaviour",
+      "caption": "Respawn timing test: the cow's health bar reaches zero after 8 damage.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-152/commands-combat/frame-104.png",
+      "source_sha256": "d3b5d1eaf7abbcb4e69e3d7e951b68bb09dbcda97fe67ecf4115f3fd46ae2a16",
+      "published_sha256": "d3b5d1eaf7abbcb4e69e3d7e951b68bb09dbcda97fe67ecf4115f3fd46ae2a16",
+      "prs": [
+        152
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-152.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/22-cow-respawn.png",
+      "section": "World & NPC behaviour",
+      "caption": "The cow is back at its spawn point; the server and client records put the respawn at exactly 45 game ticks.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-152/commands-combat/frame-111.png",
+      "source_sha256": "909c5d705781f72e4a41574ac42313ea463c117cfedc1b39e5a29eb67d0ce394",
+      "published_sha256": "909c5d705781f72e4a41574ac42313ea463c117cfedc1b39e5a29eb67d0ce394",
+      "prs": [
+        152
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-152.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical"
+    },
+    {
+      "file": "images/23-recovery-pad-ordinary-world.png",
+      "section": "World & NPC behaviour",
+      "caption": "Ordinary-world mode: logging in on the old Tower recovery pad in Lumbridge leaves the player there, with every item still in the pack.",
+      "capture_class": "Live native gameplay (headless Rust client + Rust server)",
+      "source_path": "reports/run-20261024-2339/verifier-132/commands-initial/frame-120.png",
+      "source_sha256": "f16b3c2b897ce1dd55f36fb2ed195a225eb3bf93987a700e1b049080f5022c61",
+      "published_sha256": "f16b3c2b897ce1dd55f36fb2ed195a225eb3bf93987a700e1b049080f5022c61",
+      "prs": [
+        132
+      ],
+      "evidence_level": 6,
+      "evidence_report": "reports/run-20261024-2339/osrs-workspace-pr-132.html",
+      "dimensions": [
+        765,
+        503
+      ],
+      "frames": 1,
+      "processing": "Metadata-free PNG (ancillary chunks removed: none present); IHDR/IDAT unchanged, so decoded pixels and dimensions are identical",
+      "note": "Verified on an earlier head (983bcc8d) of PR #132; the report does not claim a separate in-game check of the final merged head."
+    }
+  ]
+}
